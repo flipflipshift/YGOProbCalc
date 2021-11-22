@@ -117,7 +117,7 @@ public class Main {
 		
 		
 		action("Summon Verte").open().hopt().poss(cond(Dfusion,0),cond(2,dheroes, list(0,1)),move(2,"tri-type",2,4), move(verte,-1,2));
-		Action verte_eff = action("Eff Verte").open().hopt().poss(move(Dfusion,0,4),move(2,dheroes, list(0,1),4), move(enforcer,-1,2));
+		Action verte_eff = action("Eff Verte").open().hopt().poss(move(Dfusion,0,4),move(2,dheroes, list(0,1),4), move(enforcer,-1,2), cond(verte,2));
 		verte_eff.turnoff_all().turnon(enforcer_eff).turnon(brumm_add).turnon(kitt_eff).turnon(nerv_eff).turnon(frak_eff);
 		brumm_add.turnoff_all().turnon(place_revolt).turnon(put_back);
 		fusion_destiny.turnoff_all().turnon(enforcer_eff).turnon(brumm_add).turnon(kitt_eff).turnon(nerv_eff).turnon(frak_eff);
@@ -141,7 +141,7 @@ public class Main {
 		//Gov.terminate(cond(dheroes, 7));
 		//Gov.terminate(cond(Dfusion, 7));
 		
-		go("Enforcer + Revolt", 1000);
+		go("Enforcer + Revolt", 5);
 		
 		
 	}
