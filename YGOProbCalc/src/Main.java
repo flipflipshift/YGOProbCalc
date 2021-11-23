@@ -4,6 +4,44 @@ import java.io.FileWriter;
 public class Main {
 	public static void main(String args[])
 	{
+		Card dog = card("Fluffal Dog", 3, "fluffal",   "ns", "monster", "lv4").small();
+		Card bear = card("Fluffal Bear", 2, "fluffal", "ns", "monster").small();
+		Card dolphin = card("Fluffal Dolphin", 2, "fluffal",  "lv4water", "ns", "monster", "lv4").small();
+		Card sheep = card("Fluffal Sheep", 1, "fluffal",  "ns", "monster").small();
+		Card wings = card("Fluffal Wings", 1, "fluffal",  "ns", "monster", "good_discard").small();
+		Card penguin = card("Fluffal Penguin", 3, "fluffal",  "lv4water", "ns", "monster", "lv4", "peng").small();
+		Card penguin3 = card("lv3 Fluffal Penguin", 0, "fluffal", "peng", "monster");
+		Card octo = card("Fluffal Octopus", 1, "fluffal", "ns", "monster").small();
+		Card vendor = card("Toy Vendor", 3, "goods_target", "s/t", "good_discard");
+		Card repair = card("Frightfur Repair", 1, "frightfur",  "goods_target", "s/t", "good_discard");
+		Card patchwork = card("Frightfur Patchwork", 3, "frightfur", "s/t");
+		Card frightfur_fus = card("Frightfur Fusion", 1, "frightfur", "s/t");
+		Card poly = card("Polymerization", 3, "s/t");
+		Card goods = card("Foolish Burial Goods", 3, "s/t");
+		Card chain = card("Edge Imp Chain", 3, "edge", "ns", "monster", "lv4", "good_discard").small();
+		Card edge_scythe = card("Edge Imp Scythe", 3, "edge", "ns", "monster").small();
+		Card sabres = card("Edge Imp Sabres", 1, "edge", "ns", "monster", "good_discard").small();
+		Card gardens = card("Royal Penguin Gardens", 3, "s/t");
+		Card driver = card("Psy-Frame Driver", 1, "monster").small();
+		Card gamma = card("Psy-Framegear Gamma", 3, "monster", "dugcross_spec").small();
+		Card arti_scythe = card("Artifact Scythe", 1, "monster").small();
+		Card arti_lancea = card("Artifact Lancea", 1).small();
+		Card nib = card("Nibiru, the Primal Being",1).small();
+		Card ash = card("Ash Blossom & Joyous Spring",1).small();
+		Card eldlich = card("Eldlich the Golden Lord", 2, "monster").small();
+		Card illusion = card("Illusion of Chaos",3).small("Spellcaster", "DARK", "7", "2100", "2500");
+		Card smallworld = card("Small World",3);
+
+		locations("Deck", "Hand", "Monster Zone", "S/T Zone", "GY", "Banish", "Prosp Zone", "banishfd");
+		
+		setsmallworld(smallworld,4,7);
+		
+		
+		poss(cond(chain));
+		go("SmallWorldTest",1000);
+	}
+	public static void mainT(String args[])
+	{
 		Card rescue = card("Rescue Cat", 3, "tri-type", "monster");
 		Card frak = card("TB Fraktall", 3, "tb", "tri-type", "monster", "main tb");
 		Card kitt = card("TB Kitt", 3, "tb", "tri-type", "monster", "cat_summon", "good_gy", "main tb");
@@ -141,7 +179,7 @@ public class Main {
 		//Gov.terminate(cond(dheroes, 7));
 		//Gov.terminate(cond(Dfusion, 7));
 		
-		go("Enforcer + Revolt", 5);
+		go("Enforcer + Revolt 2", 5);
 		
 		
 	}
@@ -431,13 +469,21 @@ public class Main {
 	{
 		return new Condition(card, locations);
 	}
-	private static ZeroCondition zcond(String category, int... locations)
+	private static Condition zcond(String category, int... locations)
 	{
-		return new ZeroCondition(category, locations);
+		return new Condition(0, '=', category, locations);
 	}
-	private static ZeroCondition zcond(Card c, int... locations)
+	private static Condition zcond(Card c, int... locations)
 	{
-		return new ZeroCondition(c, locations);
+		return new Condition(0, '=', c, locations);
+	}
+	private static Condition lcond(int num, String category, int... locations)
+	{
+		return new Condition(num, '-', category, locations);
+	}
+	private static Condition lcond(int num, Card c, int... locations)
+	{
+		return new Condition(num, '-', c, locations);
 	}
 	private static Action action(String name)
 	{
@@ -491,6 +537,12 @@ public class Main {
 	public static void terminate(Action[] are_off, Condition... conds)
 	{
 		Gov.terminate(are_off, conds);
+	}
+	public static void setsmallworld(Card smallworld, int gy_locnum, int banishfd_locnum)
+	{
+		SmallWorld.small_world=smallworld;
+		SmallWorld.gy=gy_locnum;
+		SmallWorld.banish_fd=banishfd_locnum;
 	}
 
 }

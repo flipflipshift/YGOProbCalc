@@ -88,6 +88,7 @@ public class Gov {
 	}
 	public static double probability(FileWriter fw, int num_trials) throws IOException
 	{
+		SmallWorld.actions();
 		int counter = 0;
 		for(int i=0; i<num_trials; i++)
 		{

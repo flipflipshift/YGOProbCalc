@@ -66,5 +66,15 @@ public class Card {
 			return null;
 		}
 	}
+	public Card small(String type, String attribute, String level, String atk, String def)
+	{
+		SmallWorld.add(this, type, attribute, level, atk, def);
+		return this;
+	}
+	public Card small()
+	{
+		SmallWorld.add(this);
+		return this;
+	}
 
 }
