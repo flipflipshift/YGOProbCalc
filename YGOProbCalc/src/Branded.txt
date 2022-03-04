@@ -1,0 +1,1657 @@
+This Worked:
+Hand: Pegasus, Branded Fusion, Light HS Fusion, monster, Crystal Bond, 
+
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Hand to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Pegasus, Zenith, albaz, monster, Crystal Bond, 
+Preloaded draws to Exc: monster, monster, Rainbow Bridge, Crystal Bond, Light HS Fusion, Pegasus, Rainbow Bridge, Crystal Bond, Branded Fusion, Branded Fusion, s/t, s/t, Branded in Red, Zenith, Shield, Rainbow Bridge, Prosperity, monster, Dynatherium, monster, Pegasus, s/t, Prosperity, monster, Prosperity, Branded Fusion, Rainbow Dark, s/t, monster, monster, Shield, monster, s/t, s/t, s/t, monster, s/t, Zenith, s/t, s/t, Shield, 
+
+
+This failed: 
+Hand: Branded in Red, monster, monster, monster, Rainbow Bridge, 
+Preloaded draws to Exc: Shield, monster, s/t, Pegasus, Crystal Bond, Branded Fusion, Zenith, monster, s/t, Branded Fusion, s/t, Zenith, s/t, Zenith, Crystal Bond, albaz, Prosperity, Prosperity, monster, Branded Fusion, Pegasus, monster, Shield, Prosperity, monster, s/t, s/t, Dynatherium, s/t, Pegasus, monster, Rainbow Dark, s/t, Rainbow Bridge, monster, Rainbow Bridge, s/t, Shield, Crystal Bond, s/t, Light HS Fusion, 
+
+
+This Worked:
+Hand: Branded Fusion, monster, monster, s/t, Prosperity, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved Shield from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Prosperity from Deck to Exc	(Prosp eff)
+Moved Crystal Bond from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Pegasus from Exc to Hand	(Prosp processing)
+Moved Shield from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Prosperity from Exc to Deck	(Prosp processing)
+Moved Crystal Bond from Exc to Deck	(Prosp processing)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Shield, monster, s/t, s/t, s/t, 
+Preloaded draws to Exc: s/t, Zenith, Zenith, monster, albaz, Crystal Bond, Rainbow Dark, Pegasus, monster, Prosperity, Rainbow Bridge, s/t, monster, Shield, Branded Fusion, s/t, monster, s/t, Rainbow Bridge, monster, Prosperity, Branded Fusion, s/t, Light HS Fusion, monster, Pegasus, Branded Fusion, Zenith, Rainbow Bridge, Shield, Prosperity, Branded in Red, s/t, monster, monster, Pegasus, monster, Crystal Bond, s/t, Crystal Bond, Dynatherium, 
+
+
+This failed: 
+Hand: Shield, s/t, s/t, s/t, Crystal Bond, 
+Preloaded draws to Exc: monster, monster, s/t, Shield, Dynatherium, Zenith, Branded Fusion, Branded Fusion, Crystal Bond, Pegasus, s/t, Crystal Bond, monster, monster, s/t, Rainbow Bridge, Prosperity, Shield, monster, Branded in Red, monster, Rainbow Bridge, Zenith, monster, s/t, Prosperity, Pegasus, Light HS Fusion, s/t, albaz, Prosperity, monster, monster, s/t, Pegasus, s/t, Rainbow Bridge, Branded Fusion, monster, Rainbow Dark, Zenith, 
+
+
+This Worked:
+Hand: Shield, Rainbow Dark, s/t, s/t, Prosperity, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved Light HS Fusion from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Shield from Deck to Exc	(Prosp eff)
+Moved Crystal Bond from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Shield from Exc to Deck	(Prosp processing)
+Moved Light HS Fusion from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Crystal Bond from Exc to Deck	(Prosp processing)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Zenith, Shield, s/t, Prosperity, Rainbow Bridge, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved Prosperity from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Rainbow Bridge from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Prosperity from Exc to Deck	(Prosp processing)
+Moved Rainbow Bridge from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Zenith from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Pegasus, Branded Fusion, albaz, monster, Crystal Bond, 
+
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Hand to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Zenith, monster, s/t, s/t, Crystal Bond, 
+Preloaded draws to Exc: Prosperity, Crystal Bond, monster, Pegasus, monster, s/t, monster, Branded Fusion, s/t, Zenith, Prosperity, monster, Zenith, monster, monster, Branded Fusion, Crystal Bond, Branded in Red, Rainbow Bridge, Prosperity, s/t, Dynatherium, Rainbow Bridge, s/t, Pegasus, Rainbow Bridge, Light HS Fusion, monster, albaz, s/t, monster, Shield, monster, s/t, Pegasus, Branded Fusion, s/t, Shield, Rainbow Dark, s/t, Shield, 
+
+
+This Worked:
+Hand: Pegasus, Branded Fusion, monster, s/t, Prosperity, 
+
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Dynatherium, Shield, monster, s/t, Crystal Bond, 
+Preloaded draws to Exc: s/t, monster, monster, s/t, s/t, s/t, monster, Branded in Red, Branded Fusion, Light HS Fusion, albaz, Rainbow Bridge, monster, s/t, monster, Crystal Bond, monster, Shield, Pegasus, Branded Fusion, Pegasus, Zenith, monster, Rainbow Dark, s/t, Branded Fusion, Shield, Zenith, Prosperity, s/t, Rainbow Bridge, Prosperity, Rainbow Bridge, monster, s/t, Zenith, Pegasus, Crystal Bond, s/t, Prosperity, monster, 
+
+
+This failed: 
+Hand: Zenith, monster, monster, monster, s/t, 
+Preloaded draws to Exc: Branded in Red, Branded Fusion, Prosperity, Shield, albaz, monster, Pegasus, Light HS Fusion, Zenith, s/t, Rainbow Dark, monster, Pegasus, monster, s/t, Branded Fusion, Rainbow Bridge, s/t, monster, Rainbow Bridge, Dynatherium, s/t, Prosperity, Pegasus, Prosperity, s/t, monster, s/t, Shield, monster, s/t, s/t, Zenith, monster, Crystal Bond, Crystal Bond, Crystal Bond, Shield, Branded Fusion, Rainbow Bridge, s/t, 
+
+
+This failed: 
+Hand: monster, monster, monster, s/t, Prosperity, 
+Preloaded draws to Exc: Light HS Fusion, Rainbow Bridge, monster, s/t, Zenith, s/t, monster, Zenith, Crystal Bond, Pegasus, Rainbow Dark, Rainbow Bridge, Crystal Bond, Prosperity, s/t, s/t, Rainbow Bridge, s/t, Shield, Branded in Red, Branded Fusion, Zenith, monster, Dynatherium, monster, s/t, monster, Branded Fusion, s/t, albaz, Shield, s/t, monster, s/t, Pegasus, monster, Crystal Bond, Branded Fusion, Shield, Pegasus, Prosperity, 
+
+
+This Worked:
+Hand: Branded Fusion, monster, s/t, Crystal Bond, Rainbow Bridge, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Pegasus, Pegasus, Branded in Red, s/t, Crystal Bond, 
+Preloaded draws to Exc: albaz, Zenith, Crystal Bond, monster, monster, s/t, Dynatherium, monster, monster, Rainbow Bridge, s/t, Shield, Pegasus, Branded Fusion, s/t, monster, s/t, s/t, Zenith, Prosperity, Rainbow Bridge, s/t, Rainbow Bridge, monster, Branded Fusion, monster, s/t, monster, monster, Zenith, s/t, Prosperity, Shield, Prosperity, Light HS Fusion, Crystal Bond, monster, Shield, Branded Fusion, Rainbow Dark, s/t, 
+
+
+This Worked:
+Hand: Zenith, Dynatherium, Branded Fusion, monster, Crystal Bond, 
+
+Moved Dynatherium from Hand to Monster Zone	(Normal Summon)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Zenith from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Dynatherium from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Zenith, Shield, s/t, Prosperity, Crystal Bond, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Dynatherium from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Dynatherium from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Zenith from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Pegasus, albaz, Branded in Red, monster, s/t, 
+Preloaded draws to Exc: Light HS Fusion, Branded Fusion, Rainbow Bridge, Crystal Bond, Prosperity, Zenith, Pegasus, s/t, Branded Fusion, Rainbow Bridge, Prosperity, Shield, Pegasus, s/t, Prosperity, Crystal Bond, monster, monster, Rainbow Dark, s/t, s/t, Zenith, monster, Zenith, monster, s/t, monster, s/t, Branded Fusion, Shield, s/t, Shield, s/t, Rainbow Bridge, s/t, monster, monster, monster, monster, Dynatherium, Crystal Bond, 
+
+
+This failed: 
+Hand: Pegasus, Pegasus, Zenith, Shield, s/t, 
+Preloaded draws to Exc: monster, monster, s/t, Prosperity, Pegasus, Shield, Zenith, s/t, s/t, Branded in Red, s/t, monster, Crystal Bond, Rainbow Bridge, Crystal Bond, monster, Prosperity, monster, Rainbow Bridge, s/t, monster, Dynatherium, Branded Fusion, Crystal Bond, Branded Fusion, s/t, Branded Fusion, s/t, monster, Shield, albaz, Light HS Fusion, monster, Prosperity, Rainbow Dark, s/t, Rainbow Bridge, Zenith, monster, s/t, monster, 
+
+
+This Worked:
+Hand: Shield, Branded Fusion, Branded Fusion, albaz, s/t, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Hand to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Dynatherium, monster, monster, s/t, Prosperity, 
+
+Moved Dynatherium from Hand to Monster Zone	(Dyna spec)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved albaz from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Rainbow Bridge from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved albaz from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Rainbow Bridge from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Dynatherium from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Light HS Fusion, monster, s/t, Prosperity, Rainbow Bridge, 
+
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved Zenith from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Shield from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Zenith from Exc to Deck	(Prosp processing)
+Moved Shield from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Hand to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Pegasus, Branded in Red, monster, Prosperity, Rainbow Bridge, 
+
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Zenith from Deck to Exc	(Prosp eff)
+Moved Prosperity from Deck to Exc	(Prosp eff)
+Moved Zenith from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Zenith from Exc to Deck	(Prosp processing)
+Moved Zenith from Exc to Deck	(Prosp processing)
+Moved Prosperity from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Hand to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Shield, monster, monster, Crystal Bond, Rainbow Bridge, 
+Preloaded draws to Exc: Light HS Fusion, s/t, s/t, Zenith, Prosperity, Branded Fusion, s/t, Pegasus, Prosperity, Zenith, Crystal Bond, Rainbow Bridge, s/t, albaz, s/t, monster, monster, Shield, Prosperity, Branded Fusion, Crystal Bond, Rainbow Dark, s/t, Dynatherium, monster, s/t, Pegasus, Zenith, monster, Shield, monster, Branded Fusion, s/t, monster, s/t, Branded in Red, monster, Pegasus, s/t, monster, Rainbow Bridge, 
+
+
+This Worked:
+Hand: monster, monster, s/t, Prosperity, Crystal Bond, 
+
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved Prosperity from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Zenith from Deck to Exc	(Prosp eff)
+Moved Crystal Bond from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Zenith from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Prosperity from Exc to Deck	(Prosp processing)
+Moved Crystal Bond from Exc to Deck	(Prosp processing)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Zenith, Branded in Red, s/t, s/t, Crystal Bond, 
+Preloaded draws to Exc: s/t, monster, Shield, Prosperity, monster, monster, s/t, Crystal Bond, Rainbow Bridge, s/t, Shield, monster, Rainbow Bridge, Shield, s/t, Light HS Fusion, Prosperity, Branded Fusion, Rainbow Bridge, monster, Branded Fusion, Rainbow Dark, s/t, s/t, monster, monster, s/t, s/t, monster, Pegasus, Branded Fusion, albaz, Prosperity, Pegasus, Pegasus, monster, Zenith, Dynatherium, monster, Crystal Bond, Zenith, 
+
+
+This failed: 
+Hand: Pegasus, Zenith, monster, s/t, Crystal Bond, 
+Preloaded draws to Exc: monster, Dynatherium, monster, s/t, Prosperity, s/t, Prosperity, s/t, monster, Branded in Red, s/t, Prosperity, monster, monster, Zenith, monster, Light HS Fusion, monster, Rainbow Bridge, Rainbow Bridge, s/t, Crystal Bond, albaz, Zenith, monster, Shield, monster, Rainbow Dark, s/t, s/t, s/t, Branded Fusion, Rainbow Bridge, Crystal Bond, Shield, s/t, Branded Fusion, Pegasus, Shield, Pegasus, Branded Fusion, 
+
+
+This Worked:
+Hand: Zenith, Branded Fusion, monster, s/t, Rainbow Bridge, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Zenith from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Zenith, Zenith, Branded Fusion, albaz, s/t, 
+Preloaded draws to Exc: Crystal Bond, monster, Shield, s/t, s/t, Shield, Crystal Bond, Prosperity, Pegasus, Rainbow Dark, monster, Pegasus, Dynatherium, monster, Shield, Light HS Fusion, s/t, Crystal Bond, Branded Fusion, monster, s/t, s/t, s/t, Prosperity, Prosperity, Rainbow Bridge, Branded Fusion, monster, monster, monster, s/t, monster, Branded in Red, s/t, Pegasus, monster, Zenith, Rainbow Bridge, s/t, Rainbow Bridge, monster, 
+
+
+This Worked:
+Hand: Zenith, Zenith, Shield, Branded Fusion, Prosperity, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Zenith from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Pegasus, monster, monster, s/t, Rainbow Bridge, 
+Preloaded draws to Exc: Pegasus, Prosperity, monster, Zenith, monster, Prosperity, monster, Zenith, Prosperity, Shield, Branded Fusion, s/t, s/t, s/t, Crystal Bond, Crystal Bond, s/t, Rainbow Bridge, Pegasus, Branded Fusion, s/t, Light HS Fusion, monster, Branded in Red, s/t, Crystal Bond, Rainbow Dark, monster, s/t, Zenith, s/t, Branded Fusion, monster, monster, monster, Shield, albaz, Dynatherium, Shield, s/t, Rainbow Bridge, 
+
+
+This Worked:
+Hand: Zenith, Branded Fusion, s/t, s/t, Crystal Bond, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Zenith from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Zenith, Shield, s/t, Prosperity, Crystal Bond, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Hand to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved Crystal Bond from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Zenith from Deck to Exc	(Prosp eff)
+Moved Prosperity from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Zenith from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Prosperity from Exc to Deck	(Prosp processing)
+Moved Crystal Bond from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Rainbow Dark, Branded Fusion, s/t, s/t, s/t, 
+Preloaded draws to Exc: Pegasus, Branded Fusion, Crystal Bond, Zenith, s/t, monster, Zenith, monster, albaz, monster, Pegasus, Prosperity, Pegasus, Shield, Dynatherium, Shield, Light HS Fusion, s/t, monster, monster, Crystal Bond, monster, Shield, Zenith, monster, Branded in Red, Crystal Bond, Branded Fusion, Prosperity, s/t, monster, Rainbow Bridge, monster, Prosperity, s/t, monster, s/t, Rainbow Bridge, s/t, s/t, Rainbow Bridge, 
+
+
+This failed: 
+Hand: Zenith, Branded in Red, monster, monster, Crystal Bond, 
+Preloaded draws to Exc: Pegasus, s/t, s/t, Rainbow Bridge, s/t, Pegasus, Rainbow Dark, monster, monster, s/t, monster, Prosperity, monster, Branded Fusion, s/t, Branded Fusion, Shield, monster, Shield, Light HS Fusion, Branded Fusion, s/t, albaz, Rainbow Bridge, Crystal Bond, Prosperity, monster, Zenith, Prosperity, s/t, Crystal Bond, Dynatherium, s/t, Zenith, monster, Shield, Rainbow Bridge, s/t, s/t, Pegasus, monster, 
+
+
+This Worked:
+Hand: Branded Fusion, monster, monster, Rainbow Bridge, Rainbow Bridge, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Shield, Branded Fusion, Branded in Red, monster, s/t, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Hand to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Branded Fusion, Light HS Fusion, s/t, s/t, Prosperity, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Hand to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved Pegasus from Exc to Hand	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Pegasus, Zenith, Light HS Fusion, monster, Prosperity, 
+
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Hand to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Zenith from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Zenith, s/t, s/t, s/t, s/t, 
+Preloaded draws to Exc: Crystal Bond, Branded Fusion, Zenith, Crystal Bond, monster, Prosperity, s/t, Pegasus, Branded in Red, monster, monster, Zenith, Shield, Rainbow Bridge, s/t, Rainbow Bridge, Rainbow Bridge, monster, Branded Fusion, s/t, s/t, monster, Shield, Prosperity, Branded Fusion, monster, Prosperity, monster, Dynatherium, monster, Crystal Bond, albaz, s/t, monster, Pegasus, Rainbow Dark, s/t, Shield, Light HS Fusion, monster, Pegasus, 
+
+
+This Worked:
+Hand: Zenith, Branded Fusion, Branded Fusion, s/t, Prosperity, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Zenith from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved Rainbow Bridge from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Branded in Red from Deck to Exc	(Prosp eff)
+Moved Rainbow Dark from Deck to Exc	(Prosp eff)
+Moved Zenith from Deck to Exc	(Prosp eff)
+Moved Rainbow Bridge from Exc to Hand	(Prosp processing)
+Moved Zenith from Exc to Deck	(Prosp processing)
+Moved Rainbow Dark from Exc to Deck	(Prosp processing)
+Moved Branded in Red from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Rainbow Dark, monster, s/t, Crystal Bond, Rainbow Bridge, 
+Preloaded draws to Exc: Zenith, albaz, s/t, monster, Dynatherium, Light HS Fusion, monster, Shield, Prosperity, s/t, Pegasus, Branded Fusion, monster, s/t, Branded Fusion, monster, s/t, monster, Pegasus, Prosperity, Branded Fusion, Crystal Bond, s/t, s/t, s/t, monster, monster, Pegasus, Zenith, monster, monster, Crystal Bond, Shield, Rainbow Bridge, s/t, Shield, Prosperity, Zenith, s/t, Rainbow Bridge, Branded in Red, 
+
+
+This failed: 
+Hand: Zenith, Shield, albaz, monster, s/t, 
+Preloaded draws to Exc: monster, monster, Branded Fusion, Pegasus, Shield, monster, s/t, s/t, Crystal Bond, Rainbow Bridge, monster, Pegasus, Shield, Prosperity, Prosperity, Rainbow Bridge, Pegasus, monster, Light HS Fusion, Crystal Bond, Branded in Red, s/t, Rainbow Bridge, Prosperity, monster, Zenith, Zenith, s/t, Branded Fusion, monster, s/t, Crystal Bond, s/t, s/t, Dynatherium, monster, s/t, Rainbow Dark, s/t, Branded Fusion, monster, 
+
+
+This Worked:
+Hand: Shield, Branded Fusion, monster, monster, Rainbow Bridge, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Shield, monster, monster, monster, Prosperity, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved Zenith from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Zenith from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Pegasus, Branded in Red, monster, Rainbow Bridge, Rainbow Bridge, 
+Preloaded draws to Exc: Prosperity, Dynatherium, albaz, monster, Crystal Bond, s/t, Rainbow Dark, s/t, s/t, s/t, Zenith, Light HS Fusion, monster, monster, Shield, s/t, Crystal Bond, Prosperity, Crystal Bond, Pegasus, monster, Pegasus, Shield, Branded Fusion, Prosperity, monster, s/t, monster, s/t, Branded Fusion, monster, Shield, Branded Fusion, Rainbow Bridge, Zenith, s/t, monster, monster, s/t, s/t, Zenith, 
+
+
+This Worked:
+Hand: Pegasus, Zenith, Zenith, Branded Fusion, Rainbow Bridge, 
+
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Zenith from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Pegasus, Pegasus, Shield, monster, Crystal Bond, 
+Preloaded draws to Exc: Branded Fusion, monster, Zenith, s/t, Prosperity, Crystal Bond, Shield, albaz, s/t, Branded in Red, Rainbow Dark, Prosperity, s/t, s/t, Light HS Fusion, Zenith, s/t, Crystal Bond, Branded Fusion, Dynatherium, monster, s/t, s/t, s/t, monster, Prosperity, monster, monster, Zenith, Rainbow Bridge, s/t, Shield, monster, Rainbow Bridge, s/t, monster, monster, monster, Pegasus, Branded Fusion, Rainbow Bridge, 
+
+
+This Worked:
+Hand: Shield, Branded Fusion, monster, monster, Rainbow Bridge, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Zenith, s/t, s/t, Prosperity, Rainbow Bridge, 
+
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved Light HS Fusion from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Zenith from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Zenith from Exc to Deck	(Prosp processing)
+Moved Light HS Fusion from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Zenith from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Pegasus, Light HS Fusion, monster, s/t, Prosperity, 
+
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved Crystal Bond from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Shield from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Shield from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Crystal Bond from Exc to Deck	(Prosp processing)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Hand to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Pegasus, Pegasus, Shield, Branded Fusion, albaz, 
+
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Shield from Hand to Banish	(shield eff)
+Moved Dynatherium from Deck to Hand	(shield eff)
+Moved Dynatherium from Hand to Monster Zone	(Dyna spec)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Hand to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Zenith, monster, s/t, Prosperity, Crystal Bond, 
+
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Hand to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Zenith from Deck to Exc	(Prosp eff)
+Moved Prosperity from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Zenith from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Prosperity from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Branded Fusion, monster, monster, s/t, Rainbow Bridge, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Pegasus, Zenith, Dynatherium, Shield, s/t, 
+Preloaded draws to Exc: s/t, Zenith, Crystal Bond, Light HS Fusion, Branded Fusion, albaz, monster, Prosperity, Crystal Bond, monster, monster, monster, Crystal Bond, monster, Branded Fusion, Prosperity, s/t, Shield, s/t, s/t, Rainbow Bridge, s/t, Branded in Red, Pegasus, monster, Branded Fusion, Zenith, s/t, monster, Rainbow Bridge, Prosperity, monster, Rainbow Dark, s/t, monster, s/t, s/t, monster, Pegasus, Shield, Rainbow Bridge, 
+
+
+This Worked:
+Hand: Branded Fusion, monster, s/t, Crystal Bond, Rainbow Bridge, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Shield, s/t, s/t, Crystal Bond, Rainbow Bridge, 
+Preloaded draws to Exc: s/t, Crystal Bond, Dynatherium, Light HS Fusion, Branded Fusion, Shield, monster, Zenith, Prosperity, Shield, monster, s/t, Zenith, s/t, monster, s/t, monster, Branded Fusion, Pegasus, Rainbow Dark, s/t, monster, Prosperity, albaz, s/t, monster, Crystal Bond, monster, Branded Fusion, s/t, s/t, Pegasus, monster, Zenith, Prosperity, Rainbow Bridge, Pegasus, monster, monster, Rainbow Bridge, Branded in Red, 
+
+
+This Worked:
+Hand: Zenith, Rainbow Dark, Branded Fusion, albaz, Rainbow Bridge, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Hand to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Zenith from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Pegasus, Pegasus, s/t, Rainbow Bridge, Rainbow Bridge, 
+Preloaded draws to Exc: monster, Crystal Bond, monster, s/t, Rainbow Dark, monster, Branded in Red, Light HS Fusion, Crystal Bond, Zenith, monster, Shield, albaz, Pegasus, s/t, Branded Fusion, Prosperity, Prosperity, Branded Fusion, monster, Zenith, s/t, Shield, Branded Fusion, monster, monster, s/t, Shield, s/t, s/t, s/t, s/t, Crystal Bond, Rainbow Bridge, monster, monster, Zenith, Dynatherium, monster, Prosperity, s/t, 
+
+
+This failed: 
+Hand: Zenith, monster, monster, s/t, s/t, 
+Preloaded draws to Exc: s/t, Branded Fusion, Dynatherium, s/t, Prosperity, Light HS Fusion, Shield, Zenith, monster, Pegasus, Pegasus, Prosperity, Rainbow Bridge, monster, Branded in Red, Shield, Branded Fusion, monster, s/t, Pegasus, Prosperity, monster, monster, s/t, Branded Fusion, Rainbow Bridge, monster, monster, Crystal Bond, s/t, s/t, s/t, Rainbow Bridge, albaz, Zenith, Rainbow Dark, monster, Shield, s/t, Crystal Bond, Crystal Bond, 
+
+
+This Worked:
+Hand: Branded Fusion, monster, s/t, Crystal Bond, Rainbow Bridge, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Pegasus, Branded Fusion, s/t, Prosperity, Prosperity, 
+
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Shield, Rainbow Dark, monster, monster, Prosperity, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Zenith, Zenith, Dynatherium, Shield, Light HS Fusion, 
+Preloaded draws to Exc: s/t, Rainbow Bridge, monster, Branded Fusion, monster, monster, s/t, Crystal Bond, s/t, Pegasus, Crystal Bond, Branded Fusion, Branded in Red, Shield, monster, s/t, s/t, Prosperity, s/t, Rainbow Dark, Prosperity, Pegasus, Zenith, monster, Crystal Bond, s/t, monster, Branded Fusion, s/t, Pegasus, monster, Shield, Rainbow Bridge, monster, Prosperity, albaz, s/t, monster, s/t, monster, Rainbow Bridge, 
+
+
+This failed: 
+Hand: Zenith, Shield, Rainbow Dark, s/t, Crystal Bond, 
+Preloaded draws to Exc: Rainbow Bridge, albaz, Dynatherium, Rainbow Bridge, Prosperity, Pegasus, s/t, s/t, Zenith, monster, monster, monster, monster, monster, Crystal Bond, Shield, s/t, Prosperity, monster, s/t, Branded Fusion, Crystal Bond, Prosperity, Light HS Fusion, s/t, Pegasus, s/t, monster, monster, monster, Pegasus, s/t, s/t, Zenith, monster, Branded Fusion, Rainbow Bridge, Branded Fusion, Branded in Red, s/t, Shield, 
+
+
+This failed: 
+Hand: monster, s/t, s/t, s/t, Prosperity, 
+Preloaded draws to Exc: Crystal Bond, s/t, Pegasus, Rainbow Bridge, Branded Fusion, monster, Crystal Bond, Branded Fusion, Rainbow Bridge, s/t, s/t, monster, Rainbow Bridge, Prosperity, monster, Crystal Bond, monster, Zenith, Shield, monster, Shield, Pegasus, Shield, Pegasus, monster, s/t, Branded Fusion, Light HS Fusion, Dynatherium, Prosperity, Rainbow Dark, Zenith, s/t, albaz, Branded in Red, s/t, monster, monster, monster, Zenith, s/t, 
+
+
+This failed: 
+Hand: Pegasus, Shield, monster, monster, Crystal Bond, 
+Preloaded draws to Exc: Shield, Zenith, monster, monster, s/t, monster, s/t, Branded Fusion, Light HS Fusion, s/t, Prosperity, monster, Branded in Red, monster, s/t, Prosperity, Branded Fusion, albaz, Crystal Bond, s/t, monster, Prosperity, Rainbow Bridge, s/t, Rainbow Bridge, Zenith, Zenith, Shield, s/t, Pegasus, Dynatherium, s/t, s/t, Branded Fusion, Pegasus, Rainbow Dark, monster, monster, Crystal Bond, s/t, Rainbow Bridge, 
+
+
+This failed: 
+Hand: Zenith, Branded in Red, monster, s/t, Prosperity, 
+Preloaded draws to Exc: Rainbow Bridge, monster, s/t, monster, monster, Branded Fusion, Zenith, Crystal Bond, monster, Shield, Crystal Bond, monster, s/t, Rainbow Bridge, monster, monster, s/t, s/t, s/t, Pegasus, s/t, s/t, Shield, Zenith, Branded Fusion, Rainbow Dark, Pegasus, albaz, Pegasus, Rainbow Bridge, monster, Shield, Crystal Bond, Prosperity, Branded Fusion, Prosperity, Dynatherium, monster, s/t, s/t, Light HS Fusion, 
+
+
+This Worked:
+Hand: Shield, s/t, Prosperity, Crystal Bond, Rainbow Bridge, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Zenith from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Zenith from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Pegasus, Shield, monster, Prosperity, Rainbow Bridge, 
+
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved albaz from Deck to Exc	(Prosp eff)
+Moved Branded in Red from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved albaz from Exc to Deck	(Prosp processing)
+Moved Branded in Red from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: monster, s/t, Prosperity, Crystal Bond, Rainbow Bridge, 
+
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Zenith from Deck to Exc	(Prosp eff)
+Moved Crystal Bond from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Zenith from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Crystal Bond from Exc to Deck	(Prosp processing)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Shield, Rainbow Dark, Branded Fusion, monster, s/t, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Light HS Fusion, monster, monster, s/t, s/t, 
+Preloaded draws to Exc: s/t, monster, Zenith, Zenith, Branded Fusion, Prosperity, Rainbow Bridge, Prosperity, Shield, monster, monster, Crystal Bond, s/t, monster, Crystal Bond, s/t, Rainbow Bridge, monster, Shield, monster, Zenith, albaz, Crystal Bond, s/t, monster, Pegasus, Rainbow Dark, s/t, Prosperity, monster, Rainbow Bridge, s/t, s/t, Pegasus, Branded Fusion, Pegasus, Dynatherium, Branded in Red, Shield, Branded Fusion, s/t, 
+
+
+This failed: 
+Hand: monster, monster, monster, s/t, Crystal Bond, 
+Preloaded draws to Exc: Rainbow Bridge, monster, Zenith, monster, Dynatherium, Shield, monster, Shield, Rainbow Dark, Pegasus, s/t, Branded Fusion, s/t, s/t, Pegasus, s/t, s/t, Prosperity, monster, Branded Fusion, monster, Zenith, Zenith, Pegasus, Rainbow Bridge, Crystal Bond, s/t, monster, Crystal Bond, Branded in Red, Light HS Fusion, monster, s/t, Prosperity, albaz, Branded Fusion, Shield, Prosperity, s/t, Rainbow Bridge, s/t, 
+
+
+This failed: 
+Hand: Pegasus, monster, s/t, Crystal Bond, Crystal Bond, 
+Preloaded draws to Exc: Rainbow Bridge, monster, Branded Fusion, Zenith, s/t, s/t, Pegasus, Shield, Dynatherium, Rainbow Bridge, Zenith, Rainbow Dark, Prosperity, Shield, monster, monster, s/t, Branded Fusion, Prosperity, monster, s/t, s/t, Light HS Fusion, Prosperity, s/t, Branded in Red, monster, Pegasus, albaz, monster, monster, Zenith, Rainbow Bridge, Crystal Bond, Branded Fusion, monster, monster, s/t, s/t, Shield, s/t, 
+
+
+This failed: 
+Hand: Zenith, monster, s/t, s/t, Rainbow Bridge, 
+Preloaded draws to Exc: Shield, Pegasus, monster, Crystal Bond, Dynatherium, s/t, Rainbow Dark, monster, Zenith, Prosperity, monster, Shield, Branded in Red, Rainbow Bridge, Light HS Fusion, s/t, s/t, monster, Branded Fusion, monster, s/t, monster, Prosperity, s/t, Pegasus, monster, Crystal Bond, Shield, Prosperity, Rainbow Bridge, Crystal Bond, Branded Fusion, s/t, Zenith, Branded Fusion, monster, monster, s/t, s/t, albaz, Pegasus, 
+
+
+This Worked:
+Hand: Pegasus, Pegasus, s/t, Prosperity, Prosperity, 
+
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved Rainbow Dark from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Rainbow Dark from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Shield, Branded Fusion, Branded Fusion, Prosperity, Rainbow Bridge, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Zenith, Zenith, Shield, s/t, Crystal Bond, 
+Preloaded draws to Exc: Pegasus, monster, s/t, Prosperity, monster, Prosperity, Branded Fusion, Branded Fusion, Pegasus, s/t, Light HS Fusion, albaz, Crystal Bond, Prosperity, monster, Dynatherium, Crystal Bond, s/t, s/t, Rainbow Bridge, Rainbow Bridge, monster, monster, s/t, s/t, monster, s/t, Branded in Red, monster, Shield, Zenith, s/t, monster, s/t, Rainbow Bridge, Shield, Branded Fusion, monster, Rainbow Dark, Pegasus, monster, 
+
+
+This Worked:
+Hand: Shield, Branded Fusion, Branded Fusion, albaz, s/t, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Hand to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Pegasus, Zenith, monster, monster, s/t, 
+Preloaded draws to Exc: s/t, Shield, Prosperity, monster, Branded Fusion, s/t, Dynatherium, Crystal Bond, monster, Prosperity, monster, monster, monster, s/t, monster, s/t, monster, Rainbow Bridge, s/t, Rainbow Dark, Prosperity, monster, Branded in Red, s/t, Pegasus, Light HS Fusion, Zenith, Crystal Bond, Rainbow Bridge, albaz, s/t, s/t, Branded Fusion, Pegasus, Shield, Zenith, Rainbow Bridge, s/t, Crystal Bond, Branded Fusion, Shield, 
+
+
+This failed: 
+Hand: Pegasus, Dynatherium, Light HS Fusion, Crystal Bond, Rainbow Bridge, 
+Preloaded draws to Exc: s/t, Shield, monster, monster, Zenith, Pegasus, monster, s/t, Crystal Bond, s/t, s/t, Prosperity, monster, albaz, Crystal Bond, Branded Fusion, Prosperity, Shield, s/t, Zenith, monster, Zenith, Branded Fusion, Prosperity, s/t, s/t, Shield, s/t, monster, Branded in Red, Pegasus, s/t, Rainbow Dark, monster, monster, monster, Rainbow Bridge, Branded Fusion, s/t, Rainbow Bridge, monster, 
+
+
+This failed: 
+Hand: Pegasus, monster, s/t, s/t, Crystal Bond, 
+Preloaded draws to Exc: Rainbow Bridge, Shield, Rainbow Bridge, Dynatherium, albaz, Branded Fusion, s/t, monster, Branded Fusion, s/t, s/t, Pegasus, Prosperity, Zenith, monster, s/t, s/t, s/t, monster, monster, Zenith, monster, monster, s/t, Crystal Bond, Light HS Fusion, monster, Prosperity, Pegasus, Branded Fusion, Zenith, monster, Shield, Prosperity, Rainbow Dark, monster, s/t, Branded in Red, Shield, Rainbow Bridge, Crystal Bond, 
+
+
+This Worked:
+Hand: Pegasus, Rainbow Dark, Branded Fusion, monster, s/t, 
+
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Branded Fusion, monster, s/t, Prosperity, Crystal Bond, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Branded Fusion, Branded Fusion, monster, monster, Crystal Bond, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This Worked:
+Hand: Shield, s/t, Prosperity, Crystal Bond, Rainbow Bridge, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved Zenith from Deck to Exc	(Prosp eff)
+Moved Branded in Red from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Zenith from Exc to Deck	(Prosp processing)
+Moved Branded in Red from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Pegasus, Branded in Red, monster, s/t, s/t, 
+Preloaded draws to Exc: Zenith, Rainbow Dark, Branded Fusion, monster, monster, Shield, Light HS Fusion, albaz, monster, Branded Fusion, s/t, Shield, s/t, monster, s/t, Pegasus, Crystal Bond, monster, Crystal Bond, Prosperity, monster, Pegasus, Rainbow Bridge, monster, s/t, Shield, Prosperity, Zenith, Zenith, Branded Fusion, Prosperity, Dynatherium, Crystal Bond, Rainbow Bridge, s/t, s/t, s/t, monster, Rainbow Bridge, s/t, monster, 
+
+
+This Worked:
+Hand: monster, s/t, Prosperity, Crystal Bond, Rainbow Bridge, 
+
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Prosperity from Hand to GY	(Prosp eff)
+Moved monster from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Pegasus from Deck to Exc	(Prosp eff)
+Moved s/t from Deck to Exc	(Prosp eff)
+Moved Shield from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Deck to Exc	(Prosp eff)
+Moved Branded Fusion from Exc to Hand	(Prosp processing)
+Moved Pegasus from Exc to Deck	(Prosp processing)
+Moved Shield from Exc to Deck	(Prosp processing)
+Moved monster from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved s/t from Exc to Deck	(Prosp processing)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Shield, monster, monster, monster, s/t, 
+Preloaded draws to Exc: Light HS Fusion, Pegasus, Crystal Bond, monster, s/t, Crystal Bond, monster, monster, s/t, Rainbow Dark, s/t, Rainbow Bridge, Branded Fusion, Branded Fusion, monster, Rainbow Bridge, Branded in Red, Dynatherium, Zenith, monster, s/t, Shield, s/t, s/t, Rainbow Bridge, Prosperity, Crystal Bond, Zenith, Zenith, s/t, monster, monster, Branded Fusion, albaz, Shield, s/t, Pegasus, s/t, Prosperity, Pegasus, Prosperity, 
+
+
+This failed: 
+Hand: Zenith, Branded Fusion, albaz, monster, s/t, 
+Preloaded draws to Exc: Light HS Fusion, Rainbow Bridge, Pegasus, monster, monster, monster, monster, s/t, Branded Fusion, Pegasus, Rainbow Dark, s/t, Crystal Bond, Pegasus, s/t, s/t, Shield, Prosperity, Branded in Red, Branded Fusion, Prosperity, s/t, Crystal Bond, Zenith, s/t, Zenith, s/t, monster, Rainbow Bridge, Rainbow Bridge, Crystal Bond, Dynatherium, s/t, monster, Shield, monster, monster, monster, s/t, Shield, Prosperity, 
+
+
+This failed: 
+Hand: Dynatherium, monster, monster, s/t, s/t, 
+Preloaded draws to Exc: Branded Fusion, Crystal Bond, Shield, monster, Light HS Fusion, Prosperity, Pegasus, Rainbow Dark, Shield, monster, albaz, Branded Fusion, s/t, s/t, Rainbow Bridge, monster, s/t, s/t, Prosperity, Pegasus, Shield, monster, Rainbow Bridge, Rainbow Bridge, monster, s/t, monster, Zenith, Crystal Bond, Zenith, Pegasus, Branded in Red, Zenith, Branded Fusion, s/t, monster, monster, s/t, Crystal Bond, s/t, Prosperity, 
+
+
+This failed: 
+Hand: Zenith, Rainbow Dark, s/t, Crystal Bond, Crystal Bond, 
+Preloaded draws to Exc: Shield, Rainbow Bridge, monster, s/t, monster, monster, Crystal Bond, s/t, Dynatherium, monster, Shield, monster, Pegasus, monster, s/t, Prosperity, Branded in Red, Branded Fusion, Branded Fusion, s/t, s/t, Zenith, albaz, Pegasus, Pegasus, Rainbow Bridge, s/t, monster, s/t, Zenith, Prosperity, monster, s/t, Prosperity, Shield, Branded Fusion, s/t, monster, monster, Light HS Fusion, Rainbow Bridge, 
+
+
+This Worked:
+Hand: Shield, Branded Fusion, monster, Prosperity, Crystal Bond, 
+
+Moved Shield from Hand to Banish	(shield eff)
+Moved Pegasus from Deck to Hand	(shield eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Pegasus, Dynatherium, monster, monster, Crystal Bond, 
+Preloaded draws to Exc: Zenith, Prosperity, monster, Pegasus, albaz, Rainbow Bridge, Prosperity, monster, Shield, Zenith, Branded in Red, s/t, Crystal Bond, s/t, s/t, s/t, s/t, Branded Fusion, Shield, monster, monster, Rainbow Bridge, Rainbow Dark, monster, s/t, monster, monster, s/t, Rainbow Bridge, Shield, Crystal Bond, Light HS Fusion, s/t, Zenith, Pegasus, s/t, monster, Branded Fusion, s/t, Prosperity, Branded Fusion, 
+
+
+This Worked:
+Hand: Branded Fusion, Branded in Red, s/t, Prosperity, Rainbow Bridge, 
+
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Rainbow Bridge from Hand to GY	(Bridge eff)
+Moved Crystal Bond from Deck to Hand	(Bridge eff)
+Moved Crystal Bond from Hand to GY	(Bond eff)
+Moved Zenith from Deck to S/T Zone	(Bond eff)
+Moved Pegasus from Deck to Hand	(Bond eff)
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Hand to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Shield, Light HS Fusion, monster, monster, s/t, 
+Preloaded draws to Exc: Crystal Bond, Shield, s/t, Zenith, monster, Zenith, Zenith, s/t, monster, Branded Fusion, Branded Fusion, monster, Rainbow Bridge, s/t, Shield, Rainbow Dark, Pegasus, s/t, Rainbow Bridge, Prosperity, Pegasus, Rainbow Bridge, Prosperity, s/t, Crystal Bond, s/t, Dynatherium, s/t, albaz, Prosperity, s/t, monster, Crystal Bond, Branded in Red, monster, monster, monster, s/t, Pegasus, Branded Fusion, monster, 
+
+
+This Worked:
+Hand: Pegasus, Branded Fusion, s/t, Crystal Bond, Rainbow Bridge, 
+
+Moved Pegasus from Hand to Monster Zone	(Normal Summon)
+Moved Zenith from Deck to S/T Zone	(Pegasus eff)
+Moved Zenith from S/T Zone to Banish	(zenith eff)
+Moved Pegasus from Deck to Monster Zone	(zenith eff)
+Moved Rainbow Dark from Deck to Hand	(zenith eff)
+Moved Branded Fusion from Hand to GY	(Branded Fusion eff)
+Moved albaz from Deck to GY	(Branded Fusion eff)
+Moved Light HS Fusion from Deck to GY	(Branded Fusion eff)
+Placed Albion in Monster Zone	(Branded Fusion eff)
+Moved Light HS Fusion from GY to Banish	(Albion eff)
+Moved Rainbow Dark from Hand to Banish	(Albion eff)
+Placed Dragoon in Monster Zone	(Albion eff)
+Moved Pegasus from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Albion from Monster Zone to GY	(Summon Beast-Eyes)
+Moved Branded in Red from Deck to S/T Zone	(Albion gy eff)
+
+
+This failed: 
+Hand: Dynatherium, monster, monster, s/t, s/t, 
+Preloaded draws to Exc: monster, Crystal Bond, Pegasus, Rainbow Bridge, Pegasus, monster, monster, s/t, s/t, monster, s/t, Branded Fusion, Prosperity, Crystal Bond, Prosperity, Rainbow Bridge, Crystal Bond, monster, Branded in Red, Light HS Fusion, Shield, s/t, Prosperity, s/t, s/t, Shield, Zenith, Branded Fusion, albaz, Pegasus, monster, monster, s/t, monster, Rainbow Bridge, Zenith, Branded Fusion, Shield, Rainbow Dark, s/t, Zenith, 
+
+
+0.52

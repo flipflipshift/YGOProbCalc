@@ -177,8 +177,15 @@ public class Gamestate {
 				}
 				else
 				{
-					if(locations.has(cond.card_num, i))
-						available_at_loc.add(new int[] {cond.card_num, locations.locations[i][cond.card_num]});
+					if(i==-1)
+					{
+						available_at_loc.add(new int[] {cond.card_num, 5});
+					}
+					else
+					{
+						if(locations.has(cond.card_num, i))
+							available_at_loc.add(new int[] {cond.card_num, locations.locations[i][cond.card_num]});
+					}
 				}
 				available.add(available_at_loc);
 			}

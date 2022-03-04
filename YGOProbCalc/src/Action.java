@@ -9,6 +9,7 @@ public class Action {
 		draw_counter = new int[Gov.num_locations()];
 		open_actions = new ArrayList<Action>();
 	}
+	
 	int[] draws;
 	String name;
 	boolean default_live = true;
