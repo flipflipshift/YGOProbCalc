@@ -3,6 +3,7 @@ import java.io.FileWriter;
 
 public class SampleMains {
 	//Just random main methods for different decks; some incomplete
+	
 	public static void mainFlufSmallWorldTest(String args[])
 	{
 		Card dog = card("Fluffal Dog", 3, "fluffal",   "ns", "monster", "lv4").small();
@@ -233,15 +234,15 @@ public class SampleMains {
 	    Card bridge = card("Rainbow Bridge", 3);
 	    Card conc = card("Crystal Conclave", 1, "crystal s/t");
 	    Card brandedfus = card("Branded Fusion", 1, "branded s/t");
-	    Card albaz = card("albaz", 1,  "monster", "dragon", "dark", "lv4", "ns", "alb");
+	    Card albaz = card("albaz", 1,  "monster", "dragon", "dark", "lv4", "alb");
 	    Card brandred = card("Branded in Red", 1, "branded s/t");
 	    Card brandcond = card("Branded Condemnation", 1, "branded s/t");
 	    Card brandspirit = card("Branded in High Spirits", 3, "branded s/t");
 	    Card brandblade = card("Branded Blade", 1, "branded s/t");
-	    Card sprigkitt = card("Spriggans Kitt", 1, "monster", "ns", "lv4", "alb", "beast", "tri-type");
-	    Card albion = card("Albion the Shrouded", 1, "alb", "monster", "dark", "dragon");
-	    Card ecclesia = card("Incredible Ecclesia", 1, "alb", "monster", "lv4", "ns");
-	    Card merc = card("TB Mercourier", 2, "alb", "monster", "ns", "lv4", "dark", "tri-type");
+	    Card sprigkitt = card("Spriggans Kitt", 1, "monster", "ns", "lv4", "alb", "beast", "tri-type", "goodalb");
+	    Card albion = card("Albion the Shrouded", 1, "alb", "monster", "dark", "dragon", "goodalb");
+	    Card ecclesia = card("Incredible Ecclesia", 1, "alb", "monster", "lv4");//make this a good normal and goodalb
+	    Card merc = card("TB Mercourier", 2, "alb", "monster", "lv4", "dark", "tri-type", "goodalb");
 	    Card frak = card("TB Fraktall", 3, "ns", "tb", "tri-type", "monster", "main tb");
 		Card kitt = card("TB Kitt", 3, "ns", "tb", "tri-type", "monster", "beast", "main tb");
 		Card nerv = card("TB Nervall", 3, "ns","tb", "tri-type", "monster","main tb");
@@ -252,32 +253,169 @@ public class SampleMains {
 	    Card crow = card("D.D. Crow", 1, "dark", "monster", "tri-type");
 	    Card allure = card("Allure", 3);
 	    
-		Card almiraj = card("Almiraj", 0);
-		Card ferrijit = card("Ferrijit", 0, "tb", "tri-type", "tb link-2", "ferrijit");
-		Card brumm = card("Bearbrumm", 0, "tb", "tri-type", "tb link-2", "brumm");
-		Card rugal = card("Rugal", 0, "tb", "tri-type", "tb link-3", "rugal", "good_with_rev");
-		Card omen =  card("Shuraig", 0, "tb", "tri-type", "tb link-4", "omen");
-		Card fake_ferrijit = card("Imp Ferrijit", 0, "fake tb", "tri-type", "tb link-2", "ferrijit");
-		Card fake_brumm = card("Imp Bearbrumm", 0, "fake tb", "tri-type", "tb link-2", "brumm");
-		Card fake_rugal = card("Imp Rugal", 0, "fake tb", "tri-type", "tb link-3", "rugal", "good_with_rev");
-		Card fake_omen =  card("Imp Shuraig", 0, "fake tb", "tri-type", "tb link-4", "omen");
-		Card verte = card("Verte", 0);
-		Card apo2 = card("Apollousa-2", 0 , "apo", "good_with_rev");
-		Card apo3 = card("Apollousa-3", 0 , "apo", "good_with_rev");
-		Card apo4 = card("Apollousa-4",0, "apo", "good_with_rev");
-		Card raff = card("Rafflesia", 0);
+		Card almiraj = card("Almiraj", 0, "extra");
+		Card ferrijit = card("Ferrijit", 0, "tb", "tri-type", "tb link-2", "ferrijit", "extra");
+		Card brumm = card("Bearbrumm", 0, "tb", "tri-type", "tb link-2", "brumm", "extra");
+		//Card rugal = card("Rugal", 0, "tb", "tri-type", "tb link-3", "rugal", "good_with_rev", "extra");
+		Card omen =  card("Shuraig", 0, "tb", "tri-type", "tb link-4", "omen", "extra");
+		Card fake_ferrijit = card("Imp Ferrijit", 0, "fake tb", "tri-type", "tb link-2", "ferrijit", "extra");
+		Card fake_brumm = card("Imp Bearbrumm", 0, "fake tb", "tri-type", "tb link-2", "brumm", "extra");
+		//Card fake_rugal = card("Imp Rugal", 0, "fake tb", "tri-type", "tb link-3", "rugal", "good_with_rev", "extra");
+		Card fake_omen =  card("Imp Shuraig", 0, "fake tb", "tri-type", "tb link-4", "omen", "extra");
+		Card verte = card("Verte", 0, "extra");
+		Card apo2 = card("Apollousa-2", 0 , "apo", "good_with_rev", "extra");
+		Card apo3 = card("Apollousa-3", 0 , "apo", "good_with_rev", "extra");
+		Card apo4 = card("Apollousa-4",0, "apo", "good_with_rev", "extra");
+		Card raff = card("Rafflesia", 0, "extra");
 		Card mirror = card("Mirrorjade", 0);
+		Card albionBrand = card("Albion the Branded", 0, "extra", "albext");
+		Card brigrand = card("Brigrand", 0, "extra", "albext");
+		Card reaper = card("Trigger mill all", 0);
 		
 	    
 	    locations("Deck", "Hand", "Monster Zone", "S/T Zone", "GY", "Banish");
 		hand(5);
-		action("Normal Summon").open().hopt().poss(move("ns", 1, 2));
-		action("zenith eff").open().hopt().poss(move(zenith, 3, 5), move(peg, 0, 2), move(rdd, 0, 1));
+		
 		Action peg_eff = action("Pegasus eff").poss(move(zenith, list(0,1,4),3));
 		MT.add(peg, list(1,4), 2, peg_eff);
-	    action("Bond eff").open().hopt().poss(move(bond,1,4), move(zenith,0,3), move(peg,0,1));
-	    action("Bridge eff").open().hopt().poss(move(bridge,1,4), move("crystal s/t",0,1));
+	    Action merceff=action("Merc eff").poss(move("alb",0,1).exclude(merc));
+	    MT.add(merc, list(0,1,2,4), 5, merceff);
+		Action kitt_eff = action("Kitt send").hopt().poss(move(nerv,0,4)).poss(move(merc,0,4));
+		Action nerv_eff = action("Nerv add").hopt().poss(move("tb",0,1).exclude(nerv));
+		MT.add(kitt, list(0,1,2), 4, kitt_eff);
+		MT.add(nerv, list(0,1,2), 4, nerv_eff);
+		Action put_back = action("Put back 1").poss(move("card",1,0));
+	    Action sprig_eff = action("Eff Spriggans Kitt").hopt().poss(move("branded s/t",0,1)).trigger(put_back);
+	    MT.add(sprigkitt, 1, 2, sprig_eff);
+		Action ferrijit_draw = action("Ferri eff to draw").hopt().draw(1,1);
+		ferrijit_draw.trigger(put_back);
+		MT.add("ferrijit", 2, 4, ferrijit_draw);
+		Action omen_add = action("Omen eff to add").hopt().poss(cond(4, "tri-type", 5), move("tri-type", 0,1)).poss(cond(1,"card", 5), move(nerv,0,1));
+		MT.add("omen", 2, 4, omen_add);
+		Action brumm_add = action("Brumm eff to add").hopt().poss(move(revolt,0,1)).trigger(put_back);
+		MT.add("brumm", 2, 4, brumm_add);
+		Action allure_downside = action("Allure payment").poss(move("dark",1,5)).poss(move(reaper,-1,4));
+		Action mill_all = action("Mill all").move_all(1, 4);
+		MT.add(reaper, -1, 4, mill_all);	
+		Action turnoff_branfu = action("Shut off branfu");
+		MT.add("extra", -1, 2, turnoff_branfu);
+		action("zenith eff").open().hopt().guarantee_poss(move(zenith, 3, 5), move(peg, 0, 2), move(rdd, 0, 1));
+		action("Bond eff").open().hopt().guarantee_poss(move(bond,1,4), move(zenith,0,3), move(peg,0,1));
+		action("Bridge eff").open().hopt().guarantee_poss(move(bridge,1,4), move(bond,0,1));//change to crystal s/t
+		action("Tenki eff").open().hopt().guarantee_poss(move(tenki,1,3), move(frak,0,1));
+		action("Shrouded eff").open().hopt().guarantee_poss(move(albion,1,0), move(brandblade, 0, 4)).draw(1,1);//allow to mill albaz
+		Action place_revolt = action("Place revolt").open().hopt().guarantee_poss(move(revolt,1,3));
+		action("Blade eff").open().hopt().guarantee_poss(move(brandblade,4,5), move(merc,5,1));
+		Action verte_eff = action("Eff Verte").open().hopt().poss(move(brandedfus,0,4),move(albaz, list(0,1),4), move(mirror,-1,2), move(verte,2,4));
+		verte_eff.poss(move(brandedfus,0,4),move(albaz, list(0,1),4), move(brumm,2,4), move(mirror,-1,2),cond(verte,2));
+		action("Ferri eff to spec").open().hopt().poss(cond("ferrijit",2), move("tri-type", 1, 2));
+		
+		Action fraktall_summon = action("Frak summon link").open().hopt();
+		fraktall_summon.poss(cond(frak,2), move(2,"tri-type",4,5), move(fake_ferrijit, -1, 2));
+		fraktall_summon.poss(cond(frak,2), move(2,"tri-type",4,5), move(fake_brumm, -1, 2));
+		//fraktall_summon.poss(cond(frak,2), move(3,"tri-type",4,5), move(fake_rugal, -1, 2));
+		fraktall_summon.poss(cond(frak,2), move(4,"tri-type",4,5), move(fake_omen, -1, 2));
+		Action kitt_summon = action("Kitt summon link").open().hopt();
+		kitt_summon.poss(cond(kitt,2), move(2,"tri-type",4,5), move(fake_ferrijit, -1, 2));
+		kitt_summon.poss(cond(kitt,2), move(2,"tri-type",4,5), move(fake_brumm, -1, 2));
+		//kitt_summon.poss(cond(kitt,2), move(3,"tri-type",4,5), move(fake_rugal, -1, 2));
+		kitt_summon.poss(cond(kitt,2), move(4,"tri-type",4,5), move(fake_omen, -1, 2));
+		Action nerv_summon = action("Nerv summon link").open().hopt();
+		nerv_summon.poss(cond(nerv,2), move(2,"tri-type",4,5), move(fake_ferrijit, -1, 2));
+		nerv_summon.poss(cond(nerv,2), move(2,"tri-type",4,5), move(fake_brumm, -1, 2));
+		//nerv_summon.poss(cond(nerv,2), move(3,"tri-type",4,5), move(fake_rugal, -1, 2));
+		nerv_summon.poss(cond(nerv,2), move(4,"tri-type",4,5), move(fake_omen, -1, 2));
+		Action keras_summon = action("Keras summon link").open().hopt();
+		keras_summon.poss(cond(keras,2), move(2,"tri-type",4,5), move(fake_ferrijit, -1, 2));
+		keras_summon.poss(cond(keras,2), move(2,"tri-type",4,5), move(fake_brumm, -1, 2));
+		//keras_summon.poss(cond(keras,2), move(3,"tri-type",4,5), move(fake_rugal, -1, 2));
+		keras_summon.poss(cond(keras,2), move(4,"tri-type",4,5), move(fake_omen, -1, 2));
+		
+		Action frak_eff = action("Frak eff").open().hopt().poss(move(frak,1,4), move("tb",0,4).exclude(frak).exclude(nerv).exclude(merc));
+		
+		action("Summon Brumm").open().hopt().poss(move(2,"tb",2,4), move(brumm,-1,2));
+		action("Summon Verte").open().hopt().poss(move(2,"tri-type",2,4), move(verte,-1,2));
+		action("Summon Ferrijit").open().poss(move(2,"tri-type",2,4), move(ferrijit,-1,2));
+		action("Keras eff").open().hopt().poss(move(keras,1,2), move("tri-type", 1, 4));
+		action("Allure eff").open().poss(move(allure,1,4)).draw(1,2).trigger(allure_downside);
+	    Action hardact_Branfu = action("Active BranFu").open().hopt().poss(move(brandedfus,1,4), move(albaz,list(0,1),5), move(albionBrand,-1,5), move(mirror,-1,2));
+	    turnoff_branfu.turnoff(hardact_Branfu);
+	    action("High Spirits eff").open().hopt().poss(move("beast",1,4), move(brigrand,-1,4), move("goodalb",0,1)).poss(move("dragon",1,4), move(albionBrand,-1,4), move("goodalb",0,1));  
+	    action("Spec Spriggans Kitt").hopt().open().poss(cond("albext",4), move(sprigkitt,1,2));  
+	    action("Normal Summon").open().hopt().poss(move("ns", 1, 2));
+	    action("Summon almiraj").open().hopt().poss(move(kitt,2,4), move(almiraj,-1,2)).poss(move(nerv,2,4), move(almiraj,-1,2));
+	    action("BiR eff").open().hopt().poss(move(brandred, 1, 4),move(albaz,4,5), move("extra",2,5), move(mirror,-1,2));
+		//Action summon_rugal = action("Summon Rugal").open().poss(move(3,"tri-type",2,4), move(rugal,-1,2));
+		//summon_rugal.poss(cond(2, "tri-type", 2), move("tb link-2", 2,4), move("tri-type", 2,4));
+		//Action summon_omen = action("Summon Omen").open().poss(move(4,"tri-type",2,4), move(omen,-1,2));
+		//summon_omen.poss(cond(3, "tri-type", 2), move("tb link-2", 2,4), move(2, "tri-type", 2,4));
+		//summon_omen.poss(cond(2, "tri-type", 2), move("tb link-3", 2,4), move("tri-type", 2,4));		
+		//Action summon_apo = action("Summon apo4").open().hopt().poss(move(4, "tri-type", 2,4).distinct(), move(apo4,-1,2));
+		//summon_apo.poss(cond(3,"tri-type",2),move(1,"tb link-2", 2,4),move(2, "tri-type", 2,4).distinct(), move(apo3,-1,2));
+		//summon_apo.poss(move(2,"tb link-2", 2,4).distinct(), move(apo2,-1,2)).poss(cond(2,"tri-type",2),move("tb link-3", 2,4),move( "tri-type", 2,4).distinct(), move(apo2,-1,2));		
+		//Action brumm_eff = action("Brumm eff to spec").open().hopt().poss(cond(brumm,2), move(2,"card",1,4), move("main tb",5,2));
+	    hardact_Branfu.turnoff_all();
+		brumm_add.turnoff_all().turnon(place_revolt).turnon(put_back);
+		verte_eff.turnoff_all().turnon(kitt_eff).turnon(nerv_eff).turnon(brumm_add).turnon(place_revolt);	
+		//Gov.poss(cond(mirror,2), cond(merc,1), cond(revolt,3), cond(4, "tri-type", list(4,5)).exclude("fake tb"));
+		//Gov.poss(cond(mirror,2), cond(merc,1), cond(revolt,3), cond(3, "tri-type", list(4,5)).exclude("fake tb"), cond(1,"tb link-2", list(4,5)).exclude("fake tb"));
+		Gov.poss(cond(mirror,2), cond(revolt,3), cond(3, "tri-type", list(4,5)).exclude("fake tb"), cond(1,"tb link-2", list(4,5)).exclude("fake tb"));
+		Gov.poss(cond(mirror,2), cond(merc,1));
+		Gov.terminate(cond(albaz,list(4,5)), zcond(mirror,2));
+		Gov.timeout(5);
+		
+		go("CBTriAlbtest5",100);
 	    
+	}
+	public static void mainPKB(String args[])
+	{
+		Card aquamancer = card("Aquamancer", 3, "brave");
+		Card foolish = card("Foolish", 1, "s/t");
+		Card rite = card("Rite", 3, "s/t");
+		Card rocksie = card("PK Rocksies", 1, "PK");
+		Card other_pk = card("Other PK", 6, "PK");
+		Card place = card("PK Place", 3, "s/t");
+		Card souls = card("Souls", 2);
+		Card IOC = card("IOC", 3);
+		Card FD = card("Fusion Destiny", 2, "s/t");
+		Card pk_spell = card("Pand/Pranks", 2, "s/t");
+		Card gryphon = card("Gryphon", 1, "brave");
+		Card fateful = card("Fateful Adventure",1, "s/t");
+		Card draco = card("Dracoback", 1, "s/t");
+		Card imperm = card("Imperm", 3, "s/t", "HT");
+		Card other_ht= card("other h/t", 9, "HT");
+		Card DPE = card("DPE", 0);
+		complete(43);
+		locations("Deck", "Hand", "MZ", "S/TZ", "GY", "Banish");
+		
+		Action souls_1 = action("Souls for 1").hopt().open().poss(cond(souls,2),move("s/t", list(1,3), 4)).draw(1,1).off();
+		Action souls_2 = action("Souls for 2").hopt().open().poss(cond(souls,2),move(2, "s/t", list(1,3), 4)).draw(1,2).off();
+		action("Foolish").open().poss(move(foolish,1,4), move(aquamancer,0,4));
+		action("Activate Place").open().poss(move(place,1,3), move(other_pk,0,1));
+		Action aqua_eff=action("Aquamancer Eff").hopt().open().poss(move(aquamancer,list(1,4),5), move(rite, list(0,4), 1));
+		Action activate_rite=action("Activate Rite").hopt().open().poss(move(rite,1,3), move(fateful, list(0,1), 3));
+		Action place_fateful=action("Place Fateful").hopt().open().poss(move(fateful,1,3));
+		Action active_fateful=action("Active Fateful").hopt().poss(move("brave",0,1));
+		Action add_draco= action("Add Draco").hopt().poss(move(draco,0,1));
+		Action special_gryph=action("Special Gryphon").open().hopt().poss(cond(rite,3), move(gryphon,1,2));
+		aqua_eff.trigger(activate_rite);
+		activate_rite.trigger(place_fateful);
+		place_fateful.trigger(active_fateful);
+		place_fateful.trigger(add_draco);
+		active_fateful.trigger(special_gryph);
+		Action special_souls=action("Special Souls").hopt().open().poss(move(souls,1,2), move(IOC,0,4));
+		Action IOC_eff=action("IOC eff").hopt().open().poss(move(IOC,1, 0), move(souls,0,1));
+		IOC_eff.trigger(special_souls);
+		special_souls.turnon(souls_1);
+		special_souls.turnon(souls_2);
+		souls_1.turnoff(souls_2);
+		souls_2.turnoff(souls_1);
+		//action("Activate Fus Des").hopt().open().poss(move(FD,1,4), move(DPE,-1,2));
+		
+		Gov.poss(cond("PK",1), cond(gryphon,2));
+		
+		go("PK Brave", 100000);
+		
 	}
 	public static void mainBF(String args[])
 	{

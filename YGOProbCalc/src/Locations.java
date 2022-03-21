@@ -48,7 +48,7 @@ public class Locations {
 	{
 		return has(m.card_num, m.origin);
 	}
-	public void fast_move(int quantity, int card_num, int in, int out)
+	/*public void fast_move(int quantity, int card_num, int in, int out)
 	{
 		if(in!= -1)
 		{
@@ -60,9 +60,13 @@ public class Locations {
 			location_sizes[out]+= quantity;
 			locations[out][card_num]+= quantity;
 		}
-	}
-	public List<Trigger> move(int card_num, int in, int out)
+	}*/
+	
+	public List<Trigger> move(Movement movement)
 	{
+		int in = movement.origin;
+		int out = movement.destination;
+		int card_num = movement.card_num;
 		if(in!= -1)
 		{
 			location_sizes[in]--;
@@ -74,13 +78,6 @@ public class Locations {
 			locations[out][card_num]++;
 		}
 		return MT.library[card_num][in+1][out+1];
-	}
-	public List<Trigger> move(Movement movement)
-	{
-		int in = movement.origin;
-		int out = movement.destination;
-		int card_num = movement.card_num;
-		return(move(card_num,in,out));
 	}
 	//Do not use with -1, it wouldn't make sense.
 	public int getrand(int in)

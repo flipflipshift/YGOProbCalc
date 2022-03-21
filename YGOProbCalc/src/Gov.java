@@ -9,6 +9,7 @@ public class Gov {
 	static int maximum_depth=Integer.MAX_VALUE;
 	static List<Possibility> goal;
 	static List<Termination_Possibility> terminations;
+	static int max_seconds = 604800;
 	static {
 		goal = new ArrayList<Possibility>();
 		terminations = new ArrayList<Termination_Possibility>();
@@ -21,7 +22,11 @@ public class Gov {
 	{
 		locations = locs;
 	}
-	public static void poss(Condition... conditions) //if something like allure, check for a dark to discard first 
+	public static void timeout(int num_seconds)
+	{
+		max_seconds = num_seconds;
+	}
+	public static void poss(Condition... conditions) 
 	{
 		goal.add(new Possibility(conditions));
 	}
@@ -29,16 +34,20 @@ public class Gov {
 	{
 		terminations.add(new Termination_Possibility(are_off, tconds));
 	}
-	public static void terminate(Action are_off, Condition... tconds)
+	public static void terminate(Action is_off, Condition... tconds)
 	{
-		terminations.add(new Termination_Possibility(new Action[] {are_off}, tconds));
+		terminations.add(new Termination_Possibility(new Action[] {is_off}, tconds));
 	}
 	public static void terminate(Condition... tconds)
 	{
 		terminations.add(new Termination_Possibility(new Action[] {}, tconds));
 	}
-	public static boolean satisfies_possibilities(Gamestate g, int depth)//TODO: breadth-first
+	public static boolean satisfies_possibilities(Gamestate g, int depth, long end_time)
 	{
+		if(System.currentTimeMillis()>end_time)
+		{
+			return false;
+		}
 		if(depth > maximum_depth)
 		{
 			return false;
@@ -46,10 +55,7 @@ public class Gov {
 		if(g.triggers.size()>0)
 		{
 			Action trigger = g.triggers.remove(0).trigger;
-			List<Integer> exec = g.executable(trigger);
-			if(exec.size()==0)
-				return satisfies_possibilities(g, depth);
-			
+			List<Integer> exec = g.executable(trigger);	
 			for(Integer i : exec)
 			{
 				List<Modification> modifications = g.modifications(trigger, trigger.possibilities.get(i));
@@ -58,12 +64,13 @@ public class Gov {
 				for(Modification mod : modifications)
 				{
 					g.modify(mod);
-					if(satisfies_possibilities(g, depth+1))
+					if(satisfies_possibilities(g, depth+1, end_time))
 						return true;
 					g.unmodify(mod);
 				}
 				return false; 
 			}
+			return satisfies_possibilities(g, depth, end_time);
 		}
 		if(g.locations.satisfies(goal))
 			return true;
@@ -77,10 +84,12 @@ public class Gov {
 				for(Modification mod : modifications)
 				{
 					g.modify(mod);
-					if(satisfies_possibilities(g, depth+1))
+					if(satisfies_possibilities(g, depth+1, end_time))
 						return true;
 					g.unmodify(mod);
 				}
+				if(action.possibilities.get(i).guarantee && modifications.size()>0)
+					return false;
 			}
 		}
 
@@ -90,6 +99,7 @@ public class Gov {
 	{
 		SmallWorld.actions();
 		int counter = 0;
+		int timed_out = 0;
 		for(int i=0; i<num_trials; i++)
 		{
 			System.out.println("Trial number "+ (i+1) + "; Found so far: "+counter);
@@ -98,7 +108,8 @@ public class Gov {
 			String preloads = gamestate.preloads.toString();
 			System.out.print(hand);
 			System.out.print(preloads);
-			if(satisfies_possibilities(gamestate,0))
+			long end_time = System.currentTimeMillis()+max_seconds*1000;
+			if(satisfies_possibilities(gamestate,0, end_time))
 			{
 				fw.write("This Worked:\n");
 				fw.write(hand+"\n");
@@ -108,6 +119,14 @@ public class Gov {
 				}
 				counter+=1;
 				System.out.println("Found!\n");
+			}
+			else if (System.currentTimeMillis()>end_time)
+			{
+				fw.write("This timed out: \n");
+				fw.write(hand);
+				fw.write(preloads);
+				timed_out+=1;
+				System.out.println("Timed Out!\n");
 			}
 			else
 			{
@@ -119,7 +138,19 @@ public class Gov {
 			fw.write("\n\n");
 		}
 		double probability = ((double) counter)/ num_trials;
-		fw.write(Double.toString(probability));
+		double probability_timed = ((double) (counter+timed_out))/ num_trials;
+		String str1 = "Number of successes: "+counter +" out of "+num_trials;
+		String str2 = "Number of timeouts: "+timed_out;
+		String str3 = "Probability: "+Double.toString(probability);
+		String str4 = "If including timeouts: "+Double.toString(probability_timed);
+				
+		fw.write(str1+"\n"+str2 + "\n"+str3 + "\n");
+		System.out.println(str1+"\n"+str2 + "\n"+str3);
+		if(timed_out>0)
+		{
+			fw.write(str4);
+			System.out.println(str4);
+		}
 		return ((double) counter)/ num_trials;
 	}
 	

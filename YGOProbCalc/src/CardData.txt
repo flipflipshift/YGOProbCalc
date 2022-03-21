@@ -62,6 +62,7 @@ Alector, Sovereign of Birds$WIND$6$Winged Beast$2400$2000$
 Aleirtt, the Ogdoadic Dark$DARK$8$Reptile$2000$800$
 Aleister the Invoker$DARK$4$Spellcaster$1000$1800$
 Alexandrite Dragon$LIGHT$4$Dragon$2000$100$
+Alice, Lady of Lament$DARK$3$Fiend$0$2000$
 Alich, Malebranche of the Burning Abyss$DARK$3$Fiend$1200$0$
 Alien Ammonite$LIGHT$1$Reptile$500$200$
 Alien Dog$LIGHT$3$Reptile$1500$1000$
@@ -110,11 +111,13 @@ Alpha The Electromagnet Warrior$EARTH$3$Rock$1700$1100$
 Alpha The Magnet Warrior$EARTH$4$Rock$1400$1700$
 Alpha, the Master of Beasts$EARTH$8$Beast$3000$2500$
 Altergeist Fifinellag$DARK$2$Spellcaster$0$1000$
+Altergeist Fijialert$WATER$4$Spellcaster$1400$1200$
 Altergeist Kunquery$EARTH$5$Spellcaster$0$2400$
 Altergeist Marionetter$LIGHT$4$Spellcaster$1600$1700$
 Altergeist Meluseek$WATER$1$Spellcaster$500$300$
 Altergeist Multifaker$DARK$3$Spellcaster$1200$800$
 Altergeist Pixiel$WIND$1$Spellcaster$100$100$
+Altergeist Pookuery$DARK$1$Spellcaster$300$100$
 Altergeist Silquitous$WIND$2$Spellcaster$800$1500$
 Altitude Knight$WIND$4$Warrior$1400$1200$
 Aluber the Jester of Despia$DARK$4$Fairy$1800$0$
@@ -281,6 +284,7 @@ Armed Dragon Thunder LV10$WIND$10$Dragon$3000$2000$
 Armed Dragon Thunder LV3$WIND$3$Dragon$1200$900$
 Armed Dragon Thunder LV5$WIND$5$Dragon$2400$1700$
 Armed Dragon Thunder LV7$WIND$7$Dragon$2800$1000$
+Armed Dragon, the Armored Dragon$WIND$4$Dragon$1900$1400$
 Armed Ninja$EARTH$1$Warrior$300$300$
 Armed Protector Dragon$LIGHT$8$Dragon$2000$2800$
 Armed Samurai - Ben Kei$DARK$4$Warrior$500$800$
@@ -330,6 +334,8 @@ Assault Mercenary$EARTH$4$Warrior$1800$300$
 Assault Sentinel$EARTH$4$Beast-Warrior$1600$800$
 Assault Wyvern$LIGHT$4$Dragon$1800$1000$
 Astra Ghouls$EARTH$5$Zombie$0$2000$
+Astral Kuriboh$LIGHT$1$Fiend$100$100$
+Astraltopia$LIGHT$4$Warrior$0$0$
 Astrograph Sorcerer$DARK$7$Spellcaster$2500$2000$
 Asura Priest$LIGHT$4$Fairy$1700$1200$
 Aswan Apparition$DARK$3$Fiend$500$500$
@@ -589,6 +595,7 @@ Blue-Eyes Abyss Dragon$LIGHT$8$Dragon$2500$2500$
 Blue-Eyes Alternative White Dragon$LIGHT$8$Dragon$3000$2500$
 Blue-Eyes Chaos Dragon$DARK$8$Dragon$3000$0$
 Blue-Eyes Chaos MAX Dragon$DARK$8$Dragon$4000$0$
+Blue-Eyes Jet Dragon$LIGHT$8$Dragon$3000$0$
 Blue-Eyes Shining Dragon$LIGHT$10$Dragon$3000$2500$
 Blue-Eyes Solid Dragon$LIGHT$8$Dragon$2500$2000$
 Blue-Eyes Toon Dragon$LIGHT$8$Dragon$3000$2500$
@@ -761,6 +768,7 @@ Chaos Emperor Dragon - Envoy of the End$DARK$8$Dragon$3000$2500$
 Chaos Emperor, the Dragon of Armageddon$DARK$8$Dragon$3000$2500$
 Chaos Hunter$DARK$7$Fiend$2500$1600$
 Chaos Necromancer$DARK$1$Fiend$0$0$
+Chaos Nephthys$DARK$8$Winged Beast$2400$1600$
 Chaos Sorcerer$DARK$6$Spellcaster$2300$2000$
 Chaos Summoning Beast$DARK$1$Fiend$0$0$
 Chaos Valkyria$LIGHT$4$Fairy$1800$1050$
@@ -817,6 +825,7 @@ Chrysalis Pinny$LIGHT$2$Plant$100$700$
 Chthonian Emperor Dragon$FIRE$6$Dragon$2400$1500$
 Chthonian Soldier$DARK$4$Warrior$1200$1400$
 Chu-Ske the Mouse Fighter$EARTH$3$Beast$1200$0$
+Cipher Biplane$LIGHT$6$Machine$1000$2000$
 Cipher Etranger$LIGHT$1$Spellcaster$0$0$
 Cipher Mirror Knight$LIGHT$4$Warrior$0$0$
 Cipher Soldier (Updated from: Kinetic Soldier)$EARTH$3$Machine$1350$1800$
@@ -1047,6 +1056,7 @@ D/D Cerberus$DARK$4$Fiend$1800$600$
 D/D Dog$DARK$6$Fiend$2000$2000$
 D/D Evil$DARK$4$Fiend$2000$0$
 D/D Ghost$DARK$2$Fiend$600$300$
+D/D Gryphon$DARK$4$Fiend$1200$1200$
 D/D Lamia$DARK$1$Fiend$100$1900$
 D/D Lilith$DARK$4$Fiend$100$2100$
 D/D Necro Slime$DARK$1$Fiend$300$300$
@@ -1185,6 +1195,7 @@ Darksea Float$DARK$1$Machine$0$300$
 Darksea Rescue$DARK$1$Machine$0$0$
 Darkstorm Dragon$DARK$8$Dragon$2700$2500$
 Darkworld Thorns$EARTH$3$Plant$1200$900$
+Darton the Mechanical Monstrosity$DARK$1$Machine$?$0$
 Daruma Dropper$EARTH$4$Warrior$700$1800$
 Dash Warrior$WIND$3$Warrior$600$1200$
 Datacorn$DARK$1$Cyberse$0$0$
@@ -1289,6 +1300,7 @@ Diabound Kernel$DARK$5$Fiend$1800$1200$
 Diana the Light Spirit$LIGHT$4$Thunder$1700$1000$
 Dice Jar$LIGHT$3$Rock$200$300$
 Dicelops$FIRE$4$Machine$1800$200$
+Dictator of D.$DARK$4$Spellcaster$1200$1100$
 Different Dimension Dragon$LIGHT$5$Dragon$1200$1500$
 Dig Beak$EARTH$2$Beast$500$800$
 Digital Bug Centibit$LIGHT$3$Insect$1500$500$
@@ -1297,6 +1309,7 @@ Digital Bug LEDybug$LIGHT$3$Insect$500$0$
 Digital Bug Registrider$LIGHT$3$Insect$1000$1000$
 Digital Bug Websolder$LIGHT$3$Insect$500$1500$
 Digitron$EARTH$2$Cyberse$1500$0$
+Dimension Conjurer$DARK$1$Spellcaster$500$500$
 Dimension Fortress Weapon$DARK$4$Machine$1700$200$
 Dimension Jar$DARK$2$Machine$200$200$
 Dimension Shifter$DARK$6$Spellcaster$1200$2200$
@@ -1312,6 +1325,8 @@ Dinomist Pteran$WATER$4$Machine$1800$1200$
 Dinomist Rex$WATER$5$Machine$2400$2200$
 Dinomist Spinos$WATER$5$Machine$2500$1800$
 Dinomist Stegosaur$WATER$4$Machine$1600$1800$
+Dinomorphia Diplos$DARK$4$Dinosaur$1000$0$
+Dinomorphia Therizia$DARK$4$Dinosaur$1500$0$
 Dinowrestler Capaptera$WIND$3$Dinosaur$1600$0$
 Dinowrestler Capoeiraptor$EARTH$4$Dinosaur$1800$0$
 Dinowrestler Coelasilat$EARTH$2$Dinosaur$100$800$
@@ -1370,6 +1385,8 @@ Doitsu$EARTH$4$Fairy$100$200$
 Doki Doki$EARTH$2$Rock$500$500$
 Dokurorider$DARK$6$Zombie$1900$1850$
 Dokuroyaiba$FIRE$3$Fiend$1000$400$
+Doll Monster Bear-Bear$WIND$4$Beast$0$0$
+Doll Monster Miss Mädchen$LIGHT$4$Fairy$0$0$
 Doma The Angel of Silence$DARK$5$Fairy$1600$1400$
 Don Turtle$WATER$3$Reptile$1100$1200$
 Don Zaloog$DARK$4$Warrior$1400$1500$
@@ -1417,6 +1434,7 @@ Dragon Queen of Tragic Endings$DARK$6$Dragon$1900$2600$
 Dragon Seeker$DARK$6$Fiend$2000$2100$
 Dragon Spirit of White$LIGHT$8$Dragon$2500$2000$
 Dragon Zombie$DARK$3$Zombie$1600$0$
+Dragonbite$DARK$4$Insect$1000$1000$
 Dragoncaller Magician$DARK$7$Spellcaster$2400$1000$
 Dragong$EARTH$4$Machine$500$2100$
 Dragonic Guard$FIRE$4$Dragon$1500$1800$
@@ -1428,6 +1446,7 @@ Dragonmaid Tinkhec$FIRE$8$Dragon$2700$1700$
 Dragonox, the Empowered Warrior$DARK$4$Warrior$1500$1500$
 Dragonpit Magician$WATER$7$Spellcaster$900$2700$
 Dragonpulse Magician$EARTH$4$Spellcaster$1800$900$
+Dragonroid$WIND$8$Machine$2900$1000$
 Dragoons of Draconia$FIRE$4$Beast-Warrior$1800$200$
 Dragunity Aklys$WIND$2$Dragon$1000$800$
 Dragunity Angusticlavii$WIND$5$Winged Beast$2100$1000$
@@ -1439,6 +1458,7 @@ Dragunity Corsesca$WIND$1$Dragon$800$700$
 Dragunity Couse$WIND$2$Dragon$1000$200$
 Dragunity Darkspear$WIND$3$Dragon$1000$1000$
 Dragunity Dux$WIND$4$Winged Beast$1500$1000$
+Dragunity Guisarme$WIND$3$Dragon$600$1600$
 Dragunity Javelin$WIND$2$Dragon$1200$800$
 Dragunity Legatus$WIND$4$Winged Beast$1800$1200$
 Dragunity Legionnaire$WIND$3$Winged Beast$1200$800$
@@ -1600,6 +1620,8 @@ Enishi, Shien's Chancellor$LIGHT$6$Warrior$2200$1200$
 Enraged Battle Ox$EARTH$4$Beast-Warrior$1700$1000$
 Enraged Muka Muka$EARTH$5$Rock$1200$600$
 Envoy of Chaos$DARK$4$Warrior$1500$0$
+Epigonen, the Impersonation Invader$LIGHT$7$Rock$2000$2000$
+Epsilon The Magnet Warrior$EARTH$4$Rock$1300$1500$
 Erebus the Underworld Monarch$DARK$8$Zombie$2800$1000$
 Eria the Water Charmer$WATER$3$Spellcaster$500$1500$
 Erica the Rikka Fairy$WATER$6$Plant$2400$1000$
@@ -1660,6 +1682,10 @@ Exodia Necross$DARK$4$Spellcaster$1800$0$
 Exodia the Forbidden One$DARK$3$Spellcaster$1000$1000$
 Exodia, the Legendary Defender$DARK$10$Spellcaster$?$?$
 Exodius the Ultimate Forbidden Lord$DARK$10$Spellcaster$?$0$
+Exosister Elis$LIGHT$4$Spellcaster$500$800$
+Exosister Irene$LIGHT$4$Spellcaster$400$800$
+Exosister Sophia$LIGHT$4$Spellcaster$100$800$
+Exosister Stella$LIGHT$4$Spellcaster$300$800$
 Exploder Dragon$EARTH$3$Dragon$1000$0$
 Exploderokket Dragon$DARK$7$Dragon$2000$2000$
 Explossum$EARTH$1$Beast$100$100$
@@ -1747,6 +1773,7 @@ Fire King Avatar Kirin$FIRE$3$Beast$1000$200$
 Fire King Avatar Yaksha$FIRE$4$Beast-Warrior$1800$200$
 Fire King High Avatar Garunix$FIRE$8$Winged Beast$2700$1700$
 Fire Kraken$FIRE$4$Aqua$1600$1500$
+Fire Opal Head$FIRE$6$Dinosaur$2500$1000$
 Fire Princess$FIRE$4$Pyro$1300$1500$
 Fire Reaper$DARK$2$Zombie$700$500$
 Fire Sorcerer$FIRE$4$Spellcaster$1000$1500$
@@ -1814,6 +1841,7 @@ Flower Cardian Willow with Calligrapher$DARK$11$Warrior$2000$2000$
 Flower Cardian Zebra Grass$DARK$8$Warrior$100$100$
 Flower Cardian Zebra Grass with Moon$DARK$8$Warrior$2000$2000$
 Flowerbot$EARTH$3$Plant$1500$800$
+Flowerdino$EARTH$4$Dinosaur$2000$0$
 Fluffal Angel$LIGHT$2$Fairy$600$1200$
 Fluffal Bear$EARTH$3$Fairy$1200$800$
 Fluffal Cat$EARTH$1$Fairy$700$300$
@@ -1899,6 +1927,7 @@ Gagaga Magician$DARK$4$Spellcaster$1500$1000$
 Gagaga Mancer$DARK$4$Spellcaster$100$100$
 Gagaga Sister$DARK$2$Spellcaster$200$800$
 Gagagigo$WATER$4$Reptile$1850$1000$
+Gagaku-P.U.N.K. Wa Gon$EARTH$3$Psychic$900$600$
 Gaia Plate the Earth Giant$EARTH$8$Rock$2800$1000$
 Gaia Soul the Combustible Collective$FIRE$4$Pyro$2000$0$
 Gaia The Fierce Knight$EARTH$7$Warrior$2300$2100$
@@ -2050,6 +2079,7 @@ Ghostrick Lantern$DARK$1$Fiend$800$0$
 Ghostrick Mary$DARK$1$Fiend$100$1600$
 Ghostrick Mummy$DARK$3$Zombie$1500$0$
 Ghostrick Nekomusume$DARK$2$Spellcaster$400$900$
+Ghostrick Siren$DARK$4$Fairy$800$1500$
 Ghostrick Skeleton$DARK$3$Zombie$1200$1100$
 Ghostrick Specter$DARK$1$Fiend$600$0$
 Ghostrick Stein$DARK$3$Zombie$1600$0$
@@ -2222,6 +2252,7 @@ Gragonith, Lightsworn Dragon$LIGHT$6$Dragon$2000$1600$
 Granadora$WATER$4$Reptile$1900$700$
 Grand Tiki Elder$DARK$4$Fiend$1500$800$
 Grandmaster of the Six Samurai$EARTH$5$Warrior$2100$800$
+Grandpa Demetto$DARK$1$Spellcaster$0$0$
 Grandram$EARTH$4$Rock$0$0$
 Grandsoil the Elemental Lord$EARTH$8$Beast-Warrior$2800$2200$
 Granmarg the Mega Monarch$EARTH$8$Rock$2800$1000$
@@ -2462,6 +2493,7 @@ Holding Legs$DARK$4$Fiend$800$600$
 Homunculus the Alchemic Being$LIGHT$4$Plant$1800$1600$
 Honest$LIGHT$4$Fairy$1100$1900$
 Hop Ear Squadron$WIND$2$Beast$300$600$
+Horse of the Floral Knights$WIND$3$Beast$400$800$
 Horseytail$WIND$2$Plant$400$500$
 Horus the Black Flame Dragon LV4$FIRE$4$Dragon$1600$1000$
 Horus the Black Flame Dragon LV6$FIRE$6$Dragon$2300$1600$
@@ -2469,6 +2501,7 @@ Horus the Black Flame Dragon LV8$FIRE$8$Dragon$3000$1800$
 Horus' Servant$FIRE$1$Beast-Warrior$100$100$
 Hoshiningen$LIGHT$2$Fairy$500$700$
 Hourglass of Courage$LIGHT$4$Fairy$1100$1200$
+Hourglass of Life$LIGHT$2$Fairy$700$600$
 House Duston$LIGHT$1$Fiend$0$0$
 Howling Insect$EARTH$3$Insect$1200$1300$
 Humanoid Slime$WATER$4$Aqua$800$2000$
@@ -2496,9 +2529,13 @@ Hypnosister$WIND$4$Psychic$1300$1400$
 Hysteric Fairy$LIGHT$4$Fairy$1800$500$
 Ibicella Lutea$EARTH$4$Plant$1800$100$
 Ice Hand$WATER$4$Aqua$1400$1600$
+Ice Knight$WATER$4$Aqua$1300$1200$
 Ice Master$WATER$8$Spellcaster$2500$2000$
 Ice Queen$WATER$8$Spellcaster$2900$2100$
 Icejade Acti$WATER$4$Aqua$1000$1000$
+Icejade Aegirine$WATER$3$Aqua$1000$2000$
+Icejade Creation Kingfisher$WATER$9$Aqua$2500$2500$
+Icejade Kosmochlor$WATER$10$Aqua$1500$3000$
 Icejade Tinola$WATER$4$Aqua$1000$1000$
 Icejade Tremora$WATER$5$Aqua$1500$1500$
 Ido the Supreme Magical Force$DARK$6$Fiend$2200$800$
@@ -2517,6 +2554,7 @@ Ignoble Knight of Black Laundsallyn$DARK$5$Warrior$2000$800$
 Ikelos, the Dream Mirror Mara$DARK$1$Fairy$500$0$
 Ikelos, the Dream Mirror Sprite$LIGHT$1$Fairy$0$500$
 Il Blud$DARK$6$Zombie$2100$800$
+Illusion of Chaos$DARK$7$Spellcaster$2100$2500$
 Illusionist Faceless Mage$DARK$5$Spellcaster$1200$2200$
 Illusionist Faceless Magician$DARK$5$Spellcaster$1200$2200$
 Illusory Snatcher$DARK$7$Fiend$2400$1000$
@@ -2659,6 +2697,7 @@ Jirai Gumo$EARTH$4$Insect$2200$100$
 Jizukiru, the Star Destroying Kaiju$LIGHT$10$Machine$3300$2600$
 Joker's Knight$LIGHT$5$Warrior$2000$1400$
 Jormungardr the Nordic Serpent$DARK$8$Dragon$3000$3000$
+Joruri-P.U.N.K. Madame Spider$EARTH$3$Psychic$900$600$
 Jowgen the Spiritualist$LIGHT$3$Spellcaster$200$1300$
 Jowls of Dark Demise$WATER$2$Fiend$200$100$
 Judge Man$EARTH$6$Warrior$2200$1500$
@@ -2714,6 +2753,7 @@ Kaiser Glider$LIGHT$6$Dragon$2400$2200$
 Kaiser Sea Horse$LIGHT$4$Sea Serpent$1700$1650$
 Kaiser Sea Snake$WATER$8$Sea Serpent$2500$1000$
 Kaiser Vorse Raider$DARK$5$Beast-Warrior$1900$1200$
+Kaiza the Hidden Star$EARTH$5$Warrior$1000$2100$
 Kalantosa, Mystical Beast of the Forest$EARTH$2$Beast$200$1400$
 Kamion, the Timelord$EARTH$10$Fairy$0$0$
 Kamui, Hope of Gusto$WIND$2$Psychic$200$1000$
@@ -2830,10 +2870,15 @@ Kumootoko$EARTH$3$Insect$700$1400$
 Kunoichi$WIND$4$Warrior$1800$1000$
 Kurama$WIND$3$Winged Beast$800$800$
 Kuraz the Light Monarch$LIGHT$6$Warrior$2400$1000$
+Kuribabylon$DARK$5$Fiend$1500$1000$
+Kuribah$DARK$1$Fiend$300$200$
 Kuribandit$DARK$3$Fiend$1000$700$
+Kuribee$DARK$1$Fiend$300$200$
+Kuribeh$DARK$1$Fiend$300$200$
 Kuriboh$DARK$1$Fiend$300$200$
 Kuribohrn$LIGHT$1$Fiend$300$200$
 Kuribon$LIGHT$1$Fairy$300$200$
+Kuriboo$DARK$1$Fiend$300$200$
 Kuriphoton$LIGHT$1$Fiend$300$200$
 Kurivolt$LIGHT$1$Thunder$300$200$
 Kuro-Obi Karate Spirit$WIND$5$Warrior$2400$1000$
@@ -2884,10 +2929,12 @@ Laval Volcano Handmaiden$FIRE$1$Pyro$100$200$
 Laval Warrior$FIRE$4$Warrior$1800$500$
 Layard the Liberator$LIGHT$4$Fairy$1400$1500$
 Lazion, the Timelord$FIRE$10$Fairy$0$0$
+Leafplace Plaice$DARK$3$Psychic$?$?$
 Lector Pendulum, the Dracoverlord$DARK$4$Dragon$1950$0$
 Lee the World Chalice Fairy$LIGHT$2$Fairy$100$2000$
 Left Arm of the Forbidden One$DARK$1$Spellcaster$200$300$
 Left Leg of the Forbidden One$DARK$1$Spellcaster$200$300$
+Left-Hand Shark$WATER$3$Fish$1300$1500$
 Lefty Driver$EARTH$2$Machine$300$100$
 Legacy Hunter$EARTH$4$Warrior$1000$1500$
 Legendary Atlantean Tridon$WATER$3$Sea Serpent$1600$800$
@@ -2919,6 +2966,11 @@ Level Eater$DARK$1$Insect$600$0$
 Level Warrior$LIGHT$3$Warrior$300$600$
 Levia-Dragon - Daedalus$WATER$7$Sea Serpent$2600$1500$
 Libic, Malebranche of the Burning Abyss$DARK$3$Fiend$1300$700$
+Libromancer Agent$EARTH$6$Warrior$2000$2500$
+Libromancer Doombroker$DARK$6$Fiend$2500$2000$
+Libromancer Firestarter$FIRE$3$Cyberse$1800$1800$
+Libromancer Geek Boy$WIND$3$Psychic$800$800$
+Libromancer Magigirl$WATER$4$Spellcaster$600$2100$
 Lich Lord, King of the Underworld$DARK$6$Zombie$2400$1200$
 Lifeforce Harmonizer$WIND$2$Psychic$800$400$
 Lifeless Leaffish$WATER$4$Fish$1500$1600$
@@ -3028,6 +3080,7 @@ Machine King Prototype$EARTH$3$Machine$1600$1500$
 Machine Lord Ür$EARTH$4$Machine$1600$1500$
 Mad Archfiend$DARK$4$Fiend$1800$0$
 Mad Dog of Darkness$DARK$4$Beast$1900$1400$
+Mad Hacker$DARK$2$Cyberse$1000$600$
 Mad Lobster$WATER$3$Aqua$1700$1000$
 Mad Reloader$DARK$1$Fiend$0$0$
 Mad Sword Beast$EARTH$4$Dinosaur$1400$1200$
@@ -3078,9 +3131,11 @@ Magician's Robe$DARK$2$Spellcaster$700$2000$
 Magician's Rod$DARK$3$Spellcaster$1600$100$
 Magician's Valkyria$LIGHT$4$Spellcaster$1600$1800$
 Magicians' Souls$DARK$1$Spellcaster$0$0$
+Magicore Warrior of the Relics$FIRE$4$Warrior$2300$1000$
 Magidog$LIGHT$4$Spellcaster$1700$1000$
 Magikey Mechmortar - Garesglasser$EARTH$8$Machine$2000$2800$
 Magikey Mechmusket - Batosbuster$DARK$4$Machine$2000$2200$
+Magikuriboh$DARK$1$Fiend$300$200$
 Maginificent Magikey Mafteal$LIGHT$4$Fiend$1600$1600$
 Magister of Endymion$EARTH$3$Spellcaster$1500$900$
 Magma Dragon$FIRE$4$Wyrm$1600$1200$
@@ -3468,6 +3523,7 @@ Myutant Beast$EARTH$8$Beast$2400$2400$
 Myutant GB-88$WATER$4$Psychic$500$500$
 Myutant M-05$WATER$2$Psychic$0$500$
 Myutant Mist$WIND$8$Spellcaster$2700$2900$
+Myutant Mutant$WATER$1$Psychic$0$0$
 Myutant ST-46$WATER$3$Psychic$500$0$
 Naelshaddoll Ariel$WATER$4$Psychic$1000$1800$
 Naglfar, Generaider Boss of Fire$FIRE$9$Beast-Warrior$3100$200$
@@ -3522,6 +3578,7 @@ Needle Worm$EARTH$2$Insect$750$600$
 Nefarious Archfiend Eater of Nefariousness$EARTH$4$Beast$1500$200$
 Nehshaddoll Genius$EARTH$4$Machine$1800$1000$
 Neiroy, the Dream Mirror Disciple$LIGHT$3$Fairy$1000$1000$
+Neiroy, the Dream Mirror Traitor$DARK$3$Fiend$1000$1000$
 Neko Mane King$EARTH$1$Beast$0$0$
 Nekogal #1$EARTH$3$Beast$1100$900$
 Nekogal #2$EARTH$6$Beast-Warrior$1900$2000$
@@ -3600,13 +3657,21 @@ Noble Knight Joan$LIGHT$4$Warrior$1900$1300$
 Noble Knight Medraut$LIGHT$4$Warrior$1700$1000$
 Noble Knight Pellinore$LIGHT$4$Warrior$1900$500$
 Noble Knight Peredur$LIGHT$4$Warrior$1900$300$
+Noble Knight's Shield-Bearer$LIGHT$4$Warrior$800$1300$
+Noble Knight's Spearholder$LIGHT$2$Warrior$800$400$
 Nobledragon Magician$FIRE$3$Spellcaster$700$1400$
 Nobleman-Eater Bug$EARTH$5$Insect$900$1200$
 Noctovision Dragon$DARK$7$Dragon$0$2800$
+Noh-P.U.N.K. Foxy Tune$LIGHT$8$Beast$2300$2600$
+Noh-P.U.N.K. Ogre Dance$DARK$8$Fiend$2500$2000$
+Noh-P.U.N.K. Ze Amin$EARTH$3$Psychic$600$600$
 Noisy Gnat$EARTH$2$Insect$700$300$
 Nomadic Force$WIND$4$Warrior$1700$1000$
 Nopenguin$WATER$3$Aqua$1600$100$
+Nordic Beast Gullinbursti$LIGHT$3$Beast$300$100$
+Nordic Smith Ivaldi$EARTH$4$Warrior$1500$700$
 Nova Summoner$LIGHT$4$Fairy$1400$800$
+Nowru Aries the Vernal Dragon$WIND$7$Dragon$2000$2500$
 Nubian Guard$FIRE$2$Warrior$500$500$
 Numbing Grub in the Ice Barrier$WATER$4$Insect$1300$1800$
 Numen erat Testudo$WATER$5$Aqua$1800$0$
@@ -3867,6 +3932,7 @@ Photon Vanisher$LIGHT$4$Warrior$2000$0$
 Photon Wyvern$LIGHT$7$Dragon$2500$2000$
 Piercing Moray$WATER$4$Fish$1500$500$
 Pikari @Ignister$LIGHT$4$Cyberse$1200$600$
+Pile Armed Dragon$WIND$7$Dragon$2800$1000$
 Pilgrim of the Ice Barrier$WATER$4$Warrior$1500$1000$
 Pilica, Descendant of Gusto$WIND$3$Psychic$1000$1500$
 Pinch Hopper$EARTH$4$Insect$1000$1200$
@@ -4165,6 +4231,7 @@ Rhinotaurus$FIRE$4$Beast-Warrior$1800$600$
 Rider of the Storm Winds$LIGHT$1$Dragon$500$200$
 Right Arm of the Forbidden One$DARK$1$Spellcaster$200$300$
 Right Leg of the Forbidden One$DARK$1$Spellcaster$200$300$
+Right-Hand Shark$WATER$4$Fish$1500$1300$
 Righty Driver$EARTH$1$Machine$100$300$
 Rigorous Reaver$FIRE$3$Plant$1600$100$
 Rikka Petal$WATER$1$Plant$0$0$
@@ -4187,6 +4254,7 @@ Roboyarou$EARTH$3$Machine$900$450$
 Roc from the Valley of Haze$WIND$6$Winged Beast$2400$1400$
 Rock Band Xenoguitar$EARTH$4$Rock$1000$2000$
 Rock Ogre Grotto #1$EARTH$3$Rock$800$1200$
+Rock Scales$WATER$5$Fish$2100$1600$
 Rocket Arrow Express$EARTH$10$Machine$5000$0$
 Rocket Jumper$EARTH$3$Rock$1000$800$
 Rocket Warrior$LIGHT$4$Warrior$1500$1300$
@@ -4238,10 +4306,12 @@ Ryu-Ran$FIRE$7$Dragon$2200$2600$
 S-Force Dog Tag$LIGHT$5$Machine$1600$2100$
 S-Force Edge Razor$DARK$4$Cyberse$1500$1300$
 S-Force Gravitino$LIGHT$5$Psychic$2000$1400$
+S-Force Lapcewell$LIGHT$6$Fiend$2400$2500$
 S-Force Orrafist$LIGHT$4$Cyberse$1800$1000$
 S-Force Pla-Tina$DARK$6$Spellcaster$2200$2000$
 S-Force Professor DiGamma$DARK$3$Psychic$1000$1500$
 S-Force Rappa Chiyomaru$DARK$2$Warrior$800$1000$
+S-Force Retroactive$LIGHT$1$Warrior$0$0$
 Saambell the Star Bonder$WIND$3$Spellcaster$1400$1300$
 Saambell the Summoner$WIND$2$Spellcaster$600$400$
 Saber Beetle$EARTH$6$Insect$2400$600$
@@ -4413,6 +4483,7 @@ Shine Knight$LIGHT$3$Warrior$400$1900$
 Shining Abyss$LIGHT$4$Fairy$1600$1800$
 Shining Angel$LIGHT$4$Fairy$1400$800$
 Shining Friendship$LIGHT$4$Fairy$1300$1100$
+Shining Piecephilia$LIGHT$4$Rock$700$2000$
 Shinobaron Peacock$WIND$8$Winged Beast$3000$2500$
 Shinobaroness Peacock$WIND$8$Winged Beast$2500$3000$
 Shinobi Necro$DARK$2$Zombie$800$0$
@@ -4448,6 +4519,7 @@ Silent Magician LV4$LIGHT$4$Spellcaster$1000$1000$
 Silent Magician LV8$LIGHT$8$Spellcaster$3500$1000$
 Silent Paladin$LIGHT$4$Fairy$500$1500$
 Silent Psychic Wizard$EARTH$4$Psychic$1900$0$
+Silent Sea Nettle$WATER$4$Aqua$800$1300$
 Silent Strider$EARTH$2$Insect$300$700$
 Silent Swordsman$LIGHT$4$Warrior$1000$1000$
 Silent Swordsman LV3$LIGHT$3$Warrior$1000$1000$
@@ -4460,6 +4532,7 @@ Silver Fang$EARTH$3$Beast$1200$800$
 Silver Gadget$LIGHT$4$Machine$1500$1000$
 Silver Sentinel$EARTH$4$Warrior$1500$1300$
 Silverrokket Dragon$DARK$4$Dragon$1900$100$
+Silvervine Senri$WIND$2$Beast$0$0$
 SIMM Tablir$DARK$5$Cyberse$0$1800$
 Simorgh of Darkness$DARK$8$Winged Beast$2900$2000$
 Simorgh, Bird of Ancestry$WIND$8$Winged Beast$2900$2000$
@@ -4467,6 +4540,7 @@ Simorgh, Bird of Beginning$WIND$1$Winged Beast$0$1600$
 Simorgh, Bird of Bringing$WIND$2$Winged Beast$1000$1000$
 Simorgh, Bird of Calamity$WIND$3$Winged Beast$1500$200$
 Simorgh, Bird of Divinity$WIND$7$Winged Beast$2700$1000$
+Simorgh, Bird of Perfection$DARK$4$Winged Beast$1800$500$
 Simorgh, Bird of Protection$WIND$4$Winged Beast$1400$1000$
 Simorgh, Lord of the Storm$WIND$8$Winged Beast$2900$2000$
 Sinister Serpent$WATER$1$Reptile$300$250$
@@ -4476,6 +4550,7 @@ Sishunder$LIGHT$4$Thunder$900$400$
 Skelengel$LIGHT$2$Fairy$900$400$
 Skelesaurus$DARK$4$Zombie$1700$1400$
 Skilled Blue Magician$LIGHT$4$Spellcaster$1800$1800$
+Skilled Brown Magician$DARK$4$Spellcaster$300$200$
 Skilled Dark Magician$DARK$4$Spellcaster$1900$1700$
 Skilled Red Magician$DARK$4$Spellcaster$1600$1600$
 Skilled White Magician$LIGHT$4$Spellcaster$1700$1900$
@@ -4512,6 +4587,7 @@ Slot Machine$DARK$7$Machine$2000$2300$
 Slower Swallow$WIND$1$Winged Beast$100$100$
 Slushy$WATER$2$Aqua$0$0$
 Small Piece Golem$EARTH$3$Rock$1100$0$
+Smoke Mosquito$DARK$1$Insect$0$0$
 Snakeyashi$EARTH$4$Plant$1000$1200$
 Snapdragon$EARTH$2$Plant$300$100$
 Sniffer Dragon$DARK$2$Dragon$800$400$
@@ -4713,6 +4789,7 @@ Stygian Security$DARK$1$Fiend$100$600$
 Stygian Street Patrol$DARK$4$Fiend$1600$1200$
 Suanni, Fire of the Yang Zing$FIRE$4$Wyrm$1900$0$
 Sublimation Knight$FIRE$3$Warrior$1300$200$
+Submareed Tour Ride$WATER$6$Dinosaur$2200$0$
 Submarine Frog$WATER$2$Aqua$1200$600$
 Submarineroid$WATER$4$Machine$800$1800$
 Substitoad$WATER$1$Aqua$100$2000$
@@ -4914,6 +4991,7 @@ That Which Feeds on Life$DARK$4$Fiend$1200$1000$
 The 13th Grave$DARK$3$Zombie$1200$900$
 The Accumulator$LIGHT$1$Thunder$0$0$
 The Agent of Creation - Venus$LIGHT$3$Fairy$1600$0$
+The Agent of Destruction - Venus$DARK$3$Fairy$0$1600$
 The Agent of Entropy - Uranus$DARK$5$Fairy$2200$1200$
 The Agent of Force - Mars$LIGHT$3$Fairy$0$0$
 The Agent of Judgment - Saturn$LIGHT$6$Fairy$2400$0$
@@ -5049,6 +5127,7 @@ Tidal, Dragon Ruler of Waterfalls$WATER$7$Dragon$2600$2000$
 Tierra, Source of Destruction$LIGHT$11$Fiend$3400$3600$
 Tiger Axe$EARTH$4$Beast-Warrior$1300$1100$
 Tiger Dragon$EARTH$6$Dragon$2400$1800$
+Timaeus the United Dragon$LIGHT$8$Dragon$2800$1800$
 Time Escaper$EARTH$2$Psychic$500$100$
 Time Maiden$LIGHT$1$Fairy$0$0$
 Time Thief Adjuster$DARK$4$Psychic$1200$1800$
@@ -5215,6 +5294,7 @@ U.A. Playmaker$EARTH$8$Warrior$2600$2000$
 U.A. Rival Rebounder$EARTH$6$Warrior$2200$2300$
 UFO Turtle$FIRE$4$Machine$1400$1200$
 UFOroid$LIGHT$6$Machine$1200$1200$
+Ukiyoe-P.U.N.K. Sharakusai$EARTH$3$Psychic$1200$600$
 Ulevo$EARTH$10$Winged Beast$3000$2500$
 Ultimate Baseball Kid$FIRE$3$Warrior$500$1000$
 Ultimate Conductor Tyranno$LIGHT$10$Dinosaur$3500$3200$
@@ -5284,6 +5364,7 @@ Vampire Duke$DARK$5$Zombie$2000$0$
 Vampire Familiar$DARK$1$Zombie$500$0$
 Vampire Fraulein$DARK$5$Zombie$600$2000$
 Vampire Genesis$DARK$8$Zombie$3000$2100$
+Vampire Ghost$DARK$3$Zombie$1500$0$
 Vampire Grace$DARK$6$Zombie$2000$1200$
 Vampire Grimson$DARK$5$Zombie$2000$1400$
 Vampire Hunter$DARK$4$Warrior$1600$1600$
@@ -5380,6 +5461,7 @@ W-Wing Catapult$LIGHT$4$Machine$1300$1500$
 Wall of Illusion$DARK$4$Fiend$1000$1850$
 Wall of Ivy$EARTH$2$Plant$300$1200$
 Wall Shadow$DARK$7$Warrior$1600$3000$
+Wandering Gryphon Rider$WIND$7$Winged Beast$2000$2800$
 Wandering King Wildwind$DARK$4$Fiend$1700$1300$
 Wandering Mummy$EARTH$4$Zombie$1500$1500$
 War Rock Bashileos$EARTH$8$Warrior$2700$2700$
@@ -5401,6 +5483,7 @@ Watch Cat$EARTH$1$Beast$0$1800$
 Watch Dog$FIRE$1$Pyro$0$0$
 Water Dragon$WATER$8$Sea Serpent$2800$2600$
 Water Dragon Cluster$WATER$10$Sea Serpent$2800$2600$
+Water Enchantress of the Temple$WATER$3$Spellcaster$1500$1200$
 Water Leviathan @Ignister$WATER$7$Cyberse$2300$2000$
 Water Magician$WATER$4$Aqua$1400$1000$
 Water Omotics$WATER$4$Aqua$1400$1200$
@@ -5441,6 +5524,7 @@ White Night Dragon$WATER$8$Dragon$3000$2500$
 White Night Queen$LIGHT$7$Fairy$2100$800$
 White Ninja$LIGHT$4$Warrior$1500$800$
 White Potan$LIGHT$1$Fairy$100$200$
+White Relic of Dogmatika$LIGHT$4$Spellcaster$500$2500$
 White Rose Dragon$DARK$4$Dragon$1200$1000$
 White Steed of the Floral Knights$WIND$6$Beast$2400$1800$
 White Stingray$WATER$4$Fish$1400$1000$
@@ -5615,6 +5699,7 @@ Yosenju Sabu$WIND$4$Beast-Warrior$1700$400$
 Yosenju Shinchu L$WIND$4$Rock$0$2100$
 Yosenju Shinchu R$WIND$4$Rock$0$2100$
 Yosenju Tsujik$WIND$4$Beast-Warrior$1000$0$
+Yowie$EARTH$3$Reptile$500$500$
 Yubel$DARK$10$Fiend$0$0$
 Yubel - Terror Incarnate$DARK$11$Fiend$0$0$
 Yubel - The Ultimate Nightmare$DARK$12$Fiend$0$0$
@@ -5655,6 +5740,7 @@ Zoodiac Whiptail$EARTH$4$Beast-Warrior$1200$400$
 Zoroa, the Magistus of Flame$FIRE$4$Spellcaster$1500$1500$
 ZS - Armed Sage$LIGHT$4$Warrior$300$900$
 ZS - Ascended Sage$LIGHT$4$Warrior$900$300$
+ZS - Ouroboros Sage$DARK$3$Warrior$600$0$
 ZS - Vanish Sage$LIGHT$1$Warrior$500$100$
 Zubaba Buster$EARTH$3$Warrior$1800$600$
 Zubaba Knight$EARTH$3$Warrior$1600$900$
@@ -5668,6 +5754,7 @@ ZW - Lightning Blade$LIGHT$5$Beast$1200$2000$
 ZW - Pegasus Twin Saber$LIGHT$5$Beast$1000$2100$
 ZW - Phoenix Bow$FIRE$3$Winged Beast$1100$0$
 ZW - Sleipnir Mail$LIGHT$4$Beast$1000$1000$
+ZW - Sylphid Wing$LIGHT$4$Beast$800$1600$
 ZW - Tornado Bringer$WIND$5$Dragon$1300$1800$
 ZW - Ultimate Shield$EARTH$4$Aqua$0$2000$
 ZW - Unicorn Spear$LIGHT$4$Beast$1900$0$

@@ -9,7 +9,6 @@ public class Action {
 		draw_counter = new int[Gov.num_locations()];
 		open_actions = new ArrayList<Action>();
 	}
-	
 	int[] draws;
 	String name;
 	boolean default_live = true;
@@ -44,6 +43,20 @@ public class Action {
 	public Action poss(Action action, Condition... conditions) // for triggers, will only execute the first one. Think allure/vendor
 	{
 		possibilities.add(new Possibility(action,conditions));
+		return this;
+	}
+	public Action guarantee_poss(Condition...conditions ) 
+	{
+		Possibility poss = new Possibility(conditions);
+		poss.guarantee=true;
+		possibilities.add(poss);
+		return this;
+	}
+	public Action guarantee_poss(Action action, Condition... conditions) // for triggers, will only execute the first one. Think allure/vendor
+	{
+		Possibility poss = new Possibility(action,conditions);
+		poss.guarantee=true;
+		possibilities.add(poss);
 		return this;
 	}
 	public Action no_conditions()

@@ -2,6 +2,149 @@ import java.io.File;
 import java.io.FileWriter;
 
 public class Main {
+	public static void mainT(String args[])
+	{
+		Card rescue = card("Rescue Cat", 3, "tri-type", "monster");
+		Card frak = card("TB Fraktall", 3, "tb", "tri-type", "monster", "main tb");
+		Card kitt = card("TB Kitt", 3, "tb", "tri-type", "monster", "cat_summon", "good_gy", "main tb");
+		Card nerv = card("TB Nervall", 3, "tb", "tri-type", "monster", "good_gy", "main tb");
+		Card keras = card("TB Keras", 2, "tb", "tri-type", "monster", "cat_summon", "main tb");
+		Card ash_veiler = card("ash/veiler",5, "monster", "first_trap", "second_trap", "altnormal");
+		Card gamma = card("Gamma", 3, "monster", "second_trap");
+		Card driver = card("Driver",1);
+		Card imperm = card("Impermanence", 2, "first_trap", "second_trap");
+		Card strike = card("Solemn Strike", 2, "first_trap");
+		Card revolt = card("TB Revolt", 2);
+		Card imporder = card("Imperial Order", 1);
+		Card dheroes = card("DFusion brick", 2);
+		Card Dfusion = card("Fusion Destiny", 3);
+		Card tenki = card("Tenki", 1);
+		Card cbtg = card("cbtg",1);
+		Card prosperity = card("Pot of Prosperity",3);
+		//Card desires = card("Desires", 0);
+		
+		Card almiraj = card("Almiraj", 0);
+		Card ferrijit = card("Ferrijit", 0, "tb", "tri-type", "tb link-2", "ferrijit");
+		Card brumm = card("Bearbrumm", 0, "tb", "tri-type", "tb link-2", "brumm");
+		Card rugal = card("Rugal", 0, "tb", "tri-type", "tb link-3", "rugal", "good_with_rev");
+		Card omen =  card("Shuraig", 0, "tb", "tri-type", "tb link-4", "omen");
+		Card fake_ferrijit = card("Imp Ferrijit", 0, "fake tb", "tri-type", "tb link-2", "ferrijit");
+		Card fake_brumm = card("Imp Bearbrumm", 0, "fake tb", "tri-type", "tb link-2", "brumm");
+		Card fake_rugal = card("Imp Rugal", 0, "fake tb", "tri-type", "tb link-3", "rugal", "good_with_rev");
+		Card fake_omen =  card("Imp Shuraig", 0, "fake tb", "tri-type", "tb link-4", "omen");
+		Card verte = card("Verte", 0);
+		Card enforcer = card("Enforcer",0);
+		/*Card apo2 = card("Apollousa-2", 0 , "apo", "good_with_rev");
+		Card apo3 = card("Apollousa-3", 0 , "apo", "good_with_rev");
+		Card apo4 = card("Apollousa-4",0, "apo", "good_with_rev");*/
+		
+		locations("Deck", "Hand", "Monster Zone", "S/T Zone", "GY", "Banish", "Prosp Zone", "Desires zone");
+		hand(5);
+		
+		Action place_revolt = action("Place revolt").open().hopt().poss(move(revolt,1,3));
+		
+		action("Normal Summon").open().hopt().poss(move("tri-type", 1, 2));
+		Action frak_eff = action("Frak eff").open().hopt().poss(move(frak,1,4), move("tb",0,4).exclude(frak));
+		Action kitt_eff = action("Kitt send").hopt().poss(move(nerv,0,4));
+		Action nerv_eff = action("Nerv add").hopt().poss(move("tb",0,1).exclude(nerv));
+		MT.add(kitt, list(0,1,2), 4, kitt_eff);
+		MT.add(nerv, list(0,1,2), 4, nerv_eff);
+		action("Keras eff").open().hopt().poss(move(keras,1,2), move("tri-type", 1, 4));
+		
+		Action fraktall_summon = action("Frak summon link").open().hopt();
+		fraktall_summon.poss(cond(frak,2), move(2,"tri-type",4,5), move(fake_ferrijit, -1, 2));
+		fraktall_summon.poss(cond(frak,2), move(2,"tri-type",4,5), move(fake_brumm, -1, 2));
+		fraktall_summon.poss(cond(frak,2), move(3,"tri-type",4,5), move(fake_rugal, -1, 2));
+		fraktall_summon.poss(cond(frak,2), move(4,"tri-type",4,5), move(fake_omen, -1, 2));
+		Action kitt_summon = action("Kitt summon link").open().hopt();
+		kitt_summon.poss(cond(kitt,2), move(2,"tri-type",4,5), move(fake_ferrijit, -1, 2));
+		kitt_summon.poss(cond(kitt,2), move(2,"tri-type",4,5), move(fake_brumm, -1, 2));
+		kitt_summon.poss(cond(kitt,2), move(3,"tri-type",4,5), move(fake_rugal, -1, 2));
+		kitt_summon.poss(cond(kitt,2), move(4,"tri-type",4,5), move(fake_omen, -1, 2));
+		Action nerv_summon = action("Nerv summon link").open().hopt();
+		nerv_summon.poss(cond(nerv,2), move(2,"tri-type",4,5), move(fake_ferrijit, -1, 2));
+		nerv_summon.poss(cond(nerv,2), move(2,"tri-type",4,5), move(fake_brumm, -1, 2));
+		nerv_summon.poss(cond(nerv,2), move(3,"tri-type",4,5), move(fake_rugal, -1, 2));
+		nerv_summon.poss(cond(nerv,2), move(4,"tri-type",4,5), move(fake_omen, -1, 2));
+		Action keras_summon = action("Keras summon link").open().hopt();
+		keras_summon.poss(cond(keras,2), move(2,"tri-type",4,5), move(fake_ferrijit, -1, 2));
+		keras_summon.poss(cond(keras,2), move(2,"tri-type",4,5), move(fake_brumm, -1, 2));
+		keras_summon.poss(cond(keras,2), move(3,"tri-type",4,5), move(fake_rugal, -1, 2));
+		keras_summon.poss(cond(keras,2), move(4,"tri-type",4,5), move(fake_omen, -1, 2));
+		
+		action("Cat eff").open().hopt().poss(move(rescue,2,4), move(2,"cat_summon", 0, 2));
+		action("Tenki eff").open().hopt().poss(move(tenki,1,3), move(frak,0,1));
+		Action prosp_eff = action("Prosp eff").open().hopt().poss(move(prosperity,1,4)).draw(6, 6);
+		Action prosp_processing = action("Prosp processing").poss(move("card", 6,1)).move_all(6,0);
+		prosp_eff.trigger(prosp_processing);
+		
+		action("Summon almiraj").open().hopt().poss(move(kitt,2,4), move(almiraj,-1,2)).poss(move(nerv,2,4), move(almiraj,-1,2));
+		action("Summon Ferrijit").open().poss(move(2,"tri-type",2,4), move(ferrijit,-1,2));
+		Action summon_rugal = action("Summon Rugal").open().poss(move(3,"tri-type",2,4), move(rugal,-1,2));
+		summon_rugal.poss(cond(2, "tri-type", 2), move("tb link-2", 2,4), move("tri-type", 2,4));
+		Action summon_omen = action("Summon Omen").open().poss(move(4,"tri-type",2,4), move(omen,-1,2));
+		summon_omen.poss(cond(3, "tri-type", 2), move("tb link-2", 2,4), move(2, "tri-type", 2,4));
+		summon_omen.poss(cond(2, "tri-type", 2), move("tb link-3", 2,4), move("tri-type", 2,4));
+		
+		/*Action summon_apo = action("Summon apo4").open().hopt().poss(move(4, "tri-type", 2,4).distinct(), move(apo4,-1,2));
+		summon_apo.poss(cond(3,"tri-type",2),move(1,"tb link-2", 2,4),move(2, "tri-type", 2,4).distinct(), move(apo3,-1,2));
+		summon_apo.poss(move(2,"tb link-2", 2,4).distinct(), move(apo2,-1,2)).poss(cond(2,"tri-type",2),move("tb link-3", 2,4),move( "tri-type", 2,4).distinct(), move(apo2,-1,2));*/
+
+		
+		Action ferrijit_eff = action("Ferri eff to spec").open().hopt().poss(cond("ferrijit",2), move("tri-type", 1, 2));
+		Action ferrijit_draw = action("Ferri eff to draw").hopt().draw(1,1);
+		Action put_back = action("Put back 1").poss(move("card",1,0));
+		ferrijit_draw.trigger(put_back);
+		ferrijit_draw.turnoff(prosp_eff);
+		prosp_eff.turnoff(ferrijit_draw);
+		MT.add("ferrijit", 2, 4, ferrijit_draw);
+		
+		
+		
+		Action brumm_eff = action("Brumm eff to spec").open().hopt().poss(cond("brumm",2), move(2,"card",1,4), move("main tb",5,2));
+		Action brumm_add = action("Brumm eff to add").hopt().poss(move(revolt,0,1)).trigger(put_back);
+		MT.add("brumm", 2, 4, brumm_add);
+
+		
+		
+		Action omen_add = action("Omen eff to add").hopt().poss(cond("card", 5), move(nerv, 0,1)).poss(cond(2,"card", 5), move("cat_summon",0,1));
+		MT.add("omen", 2, 4, omen_add);
+		
+		Action enforcer_eff = action("Enforcer pop").hopt().open().poss(cond(enforcer,2), move("brumm",2,4));
+		
+		
+		Action fusion_destiny = action("Fusion Destiny eff").hopt().open().poss(move(Dfusion,1,4),move(2,dheroes, list(0,1),4), move(enforcer,-1,2));
+		
+		
+		action("Summon Verte").open().hopt().poss(cond(Dfusion,0),cond(2,dheroes, list(0,1)),move(2,"tri-type",2,4), move(verte,-1,2));
+		Action verte_eff = action("Eff Verte").open().hopt().poss(move(Dfusion,0,4),move(2,dheroes, list(0,1),4), move(enforcer,-1,2), cond(verte,2));
+		verte_eff.turnoff_all().turnon(enforcer_eff).turnon(brumm_add).turnon(kitt_eff).turnon(nerv_eff).turnon(frak_eff);
+		brumm_add.turnoff_all().turnon(place_revolt).turnon(put_back);
+		fusion_destiny.turnoff_all().turnon(enforcer_eff).turnon(brumm_add).turnon(kitt_eff).turnon(nerv_eff).turnon(frak_eff);
+		brumm_add.turnoff_all().turnon(place_revolt).turnon(put_back);
+		/*Action desires_eff = action("Activate Desires").open().hopt().poss(move(desires, 1, 4)).draw(7, 10).draw(1,2);
+		desires_eff.turnoff(prosp_eff);
+		prosp_eff.turnoff(desires_eff);*/
+		
+		
+		Gov.poss(cond(enforcer,2),cond(revolt,3), cond(4, "tri-type", list(4,5)).exclude("fake tb"), cond(1, "good_gy", list(4,5)));
+		Gov.poss(cond(enforcer,2),cond(revolt,3), cond(3, "tri-type", list(4,5)).exclude("fake tb"), cond(1,"tb link-2", list(4,5)).exclude("fake tb"), cond(1, "good_gy", list(4,5)));
+		//Gov.poss(cond(revolt,3), cond(4, "tri-type", list(4,5)).exclude("fake tb"), cond(1, "good_gy", list(4,5)));
+		//Gov.poss(cond(revolt,3), cond(3, "tri-type", list(4,5)).exclude("fake tb"), cond(1,"tb link-2", list(4,5)).exclude("fake tb"), cond(1, "good_gy", list(4,5)));
+		//Gov.poss(cond("good_with_rev",2),cond(revolt,3), cond(4, "tri-type", list(4,5)).exclude("fake tb"), cond(1, "good_gy", list(4,5)));
+		//Gov.poss(cond("good_with_rev",2),cond(revolt,3), cond(3, "tri-type", list(4,5)).exclude("fake tb"), cond(1,"tb link-2", list(4,5)).exclude("fake tb"), cond(1, "good_gy", list(4,5)));
+		//Gov.poss(cond("apo",2),cond(enforcer,2),cond(revolt,3), cond(4, "tri-type", list(4,5)).exclude("fake tb"), cond(1, "good_gy", list(4,5)));
+		//Gov.poss(cond("apo",2),cond(enforcer,2),cond(revolt,3), cond(3, "tri-type", list(4,5)).exclude("fake tb"), cond(1,"tb link-2", list(4,5)).exclude("fake tb"), cond(1, "good_gy", list(4,5)));
+
+		
+		//Gov.terminate(cond(2, revolt, 7));
+		//Gov.terminate(cond(dheroes, 7));
+		//Gov.terminate(cond(Dfusion, 7));
+		
+		go("Enforcer + Revolt 2", 5);
+		
+		
+	}
 	
 	public static void main(String args[])
 	{
@@ -179,7 +322,7 @@ public class Main {
 		//Gov.poss(cond(arti_scythe, list(1,3)), cond(tornado, 2), cond("apo", 2));
 		//Gov.poss(cond(apo4,2));
 
-		
+		Gov.timeout(20);
 		go("Apo Toad", 100);
 	}
 	//Ignore below this line
