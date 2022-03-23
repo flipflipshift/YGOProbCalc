@@ -84,8 +84,7 @@ public class Locations {
 	{
 		if(location_sizes[in]==0)
 		{
-			System.out.println("Too many preloads");
-			System.exit(0);
+			System.out.println("Nothing left in "+Gov.locations[in]);
 		}
 		int index = (int) (Math.random()*location_sizes[in]);
 		int card_num= -1;
@@ -116,9 +115,12 @@ public class Locations {
 		List<Trigger> ret = new ArrayList<Trigger>();
 		for(int i=0; i<locations[in].length; i++)
 		{
-			locations[out][i]+=locations[in][i];
-			locations[in][i]=0;
-			ret.addAll(MT.library[i][in+1][out+1]);
+			if(locations[in][i]>0)
+			{
+				locations[out][i]+=locations[in][i];
+				locations[in][i]=0;
+				ret.addAll(MT.library[i][in+1][out+1]);
+			}
 		}
 		location_sizes[out]+=location_sizes[in];
 		location_sizes[in]=0;
@@ -129,13 +131,14 @@ public class Locations {
 		List<Trigger> ret = new ArrayList<Trigger>();
 		for(int i=0; i<locations[in].length; i++)
 		{
-			for(int j = 0; j<locations[in][i]; j++)
+			if(locations[in][i]>0)
 			{
-				move_log.add(new Movement(i, in, out));
+				for(int j = 0; j<locations[in][i]; j++)
+					move_log.add(new Movement(i, in, out));
+				locations[out][i]+=locations[in][i];
+				locations[in][i]=0;
+				ret.addAll(MT.library[i][in+1][out+1]);
 			}
-			locations[out][i]+=locations[in][i];
-			locations[in][i]=0;
-			ret.addAll(MT.library[i][in+1][out+1]);
 		}
 		location_sizes[out]+=location_sizes[in];
 		location_sizes[in]=0;

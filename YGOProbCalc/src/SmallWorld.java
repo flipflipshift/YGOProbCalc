@@ -4,11 +4,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-//how to store: maybe give cards data: boolean smallworld, then attributes, etc
-//call static method small world to build the according array
-//or maybe instead this class can just store a list of 2-elt arrays corresponding to pairs that are distance 1 from each other.
-//how to easily store? Maybe list of card nums, list of strings (attrs), then list of 5-elt int arrays
-//After adding each one, and to List<int[]> pairs.
 public class SmallWorld {
 	static Card small_world;
 	static int gy;
@@ -102,7 +97,9 @@ public class SmallWorld {
 				for(int k : pairs.get(j))
 				{
 					if(k!=i)
+					{
 						world.poss(move(small_world,1,gy), move(cards.get(i), 1, banish_fd), move(cards.get(j),0,banish_fd), move(cards.get(k),0,1));
+					}
 				}
 			}
 		}

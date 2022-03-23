@@ -52,6 +52,8 @@ public class Gov {
 		{
 			return false;
 		}
+		try {
+			
 		if(g.triggers.size()>0)
 		{
 			Action trigger = g.triggers.remove(0).trigger;
@@ -92,12 +94,18 @@ public class Gov {
 					return false;
 			}
 		}
+		}
+		catch(IndexOutOfBoundsException e)
+		{
+			System.out.println("An error occured; if above says Nothing Left in Deck, ignore");
+			//e.printStackTrace();
+			return false;
+		}
 
 		return false;
 	}
 	public static double probability(FileWriter fw, int num_trials) throws IOException
 	{
-		SmallWorld.actions();
 		int counter = 0;
 		int timed_out = 0;
 		for(int i=0; i<num_trials; i++)
@@ -109,6 +117,7 @@ public class Gov {
 			System.out.print(hand);
 			System.out.print(preloads);
 			long end_time = System.currentTimeMillis()+max_seconds*1000;
+			fw.write("Trial Number: "+(i+1)+"\n");
 			if(satisfies_possibilities(gamestate,0, end_time))
 			{
 				fw.write("This Worked:\n");

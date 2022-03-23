@@ -69,5 +69,29 @@ public class MT {
 			for(int in : ins)
 				library[card_num][in+1][out+1].add(new Trigger(action));
 	}
+	public static void add(Card c, int in, int[] outs, Action action)
+	{
+		int card_num = c.num;
+		for (int out : outs)
+			library[card_num][in+1][out+1].add(new Trigger(action));
+	}
+	public static void add(String category, int in, int[] outs, Action action)
+	{
+		for(int c : Card.get_cards(category))
+			for (int out : outs)
+				library[c][in+1][out+1].add(new Trigger(action));
+	}
+	public static void add(Card c, int in, int[] outs, Trigger trigger)
+	{
+		int card_num = c.num;
+		for (int out : outs)
+			library[card_num][in+1][out+1].add(trigger);
+	}
+	public static void add(String category, int in, int[] outs, Trigger trigger)
+	{
+		for(int c : Card.get_cards(category))
+			for (int out : outs)
+				library[c][in+1][out+1].add(trigger);
+	}
 	
 }

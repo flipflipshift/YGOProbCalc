@@ -73,12 +73,28 @@ public class Action {
 			turn_on.add(action);
 		return this;
 	}
+	public Action turnon(Action...actions)
+	{
+		for(Action action : actions)
+		{
+			turnon(action);
+		}
+		return this;
+	}
 	public Action turnoff(Action action)
 	{
 		if(turn_on.contains(action))
 			turn_on.remove(action);
 		if(!turn_off.contains(action))
 			turn_off.add(action);
+		return this;
+	}
+	public Action turnoff(Action...actions)
+	{
+		for(Action action : actions)
+		{
+			turnoff(action);
+		}
 		return this;
 	}
 	public Action turnoff_all()

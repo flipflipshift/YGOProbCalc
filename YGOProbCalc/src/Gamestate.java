@@ -10,6 +10,7 @@ public class Gamestate {
 	List<Trigger> triggers;
 	Hashtable<Action, Boolean> is_on;//TODO: Make into array
 	List<Modification> log;
+	int[] initial_deck;
 	
 	public Gamestate()
 	{
@@ -32,6 +33,7 @@ public class Gamestate {
 		}
 		preloads = new Preloads(locations, quantities);
 		preload_indices = new int[Gov.num_locations()];
+		initial_deck = locations.locations[0].clone();
 		triggers = new ArrayList<Trigger>();
 		is_on = new Hashtable<Action, Boolean>();
 		for(Action action : Action.actions)
@@ -230,7 +232,7 @@ public class Gamestate {
 	public List<Modification> modifications(Action action, Possibility poss)
 	{
 		List<Modification> modifications = new ArrayList<Modification>();
-		int length = Gov.num_locations();
+		int length = Gov.num_locations();		
 		List<List<Movement[]>> movement_set = new ArrayList<List<Movement[]>>();
 		for(Condition cond : poss.conditions)
 		{
@@ -243,6 +245,7 @@ public class Gamestate {
 			}
 		}
 		Movement[][] movement_lists = cartesian_product(movement_set);
+		
 		
 		List<Action> turn_off = new ArrayList<Action>();
 		for(Action a : action.turn_off)
@@ -257,7 +260,7 @@ public class Gamestate {
 				turn_on.add(a);
 		}
 		boolean problem;
-		//to randomize:
+		//can randomize:
 		//while(movement_lists.size()>0)
 		//List<Movement> movements = movement_lists.remove((int)(Math.random()*movement_lists.size()));
 		for(Movement[] movements : movement_lists)
@@ -299,13 +302,20 @@ public class Gamestate {
 						{
 							int card_num = preloads.preloads.get(i).get(preload_indices[i]);
 							preload_indices[i]+=1;
-							if(!locations.has(card_num, j))
-								j--;
-							else
+							double rand = Math.random();
+							double original = (double) initial_deck[card_num];
+							double current = (double) locations.locations[0][card_num];
+							boolean dont_skip = rand>(original-current)/original;
+							
+							if(dont_skip)
 							{
 								Movement m = new Movement(card_num, 0, i);
 								move_log.add(m);
 								new_triggers.addAll(locations.move(m));
+							}
+							else
+							{
+								j--;
 							}
 						}
 					}
