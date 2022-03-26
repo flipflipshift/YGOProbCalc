@@ -5,8 +5,6 @@ public class Main {
 	
 	public static void main1(String args[])
 	{
-
-		
 		Card dog = card("Fluffal Dog", 3, "fluff", "ns");
 		Card peng = card("Fluffal Penguin", 2, "fluff", "ns");
 		Card cat = card("Fluffal Cat", 1, "fluff");
@@ -146,7 +144,7 @@ public class Main {
 	}
 		
 	
-	public static void main(String args[])
+	public static void main3(String args[])
 	{
 		Card dog = card("Fluffal Dog", 3, "fluff", "ns").small();
 		Card peng = card("Fluffal Penguin", 2, "fluff", "ns").small();
