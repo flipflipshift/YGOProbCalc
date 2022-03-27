@@ -3,7 +3,7 @@ import java.io.FileWriter;
 
 public class Main {
 	
-	public static void main1(String args[])
+	public static void main(String args[])
 	{
 		Card dog = card("Fluffal Dog", 3, "fluff", "ns");
 		Card peng = card("Fluffal Penguin", 2, "fluff", "ns");
@@ -27,7 +27,7 @@ public class Main {
 		Card prosp = card("Prosp", 1);
 		Card allure = card("Allure", 1);
 		
-		locations("Deck", "Hand", "MZ", "STZ", "GY");
+		locations("Deck", "Hand", "MZ", "STZ", "GY", "Banish");
 		hand(5);
 		
 		action("Gardens eff").poss(move(gardens,1,3),move(peng,0,1)).hopt().open();
@@ -178,7 +178,7 @@ public class Main {
 		
 		
 		Action vend_gyeff = action("Vend gy effect").poss(move("fluff",0,1)).poss(move(sabres,0,1));
-		MT.add(vend, list(-1,0,1,3), 4, vend_gyeff);
+		MT.add(vend, list(-1,0,1,3,8), 4, vend_gyeff);
 		Action chain_eff = action("Chain eff").poss(move("frightfur",0,1)).hopt();
 		MT.add(chain, list(1,2), 4, chain_eff);
 		Action owl_effect=action("Owl effect").poss(move(poly,0,1)).hopt();
@@ -192,11 +192,11 @@ public class Main {
 		MT.add(peng, 7, 4, penguin_draw);
 		Action fusion_process = action("Fusion processing").move_all(7, 4);
 		Action dump_all =action("Allure dump hand").move_all(1, 4);
-		Action allure_payment = action("Allure Payment").poss(move("dark",1,5)).poss(dump_all);
+		Action allure_payment = action("Allure Payment").poss(move("dark",1,5)).poss(dump_all).first();
 		Action vend_swapback = action("Swap back vendor").poss(move(vend_dead,4,-1), move(vend,-1,4)).poss(move(vend_dead,1,-1), move(vend,-1,1));
 		MT.add(vend_dead, 3, list(1,4), vend_swapback);		
 		Action vend_hit = action("Vendor Hit!").poss(move("ns",1,2)).poss(move("fluff",1,2));
-		Action vend_processing=action("Vendor Processing").poss(vend_hit,move("fluff",8,1)).poss(move("card",8,4));		
+		Action vend_processing=action("Vendor Processing").poss(vend_hit,move("fluff",8,1)).poss(move("card",8,4)).first();		
 		Action prosp_return = action("Return to deck").move_all(9, 0);
 		Action prosp_add=action("Add off Prosperity").poss(move("card",9,1)).trigger(prosp_return);
 		
@@ -260,7 +260,7 @@ public class Main {
 		try{
 			File f = new File("src/"+filename+".txt");
 			FileWriter fw = new FileWriter(f);
-			System.out.println(Gov.probability(fw, num_trials));
+			Gov.probability(fw, num_trials);
 			fw.close();
 		}
 		

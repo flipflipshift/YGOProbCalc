@@ -18,6 +18,8 @@ public class Action {
 	List<Trigger> triggers = new ArrayList<Trigger>();
 	
 	boolean move_all=false;
+	boolean first = false;
+	boolean mandatory = true;//only considered if triggered. All open actions are treated as optional unless in guarantee
 	int move_all_origin = -1;
 	int move_all_destination = -1;
 
@@ -132,6 +134,16 @@ public class Action {
 	public Action open()
 	{
 		open_actions.add(this);
+		return this;
+	}
+	public Action first()
+	{
+		first = true;
+		return this;
+	}
+	public Action optional()
+	{
+		mandatory = false;
 		return this;
 	}
 }

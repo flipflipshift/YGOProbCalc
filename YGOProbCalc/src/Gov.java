@@ -56,49 +56,100 @@ public class Gov {
 			
 		if(g.triggers.size()>0)
 		{
-			Action trigger = g.triggers.remove(0).trigger;
-			List<Integer> exec = g.executable(trigger);	
-			for(Integer i : exec)
+			Trigger trigger = g.triggers.remove(0);
+			Action action = trigger.trigger;
+			List<Integer> exec = g.executable(action);
+			boolean legal = false;
+			if(action.first)
 			{
-				List<Modification> modifications = g.modifications(trigger, trigger.possibilities.get(i));
-				if(modifications.isEmpty())
-					continue; //Only loop if move conditions can't be executed despite the naive check
-				for(Modification mod : modifications)
+				for(Integer i : exec)
 				{
-					g.modify(mod);
-					if(satisfies_possibilities(g, depth+1, end_time))
-						return true;
-					g.unmodify(mod);
+
+					List<Modification> modifications = g.modifications(action, action.possibilities.get(i));
+					if(modifications.isEmpty())
+						continue; //Only loop if move conditions can't be executed despite the naive check
+					legal = true;
+					for(Modification mod : modifications)
+					{
+						g.modify(mod);
+						if(satisfies_possibilities(g, depth+1, end_time))
+							return true;
+						g.unmodify(mod);
+					}
+					break;
 				}
-				return false; 
+				if(legal && action.mandatory)
+					return false;
+				return satisfies_possibilities(g, depth, end_time);
 			}
-			return satisfies_possibilities(g, depth, end_time);
+			else
+			{
+				for(int i: exec)
+				{
+					List<Modification> modifications = g.modifications(action, action.possibilities.get(i));
+					
+					if(modifications.size()>0)
+						legal = true;
+					for(Modification mod : modifications)
+					{
+						g.modify(mod);
+						if(satisfies_possibilities(g, depth+1, end_time))
+							return true;
+						g.unmodify(mod);
+					}
+					
+				}
+				if(legal && action.mandatory)
+					return false;
+				return satisfies_possibilities(g, depth, end_time);
+			}
 		}
+		
 		if(g.locations.satisfies(goal))
 			return true;
 		if(g.terminate(terminations))
 			return false;
 		for(Action action : Action.open_actions)
 		{
-			for(int i : g.executable(action))
+			if(action.first)
 			{
-				List<Modification> modifications = g.modifications(action, action.possibilities.get(i));
-				for(Modification mod : modifications)
+				for(Integer i : g.executable(action))
 				{
-					g.modify(mod);
-					if(satisfies_possibilities(g, depth+1, end_time))
-						return true;
-					g.unmodify(mod);
+					List<Modification> modifications = g.modifications(action, action.possibilities.get(i));
+					if(modifications.isEmpty())
+						continue; //Only loop if move conditions can't be executed despite the naive check
+					for(Modification mod : modifications)
+					{
+						g.modify(mod);
+						if(satisfies_possibilities(g, depth+1, end_time))
+							return true;
+						g.unmodify(mod);
+					}
+					break; //only do first possible poss
 				}
-				if(action.possibilities.get(i).guarantee && modifications.size()>0)
-					return false;
+			}
+			else
+			{
+				for(int i : g.executable(action))
+				{
+					List<Modification> modifications = g.modifications(action, action.possibilities.get(i));
+					for(Modification mod : modifications)
+					{
+						g.modify(mod);
+						if(satisfies_possibilities(g, depth+1, end_time))
+							return true;
+						g.unmodify(mod);
+					}
+					if(action.possibilities.get(i).guarantee && modifications.size()>0)
+						return false;
+				}
 			}
 		}
 		}
 		catch(IndexOutOfBoundsException e)
 		{
 			System.out.println("An error occured; if above says Nothing Left in Deck, ignore");
-			//e.printStackTrace();
+			e.printStackTrace();
 			return false;
 		}
 

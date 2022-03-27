@@ -366,5 +366,22 @@ public class Gamestate {
 		}
 		return false;
 	}
+	public String toString()
+	{
+		String s = "Gamestate info:\n";
+		for(int i = 1; i<locations.locations.length; i++)
+		{
+			if(locations.location_sizes[i]==0)
+				continue;
+			s=s+"In "+Gov.locations[i]+":\n";
+			for(int j = 0; j<Card.num_created; j++)
+			{
+				if(locations.locations[i][j]==0)
+					continue;
+				s=s+locations.locations[i][j]+" copies of "+Card.num_to_card.get(j).name+"\n";
+			}
+		}
+		return s;
+	}
 	
 }

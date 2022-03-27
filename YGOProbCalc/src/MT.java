@@ -20,11 +20,7 @@ public class MT {
 		for(int c : Card.get_cards(category))
 			library[c][in+1][out+1].add(new Trigger(action));
 	}
-	public static void add(Card c,int in, int out, Trigger trigger)
-	{
-		int card_num = c.num;
-		library[card_num][in+1][out+1].add(trigger);
-	}
+
 	public static void add(Card c,int in, int out, Action action)
 	{
 		int card_num = c.num;
@@ -36,12 +32,7 @@ public class MT {
 			for(int in : ins)
 				library[c][in+1][out+1].add(new Trigger(action));
 	}	
-	public static void add(Card c, int[] ins, int out, Trigger trigger)
-	{
-		int card_num = c.num;
-		for(int in : ins)
-			library[card_num][in+1][out+1].add(trigger);
-	}
+
 	public static void add(Card c, int[] ins, int out, Action action)
 	{
 		int card_num = c.num;
@@ -55,13 +46,7 @@ public class MT {
 				for(int in : ins)
 					library[c][in+1][out+1].add(new Trigger(action));
 	}
-	public static void add(Card c, int[] ins, int[] outs, Trigger trigger)
-	{
-		int card_num = c.num;
-		for (int out : outs)
-			for(int in : ins)
-				library[card_num][in+1][out+1].add(trigger);
-	}
+
 	public static void add(Card c, int[] ins, int[] outs, Action action)
 	{
 		int card_num = c.num;
@@ -81,17 +66,4 @@ public class MT {
 			for (int out : outs)
 				library[c][in+1][out+1].add(new Trigger(action));
 	}
-	public static void add(Card c, int in, int[] outs, Trigger trigger)
-	{
-		int card_num = c.num;
-		for (int out : outs)
-			library[card_num][in+1][out+1].add(trigger);
-	}
-	public static void add(String category, int in, int[] outs, Trigger trigger)
-	{
-		for(int c : Card.get_cards(category))
-			for (int out : outs)
-				library[c][in+1][out+1].add(trigger);
-	}
-	
 }
