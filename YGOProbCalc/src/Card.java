@@ -11,6 +11,7 @@ public class Card {
 	static Hashtable<String, List<Integer>> category_hash;
 	static List<Integer> deck;
 	static int deck_size;
+	int[] numerics;
 	static {
 	num_created=0;
 	num_to_card = new ArrayList<Card>();
@@ -74,6 +75,11 @@ public class Card {
 	public Card small()
 	{
 		SmallWorld.add(this);
+		return this;
+	}
+	public Card numerics(int ... nums)
+	{
+		numerics=nums;
 		return this;
 	}
 

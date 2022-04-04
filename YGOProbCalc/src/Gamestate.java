@@ -259,12 +259,47 @@ public class Gamestate {
 			if(is_on.get(a)==false)
 				turn_on.add(a);
 		}
+		action.switch_states.forEach((action1, action2) ->
+		{
+			if((is_on.get(action1)==true) && (is_on.get(action2)==false))
+			{
+				turn_off.add(action1);
+				turn_on.add(action2);
+			}
+			else if((is_on.get(action1)==false) && (is_on.get(action2)==true))
+			{
+				turn_on.add(action1);
+				turn_off.add(action2);
+			}
+		});
+		
+		int end_sum_index=0;
+		if(poss.summable)
+		{
+			for(int i =0; i<poss.first_k_moveconds; i++)
+			{
+				if(poss.conditions[i] instanceof MoveCondition)
+					end_sum_index+=poss.conditions[i].num;
+			}
+		}
+		
 		boolean problem;
 		//can randomize:
 		//while(movement_lists.size()>0)
 		//List<Movement> movements = movement_lists.remove((int)(Math.random()*movement_lists.size()));
 		for(Movement[] movements : movement_lists)
 		{
+			if(poss.summable)
+			{
+				int numeric = poss.numeric;
+				int running_sum = 0;
+				for(int i = 0; i<end_sum_index; i++)
+				{
+					running_sum+=movements[i].card.numerics[numeric];
+				}
+				if ((running_sum < poss.sum) || (running_sum > poss.sum && !poss.greater))
+					continue;
+			}
 			problem = false;
 			List<Movement> move_log = new ArrayList<Movement>();
 			List<Trigger> new_triggers = new ArrayList<Trigger>();

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 public class Action {
 	static List<Action> actions;
@@ -16,6 +17,7 @@ public class Action {
 	List<Action> turn_on = new ArrayList<Action>();;
 	List<Action> turn_off = new ArrayList<Action>();
 	List<Trigger> triggers = new ArrayList<Trigger>();
+	HashMap<Action, Action> switch_states = new HashMap<Action, Action>();
 	
 	boolean move_all=false;
 	boolean first = false;
@@ -144,6 +146,16 @@ public class Action {
 	public Action optional()
 	{
 		mandatory = false;
+		return this;
+	}
+	public Action onOff(Action action1, Action action2)
+	{
+		switch_states.put(action1, action2);
+		return this;
+	}
+	public Action add_poss(Possibility poss)
+	{
+		possibilities.add(poss);
 		return this;
 	}
 }

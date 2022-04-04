@@ -1,7 +1,59 @@
 import java.io.File;
 import java.io.FileWriter;
-//test branching
+
 public class Main {
+	public static void main(String args[])
+	{
+		
+		Card tuner1 = card("Tuner lv 1", 3, "tuner").numerics(1,1);
+		Card tuner2 = card("Tuner lv 2", 3, "tuner").numerics(2,1);
+		Card tuner3 = card("Tuner lv 3", 3, "tuner").numerics(3,1);
+		Card tuner4 = card("Tuner lv 4", 3, "tuner").numerics(4,1);
+		Card nontuner1 = card("Non-Tuner lv 1", 3, "non-tuner").numerics(1,1);
+		Card nontuner2 = card("Non-Tuner lv 2", 3, "non-tuner").numerics(2,1);
+		Card nontuner3 = card("Non-Tuner lv 3", 3, "non-tuner").numerics(3,1);
+		Card nontuner4 = card("Non-Tuner lv 4", 3, "non-tuner").numerics(4,1);
+		
+		Card sync4 = card("Synchro lv 4", 0).numerics(4, 1);
+		Card sync5 = card("Synchro lv 5", 0).numerics(5,1);
+		Card sync6 = card("Synchro lv 6", 0).numerics(6,1);
+		Card sync7 = card("Synchro lv 7", 0).numerics(7,1);
+		Card sync8 = card("Synchro lv 8", 0).numerics(8,1);
+		Card sync9 = card("Synchro lv 9", 0).numerics(9,1);
+		Card sync10 = card("Synchro lv 10", 0).numerics(10,1);
+		
+		Card link2 = card("Synchro lv 10", 0).numerics(0,2);
+		Card link3 = card("Synchro lv 10", 0).numerics(0,3);
+		
+		locations("Deck", "Hand", "Field", "GY");
+		
+		action("Unlimited normal").move_all(1,2).open().hopt();
+		action("Synchro 4").add_poss(poss(move(1, "tuner",2,3), move(1,"non-tuner",2,3), move(sync4,-1,2)).sum(4,2)).open();
+		action("Synchro 4").add_poss(poss(move(1, "tuner",2,3), move(2,"non-tuner",2,3), move(sync4,-1,2)).sum(4,2)).open();
+		action("Synchro 5").add_poss(poss(move(1, "tuner",2,3), move(1,"non-tuner",2,3), move(sync5,-1,2)).sum(5, 2)).open();
+		action("Synchro 5").add_poss(poss(move(1, "tuner",2,3), move(2,"non-tuner",2,3), move(sync5,-1,2)).sum(5, 2)).open();
+		action("Synchro 6").add_poss(poss(move(1, "tuner",2,3), move(1,"non-tuner",2,3), move(sync6,-1,2)).sum(6, 2)).open();
+		action("Synchro 6").add_poss(poss(move(1, "tuner",2,3), move(2,"non-tuner",2,3), move(sync6,-1,2)).sum(6, 2)).open();
+		action("Synchro 7").add_poss(poss(move(1, "tuner",2,3), move(1,"non-tuner",2,3), move(sync7,-1,2)).sum(7, 2)).open();
+		action("Synchro 7").add_poss(poss(move(1, "tuner",2,3), move(2,"non-tuner",2,3), move(sync7,-1,2)).sum(7, 2)).open();
+		action("Synchro 8").add_poss(poss(move(1, "tuner",2,3), move(1,"non-tuner",2,3), move(sync8,-1,2)).sum(8, 2)).open();
+		action("Synchro 8").add_poss(poss(move(1, "tuner",2,3), move(2,"non-tuner",2,3), move(sync8,-1,2)).sum(8, 2)).open();
+		action("Synchro 9").add_poss(poss(move(1, "tuner",2,3), move(1,"non-tuner",2,3), move(sync9,-1,2)).sum(9, 2)).open();
+		action("Synchro 9").add_poss(poss(move(1, "tuner",2,3), move(2,"non-tuner",2,3), move(sync9,-1,2)).sum(9, 2)).open();
+		action("Synchro 10").add_poss(poss(move(1, "tuner",2,3), move(1,"non-tuner",2,3), move(sync10,-1,2)).sum(10, 2)).open();
+		action("Synchro 10").add_poss(poss(move(1, "tuner",2,3), move(2,"non-tuner",2,3), move(sync10,-1,2)).sum(10, 2)).open();
+		
+		action("Link 2 Summon").add_poss(poss(move(2, "card", 2, 3), move(link2, -1,2)).sum(1,2,1)).open();
+		action("Link 3 Summon").add_poss(poss(move(2, "card", 2, 3), move(link3, -1,2)).sum(1,3,1)).open();
+		
+		
+		Gov.poss(cond(sync10, 2));
+		//Gov.poss(cond(link3, 2));
+		go("Sum testing", 10);
+		
+		
+		
+	}
 	
 	public static void main1(String args[])
 	{
@@ -54,7 +106,6 @@ public class Main {
 	
 		
 	}
-
 	
 	public static void main2(String args[])
 	{
@@ -385,6 +436,14 @@ public class Main {
 	{
 		return new Condition(category);
 	}
+	public static Possibility poss(Condition ...conditions)
+	{
+		return new Possibility(conditions);
+	}
+	public static Possibility poss(Action action, Condition... conditions)
+	{
+		return new Possibility(action, conditions);
+	}
 	public static void complete(int num)
 	{
 		if(Card.deck_size>num)
@@ -393,10 +452,6 @@ public class Main {
 			System.exit(0);
 		}
 		card("blank", num-Card.deck_size);
-	}
-	public static void poss(Condition... conditions) //if something like allure, check for a dark to discard first 
-	{
-		Gov.poss(conditions);
 	}
 	public static void terminate(Action[] are_off, Condition... conds)
 	{
