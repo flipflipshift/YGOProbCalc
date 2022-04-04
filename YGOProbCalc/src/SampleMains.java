@@ -2,14 +2,16 @@ import java.io.File;
 import java.io.FileWriter;
 
 public class SampleMains {
-	//Just random main methods for different decks; some incomplete
+	//Just random main methods for different decks; some incomplete, some using syntax that will no longer work. Ask before using, in case there is some error.
 	
 	public static void mainDPETri(String args[])
 	{
 		Card rescue = card("Rescue Cat", 3, "tri-type", "monster");
-		Card frak = card("TB Fraktall", 3, "tb", "tri-type", "monster", "main tb");
+		Card frak = card("TB Fraktall", 3, "tb", "tri-type", "monster");
+		Card dead_kitt = card("Negated Kitt", 0, "tri-type", "tb", "monster");
 		Card kitt = card("TB Kitt", 3, "tb", "tri-type", "monster", "cat_summon", "good_gy", "main tb");
 		Card nerv = card("TB Nervall", 3, "tb", "tri-type", "monster", "good_gy", "main tb");
+		Card dead_keras = card("Negated Keras", 0, "tri-type", "tb", "monster");
 		Card keras = card("TB Keras", 2, "tb", "tri-type", "monster", "cat_summon", "main tb");
 		Card ash_veiler = card("ash/veiler",5, "monster", "first_trap", "second_trap", "altnormal");
 		Card gamma = card("Gamma", 3, "monster", "second_trap");
@@ -40,7 +42,7 @@ public class SampleMains {
 		Card apo3 = card("Apollousa-3", 0 , "apo", "good_with_rev");
 		Card apo4 = card("Apollousa-4",0, "apo", "good_with_rev");*/
 		
-		locations("Deck", "Hand", "Monster Zone", "S/T Zone", "GY", "Banish", "Prosp Zone", "Desires zone");
+		locations("Deck", "Hand", "Monster Zone", "S/T Zone", "GY", "Banish", "Prosp Zone", "Desires zone", "Cat Processing");
 		hand(5);
 		
 		Action place_revolt = action("Place revolt").open().hopt().poss(move(revolt,1,3));
@@ -74,7 +76,14 @@ public class SampleMains {
 		keras_summon.poss(cond(keras,2), move(3,"tri-type",4,5), move(fake_rugal, -1, 2));
 		keras_summon.poss(cond(keras,2), move(4,"tri-type",4,5), move(fake_omen, -1, 2));
 		
-		action("Cat eff").open().hopt().poss(move(rescue,2,4), move(2,"cat_summon", 0, 2));
+		Action kitt_swap = action("Swap real kitt back").poss(move(kitt,-1,4), move(dead_kitt,4,-1));
+		Action keras_swap = action("Swap real keras back").poss(move(keras,-1,4), move(dead_keras,4,-1));
+		MT.add(dead_keras, 2, 4, keras_swap);
+		MT.add(dead_kitt, 2, 4, kitt_swap);
+		
+		Action cat_processing = action("Negate stuff off cat");
+		cat_processing.poss(cat_processing,move(kitt,8,-1), move(dead_kitt,-1,2)).poss(cat_processing,move(keras,8,-1), move(dead_keras,-1,2)).poss().first();
+		action("Cat eff").open().hopt().poss(move(rescue,2,4), move(2,"cat_summon", 0, 8)).trigger(cat_processing);
 		action("Tenki eff").open().hopt().poss(move(tenki,1,3), move(frak,0,1));
 		Action prosp_eff = action("Prosp eff").open().hopt().poss(move(prosperity,1,4)).draw(6, 6);
 		Action prosp_processing = action("Prosp processing").poss(move("card", 6,1)).move_all(6,0);
