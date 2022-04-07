@@ -23,5 +23,16 @@ public class Movement {
 		System.exit(0);
 		return "";
 	}
+	public String DrawtoString()
+	{
+		if(origin!=0)
+		{
+			System.out.println("Invalid call of DrawToString");
+			System.exit(0);
+		}
+		return "Drew " + card.name + " to " + Gov.locations[destination];
+		
+
+	}
 
 }
