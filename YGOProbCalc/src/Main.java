@@ -3,7 +3,7 @@ import java.io.FileWriter;
 
 public class Main {
 	
-	public static void main(String args[])
+	public static void main1(String args[])
 	{
 		Card dog = card("Fluffal Dog", 3, "fluff", "ns");
 		Card peng = card("Fluffal Penguin", 2, "fluff", "ns");

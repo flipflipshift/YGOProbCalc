@@ -10,6 +10,8 @@ public class Gov {
 	static List<Possibility> goal;
 	static List<Termination_Possibility> terminations;
 	static int max_seconds = 604800;
+	static boolean print_deckout=true;
+	static boolean print_full = true;
 	static {
 		goal = new ArrayList<Possibility>();
 		terminations = new ArrayList<Termination_Possibility>();
@@ -148,8 +150,12 @@ public class Gov {
 		}
 		catch(IndexOutOfBoundsException e)
 		{
+			if(print_deckout)
+			{
 			System.out.println("An error occured; if above says Nothing Left in Deck, ignore");
 			e.printStackTrace();
+			print_deckout=false;
+			}
 			return false;
 		}
 
@@ -161,6 +167,8 @@ public class Gov {
 		int timed_out = 0;
 		for(int i=0; i<num_trials; i++)
 		{
+			print_deckout=true;
+			print_full=true;
 			System.out.println("Trial number "+ (i+1) + "; Found so far: "+counter);
 			Gamestate gamestate = new Gamestate();
 			String hand = gamestate.locations.hand_string();
@@ -173,6 +181,7 @@ public class Gov {
 			{
 				fw.write("This Worked:\n");
 				fw.write(hand+"\n");
+				fw.write(preloads+"\n");
 				for(Modification mod : gamestate.log)
 				{
 					fw.write(mod.toString());
