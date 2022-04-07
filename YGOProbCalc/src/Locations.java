@@ -9,9 +9,13 @@ public class Locations {
 		for(int i = 0; i<Card.num_created; i++)
 		{
 			locations[0][i]=Card.deck.get(i);
+			if(Gov.using_extra)
+				locations[Gov.extra_deck_index][i]=Card.extra_deck.get(i);
 		}
 		location_sizes= new int[Gov.num_locations()];
 		location_sizes[0] = Card.deck_size;
+		if(Gov.using_extra)
+			location_sizes[Gov.extra_deck_index] = Card.extra_deck_size;
 		for(int i=0; i<Gov.hand_size; i++)
 		{
 			moverand(0,1);

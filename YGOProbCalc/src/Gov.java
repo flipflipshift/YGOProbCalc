@@ -12,6 +12,8 @@ public class Gov {
 	static int max_seconds = 604800;
 	static boolean print_deckout=true;
 	static boolean print_full = true;
+	static int extra_deck_index = -10;
+	static boolean using_extra = false;
 	static {
 		goal = new ArrayList<Possibility>();
 		terminations = new ArrayList<Termination_Possibility>();

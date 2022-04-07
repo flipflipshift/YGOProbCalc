@@ -146,4 +146,38 @@ public class Action {
 		mandatory = false;
 		return this;
 	}
+	public static List<Possibility> cartesian_product(Condition[][] or_conds)
+	{
+		//
+		int[] running_products = new int[or_conds.length+1];
+		int run_prod=1;
+		running_products[0]=1;
+		for(int i=0; i< or_conds.length; i++)
+		{
+
+			run_prod*=or_conds[i].length;
+			running_products[i+1]=run_prod;
+			
+		}
+		Condition[][] cond_ret = new Condition[run_prod][or_conds.length];
+		for(int i=0; i < run_prod; i++)
+		{
+			for(int j = 0; j < or_conds.length; j++)
+			{
+				cond_ret[i][j]=or_conds[j][(i % running_products[j+1])/running_products[j]];
+			}
+		}
+		List<Possibility> poss_ret = new ArrayList<Possibility>(run_prod);
+		for(int i=0; i<run_prod; i++)
+		{
+			poss_ret.add(new Possibility(cond_ret[i]));
+		}
+		return poss_ret;
+
+	}
+	public Action or_poss(Condition[]... or_conds)
+	{
+		possibilities.addAll(cartesian_product(or_conds));
+		return this;
+	}
 }
