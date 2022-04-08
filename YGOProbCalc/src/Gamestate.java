@@ -10,7 +10,8 @@ public class Gamestate {
 	List<Trigger> triggers;
 	Hashtable<Action, Boolean> is_on;//TODO: Make into array
 	List<Modification> log;
-	int[] initial_deck;
+	//int[] initial_deck;
+	List<List<Integer>> removed;//TODO: Make these dequeues
 	
 	public Gamestate()
 	{
@@ -19,7 +20,8 @@ public class Gamestate {
 		int total_preloads=0;
 		for(int i = 1; i< quantities.length; i++)
 		{
-			total_preloads+=Action.draw_counter[i];
+			if(Action.draw_counter[i]!=0)
+				total_preloads+=(Action.draw_counter[i]);
 		}
 		for(int i=1; i<quantities.length; i++)
 		{
@@ -28,12 +30,20 @@ public class Gamestate {
 				quantities[i]=0;
 			}
 			else {
-				quantities[i]=(Action.draw_counter[i] * (Card.deck_size-Gov.hand_size))/total_preloads;
+				quantities[i]=((Action.draw_counter[i]) * (Card.deck_size-Gov.hand_size))/total_preloads;
 			}
 		}
 		preloads = new Preloads(locations, quantities);
 		preload_indices = new int[Gov.num_locations()];
-		initial_deck = locations.locations[0].clone();
+		//initial_deck = locations.locations[0].clone();
+		if(preloads.non_empty)
+		{
+			removed = new ArrayList<List<Integer>>(Card.num_created);
+			for(int i =0; i<Card.num_created; i++)
+			{
+				removed.add(new ArrayList<Integer>(3));
+			}
+		}
 		triggers = new ArrayList<Trigger>();
 		is_on = new Hashtable<Action, Boolean>();
 		for(Action action : Action.actions)
@@ -70,6 +80,10 @@ public class Gamestate {
 		for(Action action : mod.events_turned_on)
 			is_on.replace(action, true);
 		triggers.addAll(mod.triggers_added);
+		for(int[] card_removed: mod.cards_thinned)
+		{
+			removed.get(card_removed[0]).add(card_removed[1]);
+		}
 		preload_indices = mod.current_preload_locations;
 	}
 	public void unmodify(Modification mod)
@@ -84,6 +98,12 @@ public class Gamestate {
 		{
 			triggers.remove(triggers.size()-1);
 		}
+		for(int[] card_removed: mod.cards_thinned)
+		{
+			List<Integer> copies_removed=removed.get(card_removed[0]);
+			copies_removed.remove(copies_removed.size()-1);
+		}
+
 		preload_indices = mod.initial_preload_locations;
 	}
 	private static void movecondition_recur(List<List<int[]>> available, List<Movement[]> ret, Movement[] moves, int curr_loc, int curr_index,  int todo, int[] origins,  int destination, int distinct)
@@ -229,6 +249,27 @@ public class Gamestate {
 		}
 		return ret;
 	}
+	
+	private void thinmod(int card_num, int destination, List<int[]> mod_removed)
+	{
+		List<Integer> copies_removed = removed.get(card_num);
+		int copy = 1;
+		for(int i =0; i<100; i++)
+		{
+			if (copies_removed.contains(copy))
+				copy++;
+			else
+				break;
+			if(i==99)
+			{
+				System.out.println("Thin Sus");
+			}
+		}
+		copies_removed.add(copy);
+		mod_removed.add(new int[] {card_num,copy});
+	}
+
+	
 	public List<Modification> modifications(Action action, Possibility poss)
 	{
 		List<Modification> modifications = new ArrayList<Modification>();
@@ -306,6 +347,7 @@ public class Gamestate {
 			new_triggers.addAll(action.triggers);
 			new_triggers.addAll(poss.trigger);
 			Locations locations_save = locations.copy();
+			List<int[]> new_removes = new ArrayList<int[]>();
 			for(Movement m : movements)
 			{
 				if(!locations.can(m))
@@ -317,8 +359,33 @@ public class Gamestate {
 				move_log.add(m);
 				new_triggers.addAll(locations.move(m));
 			}
+			if(action.draws!=null)
+			{
+				int sum_draw=0;
+				for(int i =0; i<action.draws.length; i++)
+				{
+					sum_draw+=action.draws[i];
+				}
+				if(sum_draw>locations.location_sizes[0])
+				{
+					locations = locations_save;
+					problem = true;
+				}
+			}
 			if(problem)
 				continue;
+			if(preloads.non_empty)
+			{
+				for(Movement m: move_log)
+				{
+					if(m.origin==0)
+					{
+						thinmod(m.card_num,m.destination,new_removes);
+					}
+				}
+			}
+			List<Movement> draw_log= new ArrayList<Movement>();
+			
 			int[] preload_indices_save = preload_indices.clone();
 			if(action.draws!=null)
 			{
@@ -326,31 +393,40 @@ public class Gamestate {
 				{
 					for(int j=0; j < action.draws[i]; j++)
 					{
-						if(preload_indices[i]==preloads.quantities[i])
+						if(preload_indices[i]==preloads.preloads.get(i).size())
 						{
-							int card_num = locations.getrand(0);
+							//if(Gov.print_full)
+							{
+							System.out.println("Preload Overfull "+i+" somehow");
+							System.out.println(preload_indices[i]);
+							System.out.println(locations.location_sizes[0]);
+							Gov.print_full=false;
+							}
+							System.exit(0);
+							/*int card_num = locations.getrand(0);
+							thinmod(card_num,i,new_thins);
 							Movement m = new Movement(card_num, 0, i);
 							move_log.add(m);
-							new_triggers.addAll(locations.move(m));
+							new_triggers.addAll(locations.move(m));*/
 						}
 						else
 						{
-							int card_num = preloads.preloads.get(i).get(preload_indices[i]);
+							boolean skip;
+							int[] preload = preloads.preloads.get(i).get(preload_indices[i]);
 							preload_indices[i]+=1;
-							double rand = Math.random();
-							double original = (double) initial_deck[card_num];
-							double current = (double) locations.locations[0][card_num];
-							boolean dont_skip = rand>(original-current)/original;
-							
-							if(dont_skip)
+							List<Integer> copies_removed = removed.get(preload[0]);
+							if(copies_removed.contains(preload[1]))
 							{
-								Movement m = new Movement(card_num, 0, i);
-								move_log.add(m);
-								new_triggers.addAll(locations.move(m));
+								j--;
+								continue;
 							}
 							else
 							{
-								j--;
+								Movement m = new Movement(preload[0], 0, i);
+								draw_log.add(m);
+								removed.get(preload[0]).add(preload[1]);
+								new_removes.add(preload);
+								new_triggers.addAll(locations.move(m));
 							}
 						}
 					}
@@ -363,6 +439,7 @@ public class Gamestate {
 			Modification mod = new Modification();
 			mod.action=action;
 			mod.movements=move_log;
+			mod.draws=draw_log;
 			mod.initial_locations=locations_save;
 			mod.new_locations=locations;
 			mod.initial_preload_locations=preload_indices_save;
@@ -371,10 +448,16 @@ public class Gamestate {
 			mod.triggers_added=new_triggers;
 			mod.events_turned_off=turn_off;
 			mod.events_turned_on=turn_on;
+			mod.cards_thinned=new_removes;
 			
 			modifications.add(mod);
 			locations = locations_save;
 			preload_indices = preload_indices_save;
+			for(int[] card_removed: mod.cards_thinned)
+			{
+				List<Integer> copies_removed=removed.get(card_removed[0]);
+				copies_removed.remove(copies_removed.size()-1);
+			}
 			
 		}
 		

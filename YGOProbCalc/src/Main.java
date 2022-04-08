@@ -436,14 +436,6 @@ public class Main {
 	{
 		return new Condition(category);
 	}
-	public static Possibility poss(Condition ...conditions)
-	{
-		return new Possibility(conditions);
-	}
-	public static Possibility poss(Action action, Condition... conditions)
-	{
-		return new Possibility(action, conditions);
-	}
 	public static void complete(int num)
 	{
 		if(Card.deck_size>num)
@@ -464,6 +456,13 @@ public class Main {
 		SmallWorld.banish_fd=banishfd_locnum;
 		SmallWorld.actions();
 	}
-
+	public static void set_extra(int extra_loc)
+	{
+		Gov.extra_deck_index=extra_loc;
+	}
+	public static Condition[] or(Condition... conds)
+	{
+		return conds;
+	}
 }
 
