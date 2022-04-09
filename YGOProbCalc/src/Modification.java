@@ -14,6 +14,7 @@ public class Modification {
 	int[] initial_preload_locations;
 	int[] current_preload_locations;
 	List<int[]> cards_thinned;
+	HashMap<String, Boolean> interruptionInitial;
 	HashMap<String, Boolean> interruptionUsed;
 	
 	public String toString()
@@ -31,10 +32,8 @@ public class Modification {
 		for(Entry<String, Boolean> e : interruptionUsed.entrySet()) {
 	        String key = e.getKey();
 	        Boolean value = e.getValue();
-	        bld.append(key+":"+ value+"\n");
-	        System.out.println(key+":"+ value+"\n");
+	        bld.append(key+": "+ value+"\n");
 	    }
-		String s = bld.toString();
-		return s;
+		return bld.toString();
 	}
 }

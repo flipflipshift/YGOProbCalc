@@ -16,8 +16,8 @@ public class Action {
 	HashSet<String> interruptable;
 	String name;
 	boolean default_live = true;
-	List<Possibility> possibilities= new ArrayList<Possibility>(5);;
-	List<Action> turn_on = new ArrayList<Action>();;
+	List<Possibility> possibilities= new ArrayList<Possibility>(5);
+	List<Action> turn_on = new ArrayList<Action>();
 	List<Action> turn_off = new ArrayList<Action>();
 	List<Trigger> triggers = new ArrayList<Trigger>();
 	HashMap<Action, Action> switch_states = new HashMap<Action, Action>();

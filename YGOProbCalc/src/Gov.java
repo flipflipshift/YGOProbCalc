@@ -2,7 +2,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.HashSet;
 
 public class Gov {
 	static String[] locations=new String[] {"Deck", "Hand"};
@@ -75,19 +74,20 @@ public class Gov {
 			{
 				for(Integer i : exec)
 				{
-
 					List<Modification> modifications = g.modifications(action, action.possibilities.get(i));
-					if(modifications.isEmpty())
-						continue; //Only loop if move conditions can't be executed despite the naive check
-					legal = true;
-					for(Modification mod : modifications)
+					if(!modifications.isEmpty())
 					{
-						g.modify(mod);
-						if(satisfies_possibilities(g, depth+1, end_time))
-							return true;
-						g.unmodify(mod);
+						//Only loop if move conditions can't be executed despite the naive check
+						legal = true;
+						for(Modification mod : modifications)
+						{
+							g.modify(mod);
+							if(satisfies_possibilities(g, depth+1, end_time))
+								return true;
+							g.unmodify(mod);
+						}
+						break;
 					}
-					break;
 				}
 				if(legal && action.mandatory)
 					return false;
@@ -127,16 +127,18 @@ public class Gov {
 				for(Integer i : g.executable(action))
 				{
 					List<Modification> modifications = g.modifications(action, action.possibilities.get(i));
-					if(modifications.isEmpty())
-						continue; //Only loop if move conditions can't be executed despite the naive check
-					for(Modification mod : modifications)
+					if(!modifications.isEmpty())
 					{
-						g.modify(mod);
-						if(satisfies_possibilities(g, depth+1, end_time))
-							return true;
-						g.unmodify(mod);
+						//Only loop if move conditions can't be executed despite the naive check
+						for(Modification mod : modifications)
+						{
+							g.modify(mod);
+							if(satisfies_possibilities(g, depth+1, end_time))
+								return true;
+							g.unmodify(mod);
+						}
+						break; //only do first possible poss
 					}
-					break; //only do first possible poss
 				}
 			}
 			else

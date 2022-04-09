@@ -152,9 +152,9 @@ public class Main {
 		Action chain_eff = action("Chain eff").poss(move("frightfur",0,1)).hopt().interruptable("Ash");
 		MT.add(chain, list(1,2), 4, chain_eff);
 		action("normal").poss(move("ns",1,2)).open().hopt();
-		Action owl_effect=action("Owl effect").poss(move(poly,0,1)).hopt().interruptable("Ash");
+		Action owl_effect=action("Owl effect").poss(move(poly,0,1)).hopt().interruptable("Ash", "Veiler");
 		MT.add(owl, 1, 2, owl_effect);
-		Action dog_effect = action("Dog effect").poss(move("fluff",0,1).exclude(dog)).poss(move(sabres,0,1)).hopt().interruptable("Ash");
+		Action dog_effect = action("Dog effect").poss(move("fluff",0,1).exclude(dog)).poss(move(sabres,0,1)).hopt().interruptable("Ash", "Veiler");
 		MT.add(dog,1, 2, dog_effect);
 		
 //		action("Vendor primitive field eff").poss(cond(vend,3), costMove("card",1,4)).open().hopt().interruptable("Ash");
@@ -164,8 +164,8 @@ public class Main {
 		action("Wings eff").poss(costMove(wings,4,5), move("fluff",4,5), move(vend,3,4)).open().hopt().draw(1,2).interruptable("Ash");
 		action("Activate Desires").poss(costMove(desires,1,4)).draw(6,10).draw(1,2).open().hopt().interruptable("Ash");
 		action("Special Souls").poss(move(souls,1,2), move(ioc,0,4)).open().hopt();
-		Action souls_1=action("souls for 1").poss(cond(souls,2),costMove("s/t", list(1,3),4)).draw(1,1).open().hopt().interruptable("Ash");
-		Action souls_2=action("souls for 2").poss(cond(souls,2),costMove(2,"s/t", list(1,3),4)).draw(1,2).open().hopt().interruptable("Ash");
+		Action souls_1=action("souls for 1").poss(cond(souls,2),costMove("s/t", list(1,3),4)).draw(1,1).open().hopt().interruptable("Ash", "Veiler");
+		Action souls_2=action("souls for 2").poss(cond(souls,2),costMove(2,"s/t", list(1,3),4)).draw(1,2).open().hopt().interruptable("Ash", "Veiler");
 		souls_1.turnoff(souls_2);
 		souls_2.turnoff(souls_1);
 		action("IOC search").poss(move(ioc,1,0),move(souls,0,1)).open().hopt();
@@ -189,7 +189,7 @@ public class Main {
 		action("whale eff").poss(cond(whale,2), move(repair,0,4)).open().hopt();
 		action("Make VFD").poss(move(2,whale,2,4), move(VFD,-1,2)).open().hopt();
 		
-		Gov.interruptions("Ash");
+		Gov.interruptions("Ash", "Veiler");
 		Gov.poss(cond(VFD,2));
 		Gov.timeout(5);
 		go("Fluffal Demo 2", 10);

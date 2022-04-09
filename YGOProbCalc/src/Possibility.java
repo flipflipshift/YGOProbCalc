@@ -2,7 +2,7 @@ import java.util.List;
 import java.util.ArrayList;
 public class Possibility {
 	Condition[] conditions;
-	List<Trigger> trigger = new ArrayList<Trigger>();; //for now just add one trigger at most; can have an intermediate if necessary
+	List<Trigger> trigger = new ArrayList<Trigger>(); //for now just add one trigger at most; can have an intermediate if necessary
 	int sum=-1;
 	boolean summable = false;
 	boolean greater=false;

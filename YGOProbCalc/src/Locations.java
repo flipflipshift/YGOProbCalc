@@ -173,11 +173,10 @@ public class Locations {
 			{
 				for(int j : Card.get_cards(cond.category))
 				{
-					if(cond.exclude.contains(j))
-						continue;
-					total+=locations[i][j];
-					if(total>cond.num)
-						break;
+					if(!cond.exclude.contains(j))
+						total+=locations[i][j];
+						if(total>cond.num)
+							break;
 				}
 			}
 
