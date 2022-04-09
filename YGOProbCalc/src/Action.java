@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 public class Action {
 	static List<Action> actions;
@@ -11,6 +13,7 @@ public class Action {
 		open_actions = new ArrayList<Action>();
 	}
 	int[] draws;
+	HashSet<String> interruptable;
 	String name;
 	boolean default_live = true;
 	List<Possibility> possibilities= new ArrayList<Possibility>(5);;
@@ -29,6 +32,7 @@ public class Action {
 	{
 		actions.add(this);
 		this.name=name;
+		interruptable = new HashSet<>();
 	}
 	public Action draw(int location, int quantity)
 	{
@@ -148,7 +152,6 @@ public class Action {
 		mandatory = false;
 		return this;
 	}
-<<<<<<< HEAD
 	public Action onOff(Action action1, Action action2)
 	{
 		switch_states.put(action1, action2);
@@ -157,7 +160,8 @@ public class Action {
 	public Action add_poss(Possibility poss)
 	{
 		possibilities.add(poss);
-=======
+		return this;
+	}
 	public static List<Possibility> cartesian_product(Condition[][] or_conds)
 	{
 		//
@@ -190,7 +194,11 @@ public class Action {
 	public Action or_poss(Condition[]... or_conds)
 	{
 		possibilities.addAll(cartesian_product(or_conds));
->>>>>>> refs/remotes/origin/main
+		return this;
+	}
+	public Action interruptable(String...interrupts)
+	{
+		interruptable.addAll(Arrays.asList(interrupts));
 		return this;
 	}
 }

@@ -2,6 +2,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Gov {
 	static String[] locations=new String[] {"Deck", "Hand"};
@@ -9,6 +10,7 @@ public class Gov {
 	static int maximum_depth=Integer.MAX_VALUE;
 	static List<Possibility> goal;
 	static List<Termination_Possibility> terminations;
+	static String[] interruptions;
 	static int max_seconds = 604800;
 	static boolean print_deckout=true;
 	static boolean print_full = true;
@@ -45,6 +47,11 @@ public class Gov {
 	public static void terminate(Condition... tconds)
 	{
 		terminations.add(new Termination_Possibility(new Action[] {}, tconds));
+	}
+	public static void interruptions(String...interruption)
+	{
+		interruptions = interruption;
+//		System.out.println(interruptions);
 	}
 	public static boolean satisfies_possibilities(Gamestate g, int depth, long end_time)
 	{
@@ -144,7 +151,7 @@ public class Gov {
 							return true;
 						g.unmodify(mod);
 					}
-					if(action.possibilities.get(i).guarantee && modifications.size()>0)
+					if(action.possibilities.get(i).guarantee && !modifications.isEmpty())
 						return false;
 				}
 			}

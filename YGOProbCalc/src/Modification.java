@@ -1,4 +1,6 @@
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map.Entry;
 public class Modification {
 	Action action;
 	List<Movement> movements;
@@ -12,18 +14,27 @@ public class Modification {
 	int[] initial_preload_locations;
 	int[] current_preload_locations;
 	List<int[]> cards_thinned;
+	HashMap<String, Boolean> interruptionUsed;
 	
 	public String toString()
 	{
-		String s="";
+		StringBuilder bld = new StringBuilder();
 		for(Movement movement : movements)
 		{
-			s=s+movement.toString()+"\t("+ action.name+")"+"\n";
+			bld.append(movement.toString()+"\t("+ action.name+")"+"\n");
 		}
 		for(Movement draw : draws)
 		{
-			s=s+draw.DrawtoString()+"\t("+ action.name+")"+"\n";
+			bld.append(draw.DrawtoString()+"\t("+ action.name+")"+"\n");
 		}
+		
+		for(Entry<String, Boolean> e : interruptionUsed.entrySet()) {
+	        String key = e.getKey();
+	        Boolean value = e.getValue();
+	        bld.append(key+":"+ value+"\n");
+	        System.out.println(key+":"+ value+"\n");
+	    }
+		String s = bld.toString();
 		return s;
 	}
 }

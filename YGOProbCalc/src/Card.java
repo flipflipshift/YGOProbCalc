@@ -1,4 +1,4 @@
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ public class Card {
 	String[] categories;
 	static List<Card> num_to_card; 
 	static int num_created;
-	static Hashtable<String, List<Integer>> category_hash;
+	static HashMap<String, List<Integer>> category_hash;
 	static List<Integer> deck;
 	static List<Integer> extra_deck;
 	static int deck_size;
@@ -17,7 +17,7 @@ public class Card {
 	static {
 	num_created=0;
 	num_to_card = new ArrayList<Card>();
-	category_hash =  new Hashtable<String, List<Integer>>();
+	category_hash =  new HashMap<String, List<Integer>>();
 	category_hash.put("card", new ArrayList<Integer>());
 	deck = new ArrayList<Integer>();
 	extra_deck = new ArrayList<Integer>();

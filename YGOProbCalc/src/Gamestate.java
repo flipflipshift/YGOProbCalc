@@ -1,17 +1,20 @@
 import java.util.ArrayList;
 import java.util.Deque;
-import java.util.Hashtable;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 public class Gamestate {
 	Preloads preloads;
 	int[] preload_indices;
 	Locations locations;
 	List<Trigger> triggers;
-	Hashtable<Action, Boolean> is_on;//TODO: Make into array
+	HashMap<Action, Boolean> is_on;//TODO: Make into array
 	List<Modification> log;
 	//int[] initial_deck;
 	List<List<Integer>> removed;//TODO: Make these dequeues
+	HashMap<String, Boolean> interruptions;
 	
 	public Gamestate()
 	{
@@ -45,12 +48,18 @@ public class Gamestate {
 			}
 		}
 		triggers = new ArrayList<Trigger>();
-		is_on = new Hashtable<Action, Boolean>();
+		is_on = new HashMap<Action, Boolean>();
 		for(Action action : Action.actions)
 		{
 			is_on.put(action, action.default_live);
 		}
 		log = new ArrayList<Modification>();
+		interruptions = new HashMap<>();
+		for(int i = 0; i < Gov.interruptions.length; i++)
+		{
+			interruptions.put(Gov.interruptions[i], false);
+			System.out.println(interruptions);
+		}
 	}
 	public List<Integer> executable(Action action)
 	{
@@ -85,6 +94,7 @@ public class Gamestate {
 			removed.get(card_removed[0]).add(card_removed[1]);
 		}
 		preload_indices = mod.current_preload_locations;
+		interruptions = mod.interruptionUsed;
 	}
 	public void unmodify(Modification mod)
 	{
@@ -105,6 +115,7 @@ public class Gamestate {
 		}
 
 		preload_indices = mod.initial_preload_locations;
+		interruptions = mod.interruptionUsed;
 	}
 	private static void movecondition_recur(List<List<int[]>> available, List<Movement[]> ret, Movement[] moves, int curr_loc, int curr_index,  int todo, int[] origins,  int destination, int distinct)
 	{
@@ -275,14 +286,34 @@ public class Gamestate {
 		List<Modification> modifications = new ArrayList<Modification>();
 		int length = Gov.num_locations();		
 		List<List<Movement[]>> movement_set = new ArrayList<List<Movement[]>>();
+		boolean interrupted = false;
+		Set<String> intersection = interruptions.keySet();
+		intersection.retainAll(action.interruptable);
+		ArrayList<String> intersectionList = new ArrayList<>(intersection);
+		HashMap<String, Boolean> interruption_save = interruptions;
+		System.out.print("inter before" + interruptions + " ");
+		for(String s : intersectionList)
+		{
+			if(interruptions.get(s) == false)
+			{
+				interruptions.put(s, true);
+				interrupted = true;
+				System.out.print("interrupted ");
+				break;
+			}
+		}
+		
 		for(Condition cond : poss.conditions)
 		{
 			if(cond instanceof MoveCondition)
 			{
-				List<Movement[]> to_add = movecondition_moves((MoveCondition) cond);
-				if(to_add.size()==0)
-					return modifications;
-				movement_set.add(to_add);
+				if((interrupted && ((MoveCondition) cond).cost) || !interrupted)
+				{
+					List<Movement[]> to_add = movecondition_moves((MoveCondition) cond);
+					if(to_add.size()==0)
+						return modifications;
+					movement_set.add(to_add);
+				}
 			}
 		}
 		Movement[][] movement_lists = cartesian_product(movement_set);
@@ -449,7 +480,9 @@ public class Gamestate {
 			mod.events_turned_off=turn_off;
 			mod.events_turned_on=turn_on;
 			mod.cards_thinned=new_removes;
-			
+			System.out.print("Mod inter" + mod.interruptionUsed + " ");
+			mod.interruptionUsed=interruptions;
+			System.out.println("inter" + interruptions);
 			modifications.add(mod);
 			locations = locations_save;
 			preload_indices = preload_indices_save;
@@ -458,6 +491,7 @@ public class Gamestate {
 				List<Integer> copies_removed=removed.get(card_removed[0]);
 				copies_removed.remove(copies_removed.size()-1);
 			}
+			interruptions = interruption_save;
 			
 		}
 		
