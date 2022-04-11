@@ -29,11 +29,18 @@ public class Modification {
 			bld.append(draw.DrawtoString()+"\t("+ action.name+")"+"\n");
 		}
 		
-		for(Entry<String, Boolean> e : interruptionUsed.entrySet()) {
+		/*for(Entry<String, Boolean> e : interruptionUsed.entrySet()) {
 	        String key = e.getKey();
 	        Boolean value = e.getValue();
 	        bld.append(key+": "+ value+"\n");
-	    }
+	    }*/
+		for(Entry<String, Boolean> e : interruptionUsed.entrySet()) {
+        String key = e.getKey();
+        Boolean value = e.getValue();
+        if(value && (!interruptionInitial.containsKey(key)|| !interruptionInitial.get(key)))
+        	bld.append("CHAIN! Opponent activates "+key+" to stop " +action.name+"\n");
+       // bld.append(key+": "+ value+"\n");
+    }
 		return bld.toString();
 	}
 }

@@ -145,7 +145,7 @@ public class Main {
 		action("Repair gy eff").poss(move(repair,4,5), move("fluff",1,2));
 		Action vend_gyeff = action("Vend gy effect").poss(move("fluff",0,1)).poss(move(sabres,0,1)).interruptable("Ash");
 		MT.add(vend, list(0,1,3), 4, vend_gyeff);
-		Action vend_field = action("Vendor field eff").poss(cond(vend,3), costMove("card",1,4)).open().hopt().interruptable("Ash");
+		Action vend_field = action("Vendor field eff").poss(cond(vend,3), costMove("card",1,4)).open().hopt();//.interruptable("Ash");
 		action("Gardens field eff").poss(cond(gardens,3), cond(peng,list(1,2)), move("card", 1, 4)).open().hopt();
 		action("Bear eff").poss(move(bear,1,4), move(vend,0,3)).open().hopt();
 		action("Place Vend").poss(move(vend,1,3)).open();
@@ -158,8 +158,8 @@ public class Main {
 		MT.add(dog,1, 2, dog_effect);
 		
 //		action("Vendor primitive field eff").poss(cond(vend,3), costMove("card",1,4)).open().hopt().interruptable("Ash");
-		action("Bear eff").poss(move(bear,1,4), move(vend,0,3)).open().hopt();
-		action("Place Vend").poss(move(vend,1,3)).open();	
+		//action("Bear eff").poss(move(bear,1,4), move(vend,0,3)).open().hopt();
+		//action("Place Vend").poss(move(vend,1,3)).open();	
 		
 		action("Wings eff").poss(costMove(wings,4,5), move("fluff",4,5), move(vend,3,4)).open().hopt().draw(1,2).interruptable("Ash");
 		action("Activate Desires").poss(costMove(desires,1,4)).draw(6,10).draw(1,2).open().hopt().interruptable("Ash");
