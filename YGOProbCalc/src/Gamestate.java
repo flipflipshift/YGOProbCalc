@@ -56,7 +56,7 @@ public class Gamestate {
 		for(int i = 0; i < Gov.interruptions.length; i++)
 		{
 			interruptions.put(Gov.interruptions[i], false);
-			System.out.println(interruptions);
+			//System.out.println(interruptions);
 		}
 	}
 	public List<Integer> executable(Action action)

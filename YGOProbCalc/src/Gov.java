@@ -9,7 +9,7 @@ public class Gov {
 	static int maximum_depth=Integer.MAX_VALUE;
 	static List<Possibility> goal;
 	static List<Termination_Possibility> terminations;
-	static String[] interruptions;
+	static String[] interruptions = new String[0];
 	static int max_seconds = 604800;
 	static boolean print_deckout=true;
 	static boolean print_full = true;
