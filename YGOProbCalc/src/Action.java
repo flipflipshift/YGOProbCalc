@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 public class Action {
 	static List<Action> actions;
@@ -10,12 +13,14 @@ public class Action {
 		open_actions = new ArrayList<Action>();
 	}
 	int[] draws;
+	HashSet<String> interruptable;
 	String name;
 	boolean default_live = true;
-	List<Possibility> possibilities= new ArrayList<Possibility>(5);;
-	List<Action> turn_on = new ArrayList<Action>();;
+	List<Possibility> possibilities= new ArrayList<Possibility>(5);
+	List<Action> turn_on = new ArrayList<Action>();
 	List<Action> turn_off = new ArrayList<Action>();
 	List<Trigger> triggers = new ArrayList<Trigger>();
+	HashMap<Action, Action> switch_states = new HashMap<Action, Action>();
 	
 	boolean move_all=false;
 	boolean first = false;
@@ -27,6 +32,7 @@ public class Action {
 	{
 		actions.add(this);
 		this.name=name;
+		interruptable = new HashSet<>();
 	}
 	public Action draw(int location, int quantity)
 	{
@@ -146,6 +152,16 @@ public class Action {
 		mandatory = false;
 		return this;
 	}
+	public Action onOff(Action action1, Action action2)
+	{
+		switch_states.put(action1, action2);
+		return this;
+	}
+	public Action add_poss(Possibility poss)
+	{
+		possibilities.add(poss);
+		return this;
+	}
 	public static List<Possibility> cartesian_product(Condition[][] or_conds)
 	{
 		//
@@ -178,6 +194,11 @@ public class Action {
 	public Action or_poss(Condition[]... or_conds)
 	{
 		possibilities.addAll(cartesian_product(or_conds));
+		return this;
+	}
+	public Action interruptable(String...interrupts)
+	{
+		interruptable.addAll(Arrays.asList(interrupts));
 		return this;
 	}
 }

@@ -1,17 +1,18 @@
 import java.util.ArrayList;
-import java.util.Deque;
-import java.util.Hashtable;
-import java.util.LinkedList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map.Entry;
+import java.util.Set;
 public class Gamestate {
 	Preloads preloads;
 	int[] preload_indices;
 	Locations locations;
 	List<Trigger> triggers;
-	Hashtable<Action, Boolean> is_on;//TODO: Make into array
+	HashMap<Action, Boolean> is_on;//TODO: Make into array
 	List<Modification> log;
 	//int[] initial_deck;
 	List<List<Integer>> removed;//TODO: Make these dequeues
+	HashMap<String, Boolean> interruptions;
 	
 	public Gamestate()
 	{
@@ -45,12 +46,18 @@ public class Gamestate {
 			}
 		}
 		triggers = new ArrayList<Trigger>();
-		is_on = new Hashtable<Action, Boolean>();
+		is_on = new HashMap<Action, Boolean>();
 		for(Action action : Action.actions)
 		{
 			is_on.put(action, action.default_live);
 		}
 		log = new ArrayList<Modification>();
+		interruptions = new HashMap<>();
+		for(int i = 0; i < Gov.interruptions.length; i++)
+		{
+			interruptions.put(Gov.interruptions[i], false);
+			//System.out.println(interruptions);
+		}
 	}
 	public List<Integer> executable(Action action)
 	{
@@ -85,6 +92,7 @@ public class Gamestate {
 			removed.get(card_removed[0]).add(card_removed[1]);
 		}
 		preload_indices = mod.current_preload_locations;
+		interruptions = copy(mod.interruptionUsed);
 	}
 	public void unmodify(Modification mod)
 	{
@@ -105,6 +113,7 @@ public class Gamestate {
 		}
 
 		preload_indices = mod.initial_preload_locations;
+		interruptions = copy(mod.interruptionInitial);
 	}
 	private static void movecondition_recur(List<List<int[]>> available, List<Movement[]> ret, Movement[] moves, int curr_loc, int curr_index,  int todo, int[] origins,  int destination, int distinct)
 	{
@@ -268,16 +277,44 @@ public class Gamestate {
 		copies_removed.add(copy);
 		mod_removed.add(new int[] {card_num,copy});
 	}
-
+	
+	public static HashMap<String, Boolean> copy(HashMap<String, Boolean> original)
+	{
+	    HashMap<String, Boolean> copy = new HashMap<>();
+	    for (Entry<String, Boolean> entry : original.entrySet())
+	    {
+	        copy.put(entry.getKey(), entry.getValue());
+	    }
+	    return copy;
+	}
 	
 	public List<Modification> modifications(Action action, Possibility poss)
 	{
-		List<Modification> modifications = new ArrayList<Modification>();
+		List<Modification> modifications = new ArrayList<>();
 		int length = Gov.num_locations();		
-		List<List<Movement[]>> movement_set = new ArrayList<List<Movement[]>>();
+		List<List<Movement[]>> movement_set = new ArrayList<>();
+
+		
+		boolean interrupted = false;
+		HashMap<String, Boolean> interruption_before = copy(interruptions);
+		
+		HashMap<String, Boolean> interruption_used = copy(interruption_before);
+		Set<String> intersection = interruption_before.keySet();
+		intersection.retainAll(action.interruptable);
+		ArrayList<String> intersectionList = new ArrayList<>(intersection);
+		for(String s : intersectionList)
+		{
+			if(!interruption_used.get(s))
+			{
+				interruption_used.put(s, true);
+				interrupted = true;
+				break;
+			}
+		}
+		interruption_before = copy(interruptions);
 		for(Condition cond : poss.conditions)
 		{
-			if(cond instanceof MoveCondition)
+			if(cond instanceof MoveCondition && ((interrupted && ((MoveCondition) cond).cost) || !interrupted))
 			{
 				List<Movement[]> to_add = movecondition_moves((MoveCondition) cond);
 				if(to_add.size()==0)
@@ -288,31 +325,66 @@ public class Gamestate {
 		Movement[][] movement_lists = cartesian_product(movement_set);
 		
 		
-		List<Action> turn_off = new ArrayList<Action>();
+		List<Action> turn_off = new ArrayList<>();
 		for(Action a : action.turn_off)
 		{
-			if(is_on.get(a)==true)
+			if(is_on.get(a))
 				turn_off.add(a);
 		}
-		List<Action> turn_on = new ArrayList<Action>();
+		List<Action> turn_on = new ArrayList<>();
 		for(Action a : action.turn_on)
 		{
-			if(is_on.get(a)==false)
+			if(!is_on.get(a))
 				turn_on.add(a);
 		}
+		action.switch_states.forEach((action1, action2) ->
+		{
+			if(is_on.get(action1) && !is_on.get(action2))
+			{
+				turn_off.add(action1);
+				turn_on.add(action2);
+			}
+			else if(!is_on.get(action1) && is_on.get(action2))
+			{
+				turn_on.add(action1);
+				turn_off.add(action2);
+			}
+		});
+		
+		int end_sum_index=0;
+		if(poss.summable)
+		{
+			for(int i =0; i<poss.first_k_moveconds; i++)
+			{
+				if(poss.conditions[i] instanceof MoveCondition)
+					end_sum_index+=poss.conditions[i].num;
+			}
+		}
+		
 		boolean problem;
 		//can randomize:
 		//while(movement_lists.size()>0)
 		//List<Movement> movements = movement_lists.remove((int)(Math.random()*movement_lists.size()));
 		for(Movement[] movements : movement_lists)
 		{
+			if(poss.summable)
+			{
+				int numeric = poss.numeric;
+				int running_sum = 0;
+				for(int i = 0; i<end_sum_index; i++)
+				{
+					running_sum+=movements[i].card.numerics[numeric];
+				}
+				if ((running_sum < poss.sum) || (running_sum > poss.sum && !poss.greater))
+					continue;
+			}
 			problem = false;
-			List<Movement> move_log = new ArrayList<Movement>();
-			List<Trigger> new_triggers = new ArrayList<Trigger>();
+			List<Movement> move_log = new ArrayList<>();
+			List<Trigger> new_triggers = new ArrayList<>();
 			new_triggers.addAll(action.triggers);
 			new_triggers.addAll(poss.trigger);
 			Locations locations_save = locations.copy();
-			List<int[]> new_removes = new ArrayList<int[]>();
+			List<int[]> new_removes = new ArrayList<>();
 			for(Movement m : movements)
 			{
 				if(!locations.can(m))
@@ -324,7 +396,7 @@ public class Gamestate {
 				move_log.add(m);
 				new_triggers.addAll(locations.move(m));
 			}
-			if(action.draws!=null)
+			if(action.draws!=null && !interrupted)
 			{
 				int sum_draw=0;
 				for(int i =0; i<action.draws.length; i++)
@@ -349,10 +421,10 @@ public class Gamestate {
 					}
 				}
 			}
-			List<Movement> draw_log= new ArrayList<Movement>();
+			List<Movement> draw_log= new ArrayList<>();
 			
 			int[] preload_indices_save = preload_indices.clone();
-			if(action.draws!=null)
+			if(action.draws!=null && !interrupted)
 			{
 				for(int i=1; i<length; i++)
 				{
@@ -362,10 +434,10 @@ public class Gamestate {
 						{
 							//if(Gov.print_full)
 							{
-							System.out.println("Preload Overfull "+i+" somehow");
-							System.out.println(preload_indices[i]);
-							System.out.println(locations.location_sizes[0]);
-							Gov.print_full=false;
+								System.out.println("Preload Overfull "+i+" somehow");
+								System.out.println(preload_indices[i]);
+								System.out.println(locations.location_sizes[0]);
+								Gov.print_full=false;
 							}
 							System.exit(0);
 							/*int card_num = locations.getrand(0);
@@ -376,14 +448,12 @@ public class Gamestate {
 						}
 						else
 						{
-							boolean skip;
 							int[] preload = preloads.preloads.get(i).get(preload_indices[i]);
 							preload_indices[i]+=1;
 							List<Integer> copies_removed = removed.get(preload[0]);
 							if(copies_removed.contains(preload[1]))
 							{
 								j--;
-								continue;
 							}
 							else
 							{
@@ -397,7 +467,7 @@ public class Gamestate {
 					}
 				}
 			}
-			if(action.move_all==true)
+			if(action.move_all)
 			{
 				new_triggers.addAll(locations.moveall(action.move_all_origin, action.move_all_destination, move_log));
 			}
@@ -414,7 +484,8 @@ public class Gamestate {
 			mod.events_turned_off=turn_off;
 			mod.events_turned_on=turn_on;
 			mod.cards_thinned=new_removes;
-			
+			mod.interruptionInitial=copy(interruption_before);
+			mod.interruptionUsed=copy(interruption_used);
 			modifications.add(mod);
 			locations = locations_save;
 			preload_indices = preload_indices_save;
@@ -422,8 +493,7 @@ public class Gamestate {
 			{
 				List<Integer> copies_removed=removed.get(card_removed[0]);
 				copies_removed.remove(copies_removed.size()-1);
-			}
-			
+			}			
 		}
 		
 		return modifications;

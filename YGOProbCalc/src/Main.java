@@ -2,7 +2,8 @@ import java.io.File;
 import java.io.FileWriter;
 
 public class Main {
-
+	
+	
 	public static void main1(String args[])
 	{
 		Card dog = card("Fluffal Dog", 3, "fluff", "ns");
@@ -144,7 +145,7 @@ public class Main {
 	}
 		
 	
-	public static void main3(String args[])
+	public static void main(String args[])
 	{
 		Card dog = card("Fluffal Dog", 3, "fluff", "ns").small();
 		Card peng = card("Fluffal Penguin", 2, "fluff", "ns").small();
@@ -248,7 +249,6 @@ public class Main {
 		Gov.timeout(5);
 		go("Fluffal Demo 3", 100);
 	}
-	
 
 	
 	
@@ -276,6 +276,38 @@ public class Main {
 	private static Action[] list(Action... arr)
 	{
 		return arr;
+	}
+	private static MoveCondition costMove(String category, int in, int out)
+	{
+		return new MoveCondition(category, in, out).cost();
+	}
+	private static MoveCondition costMove(String category, int[] in, int out)
+	{
+		return new MoveCondition(category, in, out).cost();
+	}
+	private static MoveCondition costMove(Card card, int in, int out)
+	{
+		return new MoveCondition(card, in, out).cost();
+	}
+	private static MoveCondition costMove(Card card, int[] in, int out)
+	{
+		return new MoveCondition(card, in, out).cost();
+	}
+	private static MoveCondition costMove(int num, String category, int in, int out)
+	{
+		return new MoveCondition(num, category, in, out).cost();
+	}
+	private static MoveCondition costMove(int num, String category, int[] in, int out)
+	{
+		return new MoveCondition(num, category, in, out).cost();
+	}
+	private static MoveCondition costMove(int num, Card card, int in, int out)
+	{
+		return new MoveCondition(num, card, in, out).cost();
+	}
+	private static MoveCondition costMove(int num, Card card, int[] in, int out)
+	{
+		return new MoveCondition(num, card, in, out).cost();
 	}
 	private static MoveCondition move(String category, int in, int out)
 	{
@@ -394,10 +426,6 @@ public class Main {
 		}
 		card("blank", num-Card.deck_size);
 	}
-	public static void poss(Condition... conditions) //if something like allure, check for a dark to discard first 
-	{
-		Gov.poss(conditions);
-	}
 	public static void terminate(Action[] are_off, Condition... conds)
 	{
 		Gov.terminate(are_off, conds);
@@ -417,5 +445,6 @@ public class Main {
 	{
 		return conds;
 	}
+	
 }
 

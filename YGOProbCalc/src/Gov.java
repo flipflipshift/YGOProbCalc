@@ -9,6 +9,7 @@ public class Gov {
 	static int maximum_depth=Integer.MAX_VALUE;
 	static List<Possibility> goal;
 	static List<Termination_Possibility> terminations;
+	static String[] interruptions = new String[0];
 	static int max_seconds = 604800;
 	static boolean print_deckout=true;
 	static boolean print_full = true;
@@ -46,6 +47,11 @@ public class Gov {
 	{
 		terminations.add(new Termination_Possibility(new Action[] {}, tconds));
 	}
+	public static void interruptions(String...interruption)
+	{
+		interruptions = interruption;
+//		System.out.println(interruptions);
+	}
 	public static boolean satisfies_possibilities(Gamestate g, int depth, long end_time)
 	{
 		if(System.currentTimeMillis()>end_time)
@@ -68,19 +74,20 @@ public class Gov {
 			{
 				for(Integer i : exec)
 				{
-
 					List<Modification> modifications = g.modifications(action, action.possibilities.get(i));
-					if(modifications.isEmpty())
-						continue; //Only loop if move conditions can't be executed despite the naive check
-					legal = true;
-					for(Modification mod : modifications)
+					if(!modifications.isEmpty())
 					{
-						g.modify(mod);
-						if(satisfies_possibilities(g, depth+1, end_time))
-							return true;
-						g.unmodify(mod);
+						//Only loop if move conditions can't be executed despite the naive check
+						legal = true;
+						for(Modification mod : modifications)
+						{
+							g.modify(mod);
+							if(satisfies_possibilities(g, depth+1, end_time))
+								return true;
+							g.unmodify(mod);
+						}
+						break;
 					}
-					break;
 				}
 				if(legal && action.mandatory)
 					return false;
@@ -120,16 +127,18 @@ public class Gov {
 				for(Integer i : g.executable(action))
 				{
 					List<Modification> modifications = g.modifications(action, action.possibilities.get(i));
-					if(modifications.isEmpty())
-						continue; //Only loop if move conditions can't be executed despite the naive check
-					for(Modification mod : modifications)
+					if(!modifications.isEmpty())
 					{
-						g.modify(mod);
-						if(satisfies_possibilities(g, depth+1, end_time))
-							return true;
-						g.unmodify(mod);
+						//Only loop if move conditions can't be executed despite the naive check
+						for(Modification mod : modifications)
+						{
+							g.modify(mod);
+							if(satisfies_possibilities(g, depth+1, end_time))
+								return true;
+							g.unmodify(mod);
+						}
+						break; //only do first possible poss
 					}
-					break; //only do first possible poss
 				}
 			}
 			else
@@ -144,7 +153,7 @@ public class Gov {
 							return true;
 						g.unmodify(mod);
 					}
-					if(action.possibilities.get(i).guarantee && modifications.size()>0)
+					if(action.possibilities.get(i).guarantee && !modifications.isEmpty())
 						return false;
 				}
 			}

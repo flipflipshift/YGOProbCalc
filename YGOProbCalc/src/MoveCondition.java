@@ -2,6 +2,7 @@
 public class MoveCondition extends Condition {
 	int destination;
 	boolean distinct = false;
+	boolean cost = false;
 	public MoveCondition(String category, int[] in, int out)
 	{
 		super(category, in);
@@ -47,5 +48,9 @@ public class MoveCondition extends Condition {
 		distinct = true;
 		return this;
 	}
-	
+	public MoveCondition cost()
+	{
+		cost = true;
+		return this;
+	}
 }

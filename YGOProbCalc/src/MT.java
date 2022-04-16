@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 public class MT {
 	static ArrayList<Trigger>[][][] library;
 	static {
