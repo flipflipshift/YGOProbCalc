@@ -50,6 +50,10 @@ public class Locations {
 	}
 	public boolean can(Movement m)
 	{
+		if(m.destination>=6 && has(m.card_num, m.destination))
+			return false;
+		if((m.destination>=7 || m.destination==1) && location_sizes[7]+location_sizes[8]+location_sizes[9]+location_sizes[10]+location_sizes[11]+location_sizes[2]>=5)
+			return false;
 		return has(m.card_num, m.origin);
 	}
 	/*public void fast_move(int quantity, int card_num, int in, int out)

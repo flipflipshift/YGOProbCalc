@@ -74,7 +74,7 @@ public class SmallWorld {
 			int common = 0;
 			for(int j = 0; j<datum.length; j++)
 			{
-				if(!(i_datum[j].equals("?")) && i_datum[j].equals(datum[j]))
+				if(!(i_datum[j].equals("?")) && i_datum[j].equalsIgnoreCase(datum[j]))
 					common++;
 			}
 			if(common==1)

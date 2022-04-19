@@ -1,0 +1,62 @@
+Trial Number: 1
+This Worked:
+Hand: 
+
+Preloaded draws to Hand: Branded Fusion 1, Branded Blade 1, TB Mercourier 1, TB Nervall 1, albaz 1, Albion the Shrouded 1, TB Fraktall 1, TB Nervall 2, Dead Keras 3, TB Kitt 1, TB Kitt 2, TB Kitt 3, TB Mercourier 2, Tenki 1, TB Revolt 1, 
+
+Moved Rescue Cat from Deck to Hand	(set hand)
+Placed blank in Hand	(set hand)
+Placed blank in Hand	(set hand)
+Placed blank in Hand	(set hand)
+Placed blank in Hand	(set hand)
+Moved Rescue Cat from Hand to Monster Zone	(Normal Summon)
+Moved Rescue Cat from Monster Zone to GY	(Cat eff)
+Moved TB Kitt from Deck to Cat Proc	(Cat eff)
+Moved Dead Keras from Deck to Cat Proc	(Cat eff)
+Removed TB Kitt from Cat Proc	(Negate stuff off cat)
+Placed Dead Kitt in Monster Zone	(Negate stuff off cat)
+Removed Dead Keras from Cat Proc	(Negate stuff off cat)
+Placed TB Keras in Monster Zone	(Negate stuff off cat)
+Moved Dead Kitt from Monster Zone to GY	(Summon Ferrijit)
+Moved TB Keras from Monster Zone to GY	(Summon Ferrijit)
+Moved Ferrijit from ED to EMZ	(Summon Ferrijit)
+Placed TB Kitt in GY	(Swap real kitt back)
+Removed Dead Kitt from GY	(Swap real kitt back)
+Placed Dead Keras in GY	(Swap real keras back)
+Removed TB Keras from GY	(Swap real keras back)
+Moved TB Nervall from Deck to GY	(Kitt send)
+Moved TB Fraktall from Deck to Hand	(Nerv add)
+Moved TB Fraktall from Hand to Monster Zone	(Ferri eff to spec)
+Moved Rescue Cat from GY to Banish	(Frak summon link)
+Moved TB Kitt from GY to Banish	(Frak summon link)
+Moved DDL from ED to EMZ	(Frak summon link)
+Moved TB Fraktall from Monster Zone to GY	(Summon Brumm)
+Moved Ferrijit from EMZ to GY	(Summon Brumm)
+Moved Bearbrumm from ED to EMZ	(Summon Brumm)
+Drew Branded Fusion to Hand	(Ferri eff to draw)
+Moved Branded Fusion from Hand to Deck	(Put back 1)
+Moved blank from Hand to GY	(Brumm eff to spec)
+Moved blank from Hand to GY	(Brumm eff to spec)
+Moved TB Kitt from Banish to Monster Zone	(Brumm eff to spec)
+Moved TB Fraktall from GY to Banish	(Kitt summon link)
+Moved TB Nervall from GY to Banish	(Kitt summon link)
+Moved Dead Keras from GY to Banish	(Kitt summon link)
+Moved Ferrijit from GY to Banish	(Kitt summon link)
+Removed Shuraig from ED	(Kitt summon link)
+Placed Imp Shuraig in EMZ	(Kitt summon link)
+Moved TB Kitt from Monster Zone to GY	(Summon Verte)
+Moved Imp Shuraig from EMZ to GY	(Summon Verte)
+Moved Verte from ED to EMZ	(Summon Verte)
+Moved TB Mercourier from Deck to Hand	(Omen eff to add)
+Moved Branded Fusion from Deck to GY	(Eff Verte)
+Moved albaz from Deck to GY	(Eff Verte)
+Moved Bearbrumm from EMZ to GY	(Eff Verte)
+Placed Mirrorjade in Monster Zone	(Eff Verte)
+Moved TB Revolt from Deck to Hand	(Brumm eff to add)
+Moved blank from Hand to Deck	(Put back 1)
+Moved TB Revolt from Hand to S/T Zone	(Place revolt)
+
+
+Number of successes: 1 out of 1
+Number of timeouts: 0
+Probability: 1.0

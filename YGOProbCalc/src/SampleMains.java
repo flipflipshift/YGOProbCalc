@@ -110,7 +110,7 @@ public class SampleMains {
 		prosp_eff.turnoff(ferrijit_draw);
 		MT.add("ferrijit", 2, 4, ferrijit_draw);
 		
-		
+
 		
 		Action brumm_eff = action("Brumm eff to spec").open().hopt().poss(cond("brumm",2), move(2,"card",1,4), move("main tb",5,2));
 		Action brumm_add = action("Brumm eff to add").hopt().poss(move(revolt,0,1)).trigger(put_back);
